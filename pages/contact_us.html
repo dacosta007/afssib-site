@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../bootstrap/css/afssstyle.css" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="favicon" href="#">
+  <title>About Us</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../bootstrap/css/font-awesome.css" />
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+  <script>
+    function initialize() {
+      var mapProp = {
+        center: new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 5,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+
+  <style>
+    .contact-map {
+      padding: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#schMenu">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="../index.html" class="navbar-brand">
+          <img src="../images/afss_logo.png" alt="sch_logo" width="auto" height="30">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="schMenu">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./principal.html">Principal</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Academics <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="./curriculums.html">Curriculum</a></li>
+              <li><a href="./departments.html">Departments</a></li>
+              <li><a href="./library.html">Library</a></li>
+              <li><a href="./laboratories.html">Laboratories</a></li>
+              <li><a href="./ict.html">ICT</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#informations" class="dropdown-toggle" data-toggle="dropdown">
+              Informations <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="listitem">
+              <li><a href="./boarding.html">Boarding</a></li>
+              <li><a href="./uniform.html">Uniform</a></li>
+              <li><a href="./admission.html">Admission</a></li>
+              <li><a href="./sch_calender.html">School Calendar</a></li>
+              <li><a href="./prospectus.html">Prospectus</a></li>
+              <li><a href="./anthem_pledge.html">Anthem/Pledge</a></li>
+            </ul>
+          </li>
+          <li><a href="./news.html">News</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./alumni.html">Alumni</a></li>
+          <li><a href="./contact_us.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav><!-- Navigation Bar Ends -->
+
+
+
+  <script>
+    var schCenter = new google.maps.LatLng(7.3735, 3.8808);
+
+    function initialize() {
+      var mapProp = {
+        center: new google.maps.LatLng(7.3735, 3.8808),
+        zoom: 9,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+      var marker = new google.maps.Marker({
+        position: schCenter,
+        animation: google.maps.Animation.BOUNCE,
+        title: 'Click to zoom'
+      });
+
+      marker.setMap(map);
+      google.maps.event.addListener(marker, 'click', function () {
+        map.setZoom(9);
+        map.setCenter(marker.getPosition());
+      });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
+  <!--
+  <section class="section-2 map-section">
+    <div class="contact-container">
+          <div class="filter">
+            <div class="address">
+              <h4>Where to meet</h4>
+              <p>
+                SW8/803, lodge street,<br> Oke-Ado, Ibadan
+              </p>
+              <h4>Bell Us</h4>
+              <p>
+                +234 703 479 3449, <br> +234 807 905 3533
+              </p>
+              <h4>the Oldways</h4>
+              <a href="mailto:ololade00736@yahoo.com ">afssib@yahoo.com</a>
+            </div>
+          </div>
+
+
+    </div>
+
+  </section>
+-->
+  <!-- <div class="map" id="" style="width: 100%; height:470;"></div> -->
+  <div class="" id="googleMap" style="width:100%;height:400px;"></div>
+  <section class="section-2 contact-img" style="background-color:#343434; color:#fff;">
+    <div class="title-area"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <h2 class="title" style="color:#444;">Get in Touch</h2>
+          <p style="color:#888;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Nemo temporibus magnam ut obcaecati ullam velit itaque deleniti.
+            </h5>
+            <div class="horizontal">
+              <div class="icon">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="">
+                <h3>Find us At</h3>
+                <p>
+                  SW8/803, lodge street,<br> Oke-Ado, Ibadan
+                </p>
+              </div>
+            </div>
+            <div class="horizontal">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="">
+                <h3>Give us a call</h3>
+                <p>
+                  School <br>
+                  +234 703 479 3449, <br> +234 807 905 3533 <br>
+                  Mon-Fri, 8:00am - 5:00pm
+                </p>
+              </div>
+            </div>
+            <div class="horizontal">
+              <div class="icon">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="">
+                <h3>Prefer to mail us</h3>
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com ">afssib@yahoo.com</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-5 col-md-offset-2">
+          <div class="card" style="padding:15px; margin-top:60px;">
+            <h2 class="contact-title">Contact Us</h2>
+            <form class="" action="MAILTO:ololade00736@yahoo.com" method="post" enctype="text/plain">
+
+              <div class="row">
+
+                <div class="form-group col-md-6">
+                  <label for="name" class="control-label">Your Fullname</label>
+                  <input type="text" class="form-control form-control-afss" placeholder="Fullname">
+                </div>
+
+
+
+                <div class="form-group col-md-6">
+                  <label for="email" class="control-label">Your Email</label>
+                  <input type="text" class="form-control form-control-afss" placeholder="Email address">
+                </div>
+
+
+                <div class="form-group col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control form-control-afss" name="name" rows="8" cols="40"
+                      placeholder="Your Comments"></textarea>
+                  </div>
+
+
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-info butn-primary" style="float:right;">
+                      Send <i class="glyphicon glyphicon-send"></i>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="section-grey">
+
+    <div class="title-area">
+
+      <h2>
+        Our Other Branches Within Nigeria
+      </h2>
+
+      <div class="bar bar-primary">
+        *
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background: url('../images/city-1.jpg'); background-position: center; background-size: cover;">
+
+            <h4 class="contact-city">lagos </h4>
+
+          </div>
+
+          <div class="contact-content">
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  1, Apostolic Faith Campgrounds Road
+
+                  Anthony Village, Lagos.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 805 7809 039, +234 803 4346 747.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com" class="text-center">
+                    school@something.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com" class="text-center">
+                    www.apostolicfaithsecsch.org
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background-image: url('../images/city.jpg'); background-position: center; background-size: cover;">
+            <div>
+              <h4 class="contact-city">oyo</h4>
+            </div>
+          </div>
+
+          <div class="contact-content">
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  SW8/803, Lodge Street Oke-Ado, Ibadan.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 703 479 3449, +234 807 905 3533.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2 text-center">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    school@something.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2 text-center">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    www.schoolsomething.edu.ng
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background-image: url('../images/header-3.jpeg'); background-position: center; background-size: cover;">
+            <h4 class="contact-city">Ogun</h4>
+          </div>
+
+          <div class="contact-content">
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  20 Somorin Street, Oke Abetu, Off Car Wash, Adatan, Abeokuta, Ogun State.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 803 7171 141.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    school@something.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    schoolsomething.com
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background-image: url('../images/header-7.jpeg'); background-position: center; background-size: cover;">
+
+            <h4 class="contact-city">Osun</h4>
+
+          </div>
+
+          <div class="contact-content">
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  2, Fagbola Road, Isokun, Ilesa, Osun State.
+                </p>
+                <br>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 803 7171 141.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    school@something.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    schoolsomething.com
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+
+    <!--  Second Row For Contact Cards -->
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background-image: url('../images/bg3.jpeg'); background-position: center; background-size: cover;">
+
+            <h4 class="contact-city">Ekiti</h4>
+
+          </div>
+
+          <div class="contact-content">
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  Ise Road, Emure, Ekiti, Ekiti State..
+                </p>
+                <br>
+                <br>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 803 7171 141.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    school@something.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    schoolsomething.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background-image: url('../images/bg4.jpeg'); background-position: center; background-size: cover;">
+            <h4 class="contact-city">kwara</h4>
+          </div>
+
+          <div class="contact-content">
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  Egosi-Ile, along Ayedun Road, Kwara State.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 803 570 1884, +234 805 780 9039.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    school@something.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    schoolsomething.com
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background-image: url('../images/bg3.jpeg'); background-position: center; background-size: cover;">
+            <h4 class="contact-city">kogi</h4>
+          </div>
+
+          <div class="contact-content">
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  Odokoro Quarters, Ayetoro Gbede, Kogi State.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 803 578 9377, +234 803 625 5944.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    school@something.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    schoolsomething.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background-image: url('../images/header-4.jpeg'); background-position: center; background-size: cover;">
+            <h4 class="contact-city">benin</h4>
+          </div>
+
+          <div class="contact-content">
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  1, Akugbe Street, Off Upper Siluko Road, Useh/Ugoh Quarters, Benin City, Edo State.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 705 563 2259.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    school@something.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    schoolsomething.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Third Row contact card   -->
+    <div class="row">
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background-image: url('../images/landing.jpg'); background-position: center; background-size: cover;">
+            <h4 class="contact-city">OWERRI:</h4>
+          </div>
+
+          <div class="contact-content">
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  MCC/Uratta Road, Opposite Zonal Education/MGT Board, Owerri.
+                </p>
+                <br>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 806 941 6655.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    school@something.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    schoolsomething.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background-image: url('../images/city-2.png'); background-position: center; background-size: cover;">
+            <h4 class="contact-city">Uyo</h4>
+          </div>
+
+          <div class="contact-content">
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  Ibesikpo Asutan Localk Government Area, Akwa Ibom State.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 802 735 9965.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    school@something.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    schoolsomething.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background-image: url('../images/music-3.jpg'); background-position: center; background-size: cover;">
+            <h4 class="contact-city">Aba</h4>
+          </div>
+
+          <div class="contact-content">
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  210, Hospital Road, P. O. Box 254 Aba, Abia State.
+                </p>
+                <br>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 803 730 4481.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    afssaba@yahoo.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    schoolsomething.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="contact-card">
+
+          <div class="contact-header"
+            style="background-image: url('../images/header-4.jpeg'); background-position: center; background-size: cover;">
+            <h4 class="contact-city">benin</h4>
+          </div>
+
+          <div class="contact-content">
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-map-marker"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  1, Akugbe Street, Off Upper Siluko Road, Useh/Ugoh Quarters, Benin City, Edo State.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  +234 705 563 2259.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-envelope-o"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    school@something.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-2">
+                <i class="fa fa-globe"></i>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a href="mailto:ololade00736@yahoo.com">
+                    schoolsomething.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer in-space">
+    <!-- Footer Section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <!-- Sch-logo and address -->
+          <div class="row">
+            <div class="col-sm-4">
+              <a href="../index.html" title="home Page">
+                <img src="../images/afss_logo.png" class="img-responsive ft-logo" alt="sch_logo" />
+              </a>
+            </div>
+            <div class="col-sm-8">
+              <span>
+                Apostolic Faith Secondary School <small class="small">Ibadan</small> <br>
+                SW8/803, Lodge Street Oke-Ado, Ibadan. <br>
+                Tel:<br> +234 703 479 3449, +234 807 905 3533. <br>
+                Email: afssib@yahoo.com
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <!-- External Links -->
+          <div class="text-center">
+            <h5>External Links</h5>
+            <a href="#contact.php">Quick Contact</a><br>
+            <a href="#contact.php">Enquires</a><br>
+            <a href="#" target="_blank">Alumni Association</a><br>
+            <a href="http://www.wikipedia.org" target="_blank">Wikipedia</a><br>
+            <a href="http://www.google.com.ng" target="_blank">Google</a>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <!--Social Media Links -->
+          <div class="">
+            <h5>Follow Us On</h5>
+            <a href="https://www.facebook.com" target="_blank" title="like our page on facebook">
+              <i class="fa fa-facebook facebook"></i> Facebook
+            </a>
+
+            <br>
+
+            <a href="https://www.twitter.com" target="_blank" title="follow us on twitter">
+              <i class="fa fa-twitter twitter"></i> Twitter
+            </a>
+
+            <br>
+
+            <a href="https://www.googleplus.com" target="_blank" title="join our circle on google plus ">
+              <i class="fa fa-google-plus google-plus"></i> Google<sup>+</sup>
+            </a>
+            <br>
+            <a href="#" title="follow us on instagram">
+              <i class="fa fa-instagram instagram"></i> Instalgram
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center">
+        &copy;2016 Apostolic Faith Secondary School, Ibadan. All Right Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!--
+  ============================================
+  Jquery File And Javascript core file
+  ============================================
+   -->
+  <script src="../bootstrap/js/jquery.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
