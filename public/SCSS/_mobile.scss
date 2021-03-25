@@ -1,0 +1,70 @@
+// ========== The general mobile CSS rules for every page  ==========
+
+// Wild Screen Desktop & Laptop Devices
+@include mediaXl {
+  .main {
+    margin-top: 5.4em;
+  }
+
+  .section {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+// Large Screen Tablet, Laptop, & Desktop Devices
+@include mediaLg {
+  .main {
+    margin-top: 5.4em;
+  }
+
+  .section {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .modal .modal-content {
+    width: 60%;
+    margin-top: 20%;
+  }
+}
+
+// Medium Tablet & Small Devices
+@include mediaMd {
+  .main {
+    margin-top: 5.3em;
+  }
+
+  .section {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .modal .modal-content {
+    width: 70%;
+    margin-top: 20%;
+  }
+}
+
+// Small or Smartphone Devices
+@include mediaSm {
+  .main {
+    margin-top: 4.5em;
+  }
+
+  .section {
+    max-width: 540px;
+  }
+
+  .show-sm {
+    display: inherit;
+  }
+
+  .show-flex-sm {
+    display: flex !important;
+  }
+
+  .hide-sm {
+    display: none;
+  }
+}

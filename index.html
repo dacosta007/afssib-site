@@ -1,505 +1,725 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="#/css/master.css" />
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="bootstrap/css/afssstyle.css" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="bootstrap/css/font-awesome.css" />
-  <title>Home Page</title>
-  <style>
-    .affix {
-      top: 0;
-      width: 100%;
-      z-index: 9999 !important;
-    }
-
-    .affix~.container-fluid {
-      position: relative;
-      top: 50px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apostolic Faith Secondary School, Ibadan | Home page</title>
+  <meta name="description" content="A school with standardized educational offering with sound morale rooted in the christian world view">
+  <meta name="keywords" content="Apostolic Faith Secondary School in Ibadan, Oyo state">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/public/css/themify-icons.css">
+  <link rel="stylesheet" href="/public/css/main.css">
 </head>
-
 <body>
-  <header>
-    <div class="head">
-      <div class="row">
-        <div class="col-md-6">
-          <a href="index.html" title="home">
-            <img src="../AFSS_IB/images/afss_logo.png" class="img-responsive" alt="sch_logo" width="90" height="90">
+  <!-- site's main header -->
+  <header class="">
+    <nav class="navbar">
+      <!-- the site logo/crest & humbuger icon -->
+      <div class="navbar-brand">
+        <a href="#/">
+          <img src="/public/img/afss_logo.png" alt="sch_logo_or_crest" width="40px" height="auto">
+        </a>
+        <!-- hamburger icon (show on small device) -->
+        <i class="ti ti-menu small-menu-icon"></i>
+      </div>
+
+      <!-- the nav menus -->
+      <div class="navbar-menus">
+        <a href="#/pages/about.html">about</a>
+        <a href="#/pages/principal.html">principal</a>
+
+        <!-- academics -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>academics</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="#/pages/curriculums.html">curriculums</a>
+            <a href="#/pages/departments.html">departments</a>
+            <a href="#/pages/library.html">library</a>
+            <a href="#/pages/laboratories.html">laboratories</a>
+          </div>
+        </div>
+
+        <!-- information -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>info</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="/pages/boarding.html">boarding</a>
+            <a href="/pages/admission.html">admission</a>
+            <a href="/pages/calendar">calendar</a>
+            <a href="/pages/uniform.html">uniform</a>
+            <a href="/pages/anthem.html">anthem & pledge</a>
+          </div>
+        </div>
+
+        <a href="/pages/news.html">news</a>
+        <a href="/pages/gallery.html">gallery</a>
+        <a href="/pages/alumni.html">alumni</a>
+        <a href="/pages/contact.html">contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- site's main body contents -->
+  <main class="main">
+    <!-- FIRST SECTION -->
+    <section class="first-section">
+      <section class="section">
+        <div class="hero-container">
+          <!-- the sch name in bold text -->
+          <div class="hero-text">
+            <h1 class="title">
+              Apostolic faith Secondary school, <br>
+              Ibadan
+            </h1>
+            <div class="scroll-down-btn-container">
+              <a href="#secSection" class="scroll-down-btn">
+                <i class="ti ti-angle-down"></i>
+              </a>
+            </div>
+          </div>
+  
+          <!-- the hero sch imgs(animated) -->
+          <div class="hero-imgs-container">
+            <!-- first img container -->
+            <div class="hero-img-1-container">
+              <div class="flip-img-inner">
+                <!-- front side of animated img -->
+                <div class="flip-img-front">
+                  <img src="/public/img/studt-img-1.jpg" alt="sch_front_imgs" class="flip-img-1" width="300px" height="auto">
+                </div>
+                <!-- back side of animated img -->
+                <div class="flip-img-back">
+                  <img src="/public/img/classroom-img.jpg" alt="sch_back_imgs" class="flip-img-2" width="300px" height="auto">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- SECOND SECTION -->
+    <section class="second-section" id="secSection">
+      <section class="section">
+        <div class="flex-container">
+          <div>
+            <!-- some convincing header title -->
+            <header class="section-title">
+              <h2>know more about</h2>
+              <h2>AFSS Ibadan</h2>
+              <h2>as we love to call it</h2>
+            </header>
+            <!-- brief description about the sch -->
+            <p class="description">
+              Apostolic Faith Secondary School (AFSS) Lodge street, Oke-Ado, Ibadan, Oyo state. is a government-approved co-educational school with boarding facilities. Apostolic Faith Secondary School is borne out of the commendable educational initiative of the Overseer for the Apostolic Faith Works in Africa, Reverend Paul Oge Akazue. The high sense of urgency attached to the Church’s initiative and the motivation by the Africa Overseer is primarily, a social one, that is, to provide a unique and sacred opportunity to shape the lives of children into competent, responsible and God-fearing citizens for the good of themselves, their families and the nation at large.
+            </p>
+            <!-- CTA. button for redirection to about page -->
+            <div class="cta-btn-container hide-sm">
+              <a href="#/pages/about.html" class="cta-btn">
+                <span>read more</span> <i class="ti ti-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- some sch images -->
+          <div>
+            <div class="grid-container two-grid-columns sch-img-container">
+              <div class="ft-sch-img-container">
+                <img src="/public/img/studt-img-1.jpg" alt="sch_img_premise_1" loading="lazy" width="200px" height="auto">
+              </div>
+              <div class="nd-sch-img-container">
+                <img src="/public/img/lab-img.jpg" alt="sch_img_premise_2" loading="lazy" width="200px" height="auto">
+                <img src="/public/img/ict-img.jpg" alt="sch_img_premise_3" loading="lazy" width="200px" height="auto">
+              </div>
+            </div>
+
+            <!-- CTA. button for redirection to about page -->
+            <div class="cta-btn-container show-flex-sm">
+              <a href="#/pages/about.html" class="cta-btn">
+                <span>read more</span> <i class="ti ti-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section> 
+    </section>
+
+    <!-- THIRD SECTION -->
+    <section class="third-section">
+      <section class="section">
+        <div class="flex-container">
+          <!-- convincing header title -->
+          <header class="section-title">
+            <h2>wonder what we offer</h2>
+            <h2>some distinguishable features</h2>
+          </header>
+
+          <!-- sch noticeable features -->
+          <div class="grid-container sch-features-container">
+            <div class="sch-feature" data-intersect>
+              <!-- feature header title & icon preception -->
+              <header>
+                <img src="/public/img/environmental.png" class="feature-icon" alt="environment_icon" width="70px" height="auto">
+                <h4 class="title">serene environment</h4>
+              </header>
+              <!-- brief feature description -->
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit alias neque eos sapiente. Dignissimos, nulla?</p>
+            </div>
+
+            <div class="sch-feature" data-intersect>
+              <!-- feature header title & icon preception -->
+              <header>
+                <img src="/public/img/staff.png" class="feature-icon" alt="personnel" width="70px" height="auto">
+                <h4 class="title">qualified personnel</h4>
+              </header>
+              <!-- brief feature description -->
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit alias neque eos sapiente. Dignissimos, nulla?</p>
+            </div>
+
+            <div class="sch-feature" data-intersect>
+              <!-- feature header title & icon preception -->
+              <header>
+                <img src="/public/img/curriculums.png" class="feature-icon" alt="curriculums" width="70px" height="auto">
+                <h4 class="title">rich curriculums</h4>
+              </header>
+              <!-- brief feature description -->
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit alias neque eos sapiente. Dignissimos, nulla?</p>
+            </div>
+
+            <div class="sch-feature" data-intersect>
+              <!-- feature header title & icon preception -->
+              <header>
+                <img src="/public/img/laboratory.png" class="feature-icon" alt="laboratory" width="90px" height="auto">
+                <h4 class="title">equiped laboratories</h4>
+              </header>
+              <!-- brief feature description -->
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit alias neque eos sapiente. Dignissimos, nulla?</p>
+            </div>
+
+            <div class="sch-feature" data-intersect>
+              <!-- feature header title & icon preception -->
+              <header>
+                <img src="/public/img/residence.png" class="feature-icon" alt="boarding" width="70px" height="auto">
+                <h4 class="title">better boarding</h4>
+              </header>
+              <!-- brief feature description -->
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit alias neque eos sapiente. Dignissimos, nulla?</p>
+            </div>
+
+            <div class="sch-feature" data-intersect>
+              <!-- feature header title & icon preception -->
+              <header>
+                <img src="/public/img/learning.png" class="feature-icon" alt="vocational_studies" width="90px" height="auto">
+                <h4 class="title">vocational acquisition</h4>
+              </header>
+              <!-- brief feature description -->
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit alias neque eos sapiente. Dignissimos, nulla?</p>
+            </div>
+
+            <div class="sch-feature" data-intersect>
+              <!-- feature header title & icon preception -->
+              <header>
+                <img src="/public/img/morale.png" class="feature-icon" alt="morale_critique" width="70px" height="auto">
+                <h4 class="title">morale critique</h4>
+              </header>
+              <!-- brief feature description -->
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit alias neque eos sapiente. Dignissimos, nulla?</p>
+            </div>
+
+            <div class="sch-feature" data-intersect>
+              <!-- feature header title & icon preception -->
+              <header>
+                <img src="/public/img/counselor.png" class="feature-icon" alt="counseling" width="70px" height="auto">
+                <h4 class="title">counseling</h4>
+              </header>
+              <!-- brief feature description -->
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit alias neque eos sapiente. Dignissimos, nulla?</p>
+            </div>
+
+            <div class="sch-feature" data-intersect>
+              <!-- feature header title & icon preception -->
+              <header>
+                <img src="/public/img/alumni.png" class="feature-icon" alt="alumni" width="70px" height="auto">
+                <h4 class="title">alunmi community</h4>
+              </header>
+              <!-- brief feature description -->
+              <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit alias neque eos sapiente. Dignissimos, nulla?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- FOURTH SECTION -->
+    <section class="fourth-section">
+      <section class="section">
+        <div class="flex-container">
+          <header class="section-title">
+            <h2>some thoughtful incite from</h2>
+            <h2>our principal</h2>
+            <!-- some breif word form the principal -->
+            <p class="description">
+              A Careful Study Of God’s Love For Mankind Reveals That God Never Leaves Man, His Handiwork, Alone To The Crafty Devices Of Man’s Enemy. From Time To Time And At Appropriate Times, God Unfolds His Great Plan Of Deliverance And Safety For Mankind, His Creation.We Read In The Bible Of A Period Of Darkness When It Seemed That The Voice Of God Was No More Heard Through His Prophets. In Due Time, The Bible Recorded The Voice Of The One Crying In The Wilderness Saying “Prepare Ye The Way Of The Lord, Make His Paths Straight”, “Repent Ye For The Kingdom Of God Is At Hand”. Since Then, The Song Of Redemption Has Been Sounding And Little By Little, Souls Have Been Turning To God.
+            </p>
+
+            <!-- CTA. button redirecting to principal's page -->
+            <div class="cta-btn-container hide-sm">
+              <a href="#/pages/principal.html" class="cta-btn">
+                <span>read more</span> <i class="ti ti-arrow-right"></i>
+              </a>
+            </div>
+          </header>
+
+          <!-- principal's img & qoute -->
+          <div class="principal-img-quote">
+            <div class="img-quote-container">
+              <!-- sch branch principal's img -->
+              <img src="/public/img/principal.jpg" class="principal-img" loading="lazy" alt="principal_img" width="300px" height="auto">
+              <!-- principal's word qoute -->
+              <p class="quote-container">
+                <i class="ti ti-quote-left"></i> 
+                A great <b>thought</b> begins by seeing something <b>differently</b>, with a shift of the mind's <b>eye!</b>.
+                <i class="ti ti-quote-right"></i>
+                <span class="quote-by">Albert Einstein</span>
+              </p>
+            </div>
+            <!-- CTA. button redirecting to principal's page -->
+            <div class="cta-btn-container show-flex-sm">
+              <a href="#/pages/principal.html" class="cta-btn">
+                <span>read more</span> <i class="ti ti-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- FIFTH SECTION -->
+    <section class="fifth-section">
+      <section class="section">
+        <div class="flex-container">
+          <!-- section convincing header title -->
+          <header class="section-title">
+            <h2>what gives us the drive</h2>
+            <h2>to do what we do</h2>
+            <h2>our mantra</h2>
+          </header>
+
+          <!-- sch 'vision' & 'mission' world view -->
+          <div class="grid-container">
+            <!-- vision world view -->
+            <div class="vision-container" data-intersect>
+              <!-- vision foreground img (will be displayed faintly over container) -->
+              <img src="/public/img/vision.png" class="foreground-img" alt="vision_img" width="300px" height="auto">
+
+              <header>
+                <!-- vision icon  -->
+                <i class="ti ti-eye vision-mision-icon"></i>
+                <!-- header title -->
+                <h2 class="title">vision</h2>
+              </header>
+
+              <!-- veiw description -->
+              <p class="description">
+                <i class="ti ti-quote-left"></i>
+                The school cite is to become a world-class secondary school, helping to build Africa through Christ.
+                <i class="ti ti-quote-right"></i>
+              </p>
+            </div>
+  
+            <!-- mission view to the world -->
+            <div class="mission-container" data-intersect>
+              <!-- mission foreground img(will be displayed faintly over container) -->
+              <img src="/public/img/mission.png" class="foreground-img" alt="mission_img" width="300px" height="auto">
+
+              <header>
+                <!-- vision world icon -->
+                <i class="ti ti-world vision-mision-icon"></i>
+                <!-- header title -->
+                <h2 class="title">mission</h2>
+              </header>
+
+              <!-- veiw description -->
+              <p class="description">
+                And out main intent is; provide world-class education in academics, and moral values which uniquely shape the lives of children into completely responsible, and God-fearing citizens through the knowledge of Christ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- SIXTH SECTION: Sch 'events' & 'news' -->
+    <section class="sixth-section">
+      <div class="foreground-bg-clip"></div>
+      <div class="main-content">
+        <section class="section">
+          <div class="flex-container center-container">
+            <div class="grid-container news-event-grid">
+              <!-- sch current & upcoming events -->
+              <div class="events-container">
+                <h2 class="title">current term events</h2>
+  
+                <div class="events">
+                  <!-- event 1 -->
+                  <div class="grid-container" data-intersect>
+                    <!-- event date & day -->
+                    <div class="event-date">
+                      <!-- day of the week -->
+                      <div class="day-of-week">wed</div>
+                      <!-- date on calendar -->
+                      <div class="cal-date">3</div>
+                      <!-- month of the year -->
+                      <div class="month">feb</div>
+                    </div>
+                    <!-- event title & description -->
+                    <div class="title-and-description">
+                      <h3 class="title">term begins</h3>
+                      <p class="event-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ex. Doloremque nam velit id tempora!
+                      </p>
+                      <!-- C.T.A btn to read more in a modal window -->
+                      <div class="cta-news-and-events-container">
+                        <a href="#/" class="cta-read" onclick="openNewsModal()">
+                          <span>read more</span> <i class="ti ti-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- event 2 -->
+                  <div class="grid-container" data-intersect>
+                    <!-- event date & day -->
+                    <div class="event-date">
+                      <!-- day of the week -->
+                      <div class="day-of-week">thu</div>
+                      <!-- date on calendar -->
+                      <div class="cal-date">11</div>
+                      <!-- month of the year -->
+                      <div class="month">mar</div>
+                    </div>
+                    <!-- event title & description -->
+                    <div class="title-and-description">
+                      <h3 class="title">Mid-term test</h3>
+                      <p class="event-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quae rem deserunt aut perferendis voluptatem!
+                      </p>
+                      <!-- C.T.A btn to read more in a modal window -->
+                      <div class="cta-news-and-events-container">
+                        <a href="#/" class="cta-read" onclick="openNewsModal()">
+                          <span>read more</span> <i class="ti ti-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- event 3 -->
+                  <div class="grid-container" data-intersect>
+                    <!-- event date & day -->
+                    <div class="event-date">
+                      <!-- day of the week -->
+                      <div class="day-of-week">mon</div>
+                      <!-- date on calendar -->
+                      <div class="cal-date">12</div>
+                      <!-- month of the year -->
+                      <div class="month">apr</div>
+                    </div>
+                    <!-- event title & description -->
+                    <div class="title-and-description">
+                      <h3 class="title">second Exam</h3>
+                      <p class="event-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A minima excepturi iusto consequatur voluptas consectetur!
+                      </p>
+                      <!-- C.T.A btn to read more in a modal window -->
+                      <div class="cta-news-and-events-container">
+                        <a href="#/" class="cta-read" onclick="openNewsModal()">
+                          <span>read more</span> <i class="ti ti-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- CTA. button redirection to event's page -->
+                <div class="cta-btn-container">
+                  <a href="#/pages/calender.html" class="cta-btn cta-block">
+                    <span>read more</span> <i class="ti ti-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+  
+              <!-- sch's current news -->
+              <div class="news-container">
+                <h2 class="title">news around the school</h2>
+  
+                <div class="news">
+                  <!-- news 1 -->
+                  <div class="grid-container" data-intersect>
+                    <!-- news title & description -->
+                    <div class="news-contents">
+                      <h3 class="title">admission open and avialable for sales</h3>
+                      <p class="event-description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam assumenda, necessitatibus obcaecati velit est minus!
+                      </p>
+                      <!-- C.T.A btn to read more in a modal window -->
+                      <div class="cta-news-and-events-container">
+                        <!-- news date -->
+                        <small class="news-date">20 sep 2020</small>
+                        <!-- C.T.A btn -->
+                        <a href="#/" class="cta-read" onclick="openNewsModal()">
+                          <span>read more</span> <i class="ti ti-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- img or icon depicting news feed -->
+                    <div class="news-img-icon">
+                      <img src="/public/img/studt-img-1.jpg" loading="lazy" alt="news_feed_img_or_icon" width="80px" height="auto">
+                    </div>
+                  </div>
+  
+                  <!-- news 2 -->
+                  <div class="grid-container" data-intersect>
+                    <!-- news title & description -->
+                    <div class="news-contents">
+                      <h3 class="title">expedition into the canyons of colorado</h3>
+                      <p class="event-description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam assumenda, necessitatibus obcaecati velit est minus!
+                      </p>
+                      <!-- C.T.A btn to read more in a modal window -->
+                      <div class="cta-news-and-events-container">
+                        <!-- news date -->
+                        <small class="news-date">10 feb 2021</small>
+                        <!-- C.T.A btn -->
+                        <a href="#/" class="cta-read" onclick="openNewsModal()">
+                          <span>read more</span> <i class="ti ti-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- img or icon depicting news feed -->
+                    <div class="news-img-icon">
+                      <img src="/public/img/ict-img.jpg" loading="lazy" alt="news_feed_img_or_icon" width="80px" height="auto">
+                    </div>
+                  </div>
+  
+                  <!-- news 3 -->
+                  <div class="grid-container" data-intersect>
+                    <!-- news title & description -->
+                    <div class="news-contents">
+                      <h3 class="title">current term comes to an end</h3>
+                      <p class="event-description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam assumenda, necessitatibus obcaecati velit est minus!
+                      </p>
+                      <!-- C.T.A btn to read more in a modal window -->
+                      <div class="cta-news-and-events-container">
+                        <!-- news date -->
+                        <small class="news-date">09 apr 2021</small>
+                        <!-- C.T.A btn -->
+                        <a href="#/" class="cta-read" onclick="openNewsModal()">
+                          <span>read more</span> <i class="ti ti-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- img or icon depicting news feed -->
+                    <div class="news-img-icon">
+                      <img src="/public/img/lab-img.jpg" loading="lazy" alt="news_feed_img_or_icon" width="80px" height="auto">
+                    </div>
+                  </div>
+                </div> 
+  
+                <!-- CTA. button redirection to event's page -->
+                <div class="cta-btn-container">
+                  <a href="#/pages/calender.html" class="cta-btn cta-block">
+                    <span>read more</span> <i class="ti ti-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- SEVENTH SECTION: Sch 'newsletter' -->
+    <section class="seventh-section">
+      <section class="section">
+        <div class="flex-container center-container">
+          <div class="grid-container">
+            <!-- convincing header title & words -->
+            <header class="section-title">
+              <h2>be the first to know when new content is avialable</h2>
+              <p class="description">
+                Subscribe to our newsletter and keep-up with up-to-date upcoming events or news which can helps in getting you well informed, and making viable decisions.
+              </p>
+            </header>
+            
+            <!-- input field to accept newsletter subscribers -->
+            <div class="newsletter-container">
+              <div class="input-field">
+                <input type="email" name="newsletter" id="subscriberEmail" placeholder="Your email address for subscription" required>
+                <label for="email">your email</label>
+              </div>
+
+              <!-- show error message when necessary -->
+              <small class="error-msg"></small>
+
+              <!-- agreement or 'concencus ad idem' to newsletter subcription by user's email -->
+              <div class="user-agreement-testiment">
+                <input type="checkbox" id="subscriberAgreement">
+                <label for="subscriberAgreement">
+                  I agree to my email address being stored, and use to receive monthly newsletter.
+                </label>
+              </div>
+
+              <!-- submit btn -->
+              <div>
+                <button type="button" onclick="newsletter()" id="subscribeBtn" class="btn btn-pry btn-block">subscribe</button>
+              </div>
+            </div>
+
+            <!-- confirmation message for subscription -->
+            <div class="subscriber-confirmation-msg">
+              <!-- animated icon img -->
+              <div class="confirmation-icon-msg">
+                <img src="/public/img/checkmark.gif" alt="confirmation_img" width="150px" height="auto">
+              </div>
+
+              <!-- confirmation message -->
+              <div class="subscriber-msg">
+                <header>
+                  thank you for subscribing!
+                </header>
+                
+                <p class="description">
+                  you have <b>successfully</b> subscribed to our list of newsletter subscribers. We will let you know when we launch.
+                </p>
+
+                <!-- close confirmation msg btn -->
+                <div>
+                  <button class="btn btn-block btn-pry" onclick="closeNewsletterSuccessMsg()">
+                    close message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- modal window for previewing news & events -->
+    <aside class="modal" id="previewEventsNews">
+      <section class="modal-content">
+        <!-- news/event img, tag title, & close btn  -->
+        <header class="events-news-header">
+          <div class="news-title-tag-container">
+            <!-- close modal btn -->
+            <i class="close-modal-btn ti ti-arrow-left" onclick="closeNewsModal()"></i>
+  
+            <!-- tag title, title, & date -->
+            <div class="news-tag-headline">
+              <span class="news-tag">tag</span>
+              <h3 class="title news-title">news or event title</h3>
+              <div class="news-sub-title">news or event sub-title</div>
+            </div>
+          </div>
+        </header>
+
+        <!-- news/event description, news author, & reading time -->
+        <div class="news-description-container">
+          <!-- news date, & reading time -->
+          <div class="news-event-date-container">
+            <!-- news date -->
+            <div class="news-event-date">
+              <i class="ti ti-calendar"></i> <span>09 apr 2021</span>
+            </div>
+            <!-- reading time -->
+            <div class="news-event-read-time">
+              <i class="ti ti-timer"></i> <sup>'</sup><span>4mins</span>
+            </div>
+          </div>
+          <!-- news/event description -->
+          <p class="news-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti placeat numquam dolore vitae, qui blanditiis, quam in officia commodi corporis odio ut aperiam, ullam praesentium quos? Facere officia laudantium necessitatibus tempora, maiores excepturi magnam nostrum cupiditate aliquid quia omnis ipsam.
+            <br>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti placeat numquam dolore vitae, qui blanditiis, quam in officia commodi corporis odio ut aperiam, ullam praesentium quos? Facere officia laudantium necessitatibus tempora, maiores excepturi magnam nostrum cupiditate aliquid quia omnis ipsam.
+          </p>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <!-- site's main footer -->
+  <footer class="footer">
+    <div class="footer-info">
+      <div class="footer-brand">
+        <a href="#/">
+          <img src="/public/img/afss_logo.png" class="footer-img" alt="sch_logo_or_crest" width="50px" height="auto">
+        </a>
+        <div class="contact-info">
+          <p>Apostolic Faith Secondary School, Ibadan</p>
+          <p>SW8/803, Lodge street, Oke-Ado, Ibadan, Oyo State, Nigeria</p>
+          <p>Tel: <br> <span>+234 703 4793 449,</span> <br> <span>+234 807 9053 533</span></p>
+        </div>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h4 class="title">quick links</h4>
+
+        <ul>
+          <li><a href="#/pages/contact_us.html">FAQ</a></li>
+          <li><a href="#/pages/admission.html">admission</a></li>
+          <li><a href="#/pages/alumni.html">alumni</a></li>
+          <li><a href="#/pages/contact_us.html">contact us</a></li>
+        </ul>
+      </div>
+  
+      <!-- sch social media links -->
+      <div class="social-links">
+        <h4 class="title">follow us</h4>
+
+        <p>
+          on our major social media platforms, to get closer on events within and around the school.
+        </p>
+
+        <div class="links">
+          <a href="http://facebook.com/afssibadan">
+            <i class="ti ti-facebook"></i>
+          </a>
+          <a href="http://twitter.com/afssibadan">
+            <i class="ti ti-twitter"></i>
+          </a>
+          <a href="http://instagram.com/afssibadan">
+            <i class="ti ti-instagram"></i>
+          </a>
+          <a href="http://youtube.com/afssibadan">
+            <i class="ti ti-youtube"></i>
           </a>
         </div>
-        <div class="col-md-5 col-md-offset-1">
-          <h4 class="banner">
-            Apostolic Faith Secondary School Oke-Ado, <small class="small">Ibadan.</small>
-          </h4>
-        </div>
-      </div>
-
-      <nav class="navbar navbar-default" data-spy="affix" data-offset-top="50" style="margin-bottom:0px;">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#schMenu">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand">
-              <img src="images/afss_logo.png" alt="sch_logo" width="auto" height="30">
-            </a>
-          </div>
-          <div class="collapse navbar-collapse" id="schMenu">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="pages/about.html">About</a></li>
-              <li><a href="pages/principal.html">Principal</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  Academics <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a href="pages/curriculums.html">Curriculum</a></li>
-                  <li><a href="pages/departments.html">Departments</a></li>
-                  <li><a href="pages/library.html">Library</a></li>
-                  <li><a href="pages/laboratories.html">Laboratories</a></li>
-                  <li><a href="pages/ict.html">ICT</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#informations" class="dropdown-toggle" data-toggle="dropdown">
-                  Informations <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" role="listitem">
-                  <li><a href="pages/boarding.html">Boarding</a></li>
-                  <li><a href="pages/uniform.html">Uniform</a></li>
-                  <li><a href="pages/admission.html">admission</a></li>
-                  <li><a href="pages/sch_calendar.html">School Calendar</a></li>
-                  <li><a href="pages/prospectus.html">Prospectus</a></li>
-                  <li><a href="pages/anthem_pledge.html">Anthem/Pledge</a></li>
-                </ul>
-              </li>
-              <li><a href="pages/news.html">News</a></li>
-              <li><a href="pages/gallery.html">Gallery</a></li>
-              <li><a href="pages/alumni.html">Alumni</a></li>
-              <li><a href="pages/contact_us.html">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav><!-- Navigation Bar Ends -->
-  </header>
-  <!-- Slides -->
-  <div class="carousel slide text-center" data-ride="carousel" id="schCarousel">
-    <!-- Carousel Start-->
-    <ol class="carousel-indicators">
-      <!-- Carousel-indicators -->
-      <li class="active" data-target="#schCarousel" data-slide-to="0"></li>
-      <li data-target="#schCarousel" data-slide-to="1"></li>
-      <li data-target="#schCarousel" data-slide-to="2"></li>
-      <li data-target="#schCarousel" data-slide-to="3"></li>
-    </ol><!-- Carousel-indicators Ends -->
-
-    <!-- Wrapper For Carousel -->
-    <div class="carousel-inner" role="listbox">
-      <!-- Carousel-inner Start -->
-      <div class="item active">
-        <img src="images/bg4.jpeg" alt="img1" />
-        <h4 class="carousel-caption">Here is the first Carousel-item</h4>
-      </div>
-
-      <div class="item">
-        <img src="images/bg3.jpeg" alt="img1" />
-        <h4 class="carousel-caption">Here is the Seconde Carousel-item</h4>
-      </div>
-
-      <div class="item">
-        <img src="images/city.jpg" alt="img1" />
-        <h4 class="carousel-caption">Here is the Third Carousel-item</h4>
-      </div>
-
-      <div class="item">
-        <img src="images/city.jpg" alt="img4" />
-        <div class="carousel-caption">
-          <h4>Here is the Fourth Carousel-item</h4>
-        </div>
-      </div>
-    </div><!-- Carousel-inner Ends -->
-
-    <!-- Carousel-controls -->
-    <a class="left carousel-control" href="#schCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#schCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div><!-- Carousel Ends-->
-
-  <section class="section-2">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-7">
-          <div class="">
-            <div class="sch-img">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                  <h3 class="text-center"
-                    style="font-size: 32px; text-shadow: 2px 1px 3px #666; padding-top:75px; color: #fff;">
-                    Welcome To Apostolic Faith Secondary School
-                    <small class="small">Ibadan</small>
-                </div>
-              </div>
-              </h3>
-            </div>
-          </div>
-          <p class="top-space" style="font-size: 16px;">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-            occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
-            <a href="#" class="btn">read more &rarr;</a>
-          </p>
-        </div>
-        <div class="col-md-4">
-          <!-- Principal Section -->
-          <div class="card">
-            <div class="header">
-
-              <div class="action text-center">
-                <a href="#" class="button">Read Article</a>
-              </div>
-            </div>
-            <div class="content">
-              <div class="text-center class=" img-space"">
-                <p class="text-center">
-                  <img src="images/kendall.jpg" class="img-circle img-border" alt="principal" width="150px"
-                    height="150px" />
-                </p>
-                <h4>Kendall</h4>
-                <h5 class="category">-Principal</h5>
-              </div>
-              <p class="description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </section>
 
-  <section class="bg-blue section">
-    <!-- Services Section -->
-    <div class="container">
-      <h2 style="font-size: 26px; font-weight: 300;">SERVICES</h2>
-      <h4 style="font-size: 26px; font-weight: 200;">We Offer</h4>
-      <br>
-      <div class="row">
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-education logo-small"></span>
-          <h4>
-            Qualitative Education
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet..
-            You can write here details about one of your team members. <br>
-            You can give more details about what they do. <br>
-            Feel free to add some links for people to be able to follow them outside the site.
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-leaf logo-small"></span>
-          <h4>
-            Good Hostel Facilities
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet..
-            You can write here details about one of your team members. <br>
-            You can give more details about what they do. <br>
-            Feel free to add some links for people to be able to follow them outside the site.
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-user logo-small"></span>
-          <h4>
-            Good Morals Through Christ
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet..
-            You can write here details about one of your team members. <br>
-            You can give more details about what they do. <br>
-            Feel free to add some links for people to be able to follow them outside the site.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-heart logo-small"></span>
-          <h4>
-            Learn Musical Instruments
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet..
-            You can write here details about one of your team members. <br>
-            You can give more details about what they do. <br>
-            Feel free to add some links for people to be able to follow them outside the site.
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-file logo-small"></span>
-          <h4>
-            Enriched Curriculum
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet..
-            You can write here details about one of your team members. <br>
-            You can give more details about what they do. <br>
-            Feel free to add some links for people to be able to follow them outside the site.
-          </p>
-        </div>
-        <div class="col-sm-4">
-          <span class="glyphicon glyphicon-tower logo-small"></span>
-          <h4>
-            Equipped Laboratories
-          </h4>
-          <p>
-            Lorem ipsum dolor sit amet..
-            You can write here details about one of your team members. <br>
-            You can give more details about what they do. <br>
-            Feel free to add some links for people to be able to follow them outside the site.
-          </p>
-        </div>
-      </div>
+    <!-- site's copyright's statement -->
+    <div class="copyright-container">
+      <small>
+        &copy;2021 
+        <span class="hide-sm">Apostolic Faith Secondary School</span> 
+        AFSS<sup>&trade;</sup> 
+        <span class="show-sm">Oke-Ado</span>, Ibadan. All Rights Reserved.
+      </small>
     </div>
-  </section>
+  </footer>
 
-  <section class="bg-grey">
-    <!-- Vision & Mission, Quick Contact, and News -->
-    <div class="container">
-      <div class="row" style="margin-top: 30px;">
-        <div class="col-sm-4">
-          <!-- Vision And Mission -->
-          <h4 class="category" style="font-size: 22px; font-weight: 200; ">Our </h4>
-          <div class="card-2">
-            <div class="float">
-              <span class="glyphicon glyphicon-eye-open logo-small-2"></span>
-              <i class="text-center text-primary" style="margin: 20px;">
-                <strong style="font-size: 18px;">Vision</strong>
-              </i>
-            </div>
-            <br>
-            <p class="text-center" style="font-size: 18px; padding: 10px;">
-              To be a world class Secondary School helping to bulid Africa through Christ
-            </p>
-
-            <div class="float-2">
-              <span class="glyphicon glyphicon-globe logo-small-2"></span>
-              <i class="text-center text-primary" style="margin-left: 20px;">
-                <strong style="font-size: 18px;">Mission</strong>
-              </i>
-            </div>
-            <br>
-            <p class="text-center" style="font-size: 18px; padding: 10px;">
-              To promote a world class education in academic and moral which uniquely shape the life of
-              children into completely responsible and God fearing citizens through the knowledge of christ.
-            </p>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <!-- Quick Contact -->
-          <h4 class="category" style="font-size: 22px; font-weight: 200; ">
-            Quick Contact <span class="glyphicon glyphicon-phone bold-logo"></span>
-          </h4>
-          <div class="card-2">
-            <p class="spacing">
-              Lorem ipsum dolor sit amet..
-              You can write here details about one of your team members. <br>
-              You can give more details about what they do.
-              Feel free to add some links for people to be able to follow them outside the site...
-              <a href="#" class="btn">Read more &rarr;</a>
-            </p>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <!-- News -->
-          <h4 class="category" style="font-size: 22px; font-weight: 200; ">News:</h4>
-          <div class="list-group">
-
-            <a href="#" class="list-group-item active">
-              <h3 class="list-group-heading">First List group Item heading</h3>
-              <p class="list-group-text">
-                Some List Group Text.
-              </p>
-            </a>
-
-            <a href="#" class="list-group-item">
-              <h3 class="list-group-heading">Seconde List group Item heading</h3>
-              <p class="list-group-text">
-                Some List Group Text.
-              </p>
-            </a>
-
-            <a href="#" class="list-group-item">
-              <h3 class="list-group-heading">Third List group Item heading</h3>
-              <p class="list-group-text">
-                Some List Group Text.
-              </p>
-            </a>
-
-            <a href="#" class="list-group-item">
-              <h3 class="list-group-heading">Fourth List group Item heading</h3>
-              <p class="list-group-text">
-                Some List Group Text.
-              </p>
-            </a>
-
-          </div </div> </div> </div> </div> </section> <aside class="aside">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="pics pics-img-1">
-                  <div class="area-over">
-                    <h4>ICT</h4>
-                    <p>
-                      You can write here details about one of your team members.
-                      You can give more details about what they do.
-                      Feel free to add some links for people to be able to follow them outside the site.
-                      <br>
-                      <a href="#" class="btn" style="color: #36c;">read more &rarr;</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="pics pics-img-2">
-                  <div class="area-over">
-                    <h4>Laboratory</h4>
-                    <p>
-                      You can write here details about one of your team members.
-                      You can give more details about what they do.
-                      Feel free to add some links for people to be able to follow them outside the site.
-                      <br>
-                      <a href="#" class="btn" style="color: #36c;">read more &rarr;</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="pics pics-img-1">
-                  <div class="area-over">
-                    <h4>Library</h4>
-                    <p>
-                      You can write here details about one of your team members.
-                      You can give more details about what they do.
-                      Feel free to add some links for people to be able to follow them outside the site.
-                      <br>
-                      <a href="#" class="btn" style="color: #36c;">read more &rarr;</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </aside>
-
-          <footer class="footer in-space">
-            <div class="container">
-              <div class="row">
-                <div class="col-sm-4">
-                  <!-- Sch-logo and address -->
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <a href="#" title="home Page">
-                        <img src="images/afss_logo.png" class="img-responsive ft-logo" alt="sch_logo" />
-                      </a>
-                    </div>
-                    <div class="col-sm-8">
-                      <span>
-                        Apostolic Faith Secondary School <small class="small">Ibadan</small> <br>
-                        SW8/803, Lodge Street Oke-Ado, Ibadan. <br>
-                        Tel: +234 703 479 3449, +234 807 905 3533.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-4">
-                  <!-- External Links -->
-                  <div class="text-center">
-                    <h5>External Links</h5>
-                    <a href="#contact.php">Quick Contact</a><br>
-                    <a href="#contact.php">Enquires</a><br>
-                    <a href="#" target="_blank">Alumni Association</a><br>
-                    <a href="http://www.wikipedia.org" target="_blank">Wikipedia</a><br>
-                    <a href="http://www.google.com.ng" target="_blank">Google</a>
-                  </div>
-                </div>
-
-                <div class="col-sm-4">
-                  <!--Social Media Links -->
-                  <div class="">
-                    <h5>Follow Us On</h5>
-                    <a href="https://www.facebook.com" target="_blank" title="like our page on facebook">
-                      <i class="fa fa-facebook facebook"></i> Facebook
-                    </a>
-
-                    <br>
-
-                    <a href="https://www.twitter.com" target="_blank" title="follow us on twitter">
-                      <i class="fa fa-twitter twitter"></i> Twitter
-                    </a>
-
-                    <br>
-
-                    <a href="https://www.googleplus.com" target="_blank" title="join our circle on google plus ">
-                      <i class="fa fa-google-plus google-plus"></i> Google<sup>+</sup>
-                    </a>
-                    <br>
-                    <a href="#" title="follow us on instagram">
-                      <i class="fa fa-instagram instagram"></i> Instalgram
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <hr>
-              <p class="text-center">
-                &copy;2016 Apostolic Faith Secondary School, Ibadan. All Right Reserved.
-              </p>
-            </div>
-          </footer>
-          <!--
-============================================
-Jquery File And Javascript core file
-============================================
- -->
-          <script src="bootstrap/js/jquery.min.js"></script>
-          <script src="bootstrap/js/bootstrap.min.js"></script>
-          <script type="text/javascript">
-            /*  var myVar;
-  function showDiv() {
-    document.getElementById('slide').Style.display="none";
-    document.getElementByClassName('action-content').Style.display="none";
-  }
-
-  function myFunction() {
-    myVar = setTimeout(showDiv, 3000);
-  }
-  */
-          </script>
+  <!-- javaScript and other script files -->
+  <script src="/public/js/main.js"></script>
 </body>
-
 </html>

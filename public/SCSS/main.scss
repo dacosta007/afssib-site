@@ -1,0 +1,372 @@
+// ========== The main CSS file where every style sheets is imported ========== 
+@import 'fonts';
+@import 'variables';
+@import 'reset';
+@import 'mixins';
+@import 'animations';
+
+// General rules
+.title, .section-title {
+  font-family: $heading-font;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 1.5em;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 1.2em;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.center-text {
+  text-align: center;
+}
+
+.show {
+  display: block !important;
+}
+
+.show-flex {
+  display: flex !important;
+}
+
+.show-sm, .show-flex-sm {
+  display: none !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.error-msg {
+  display: none;
+  position: relative;
+  background: transparentize($danger-color, $amount: 0.85);
+  color: $danger-color;
+  font-size: 12.5px;
+  padding: 0.5em;
+  border-radius: 5px;
+  animation: scale-io 0.4s ease;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+
+  span{
+    display: inline-block;
+    margin-right: 26px;
+  }
+
+  i.ti-close {
+    display: inline-block;
+    position: absolute;
+    right: 7px;
+    transform: translateY(25%);
+    border-radius: 50%;
+    padding: 0.4em;
+    font-size: 16px;
+    font-weight: bold;
+    background: transparentize($danger-color, $amount: 0.51);
+    color: #f4f4f9;
+  }
+}
+
+.card {
+  @include card;
+}
+
+.cta-btn-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+
+  .cta-btn {
+    padding: 0.8rem 0.8rem;
+    outline: none;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+    &:hover {
+      background: $sec-color;
+      transition: background 0.3s linear;
+    }
+  }
+}
+
+// container
+.grid-container {
+  display: grid;
+}
+
+.two-grid-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.three-grid-columns {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+// input fields
+.input-field {
+  position: relative;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1.2rem;
+  }
+
+  label {
+    position: absolute;
+    user-select: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    left: 0;
+    transition: top 0.2s, font-size 0.2s, color 0.2s;
+  }
+
+  input, textarea {
+    width: 100%;
+    background: $white-color;
+    border: 2px solid #a4abdc56;
+    border-radius: 6px;
+    transition: border-color 0.2s;
+    font-size: 14px;
+    outline: none;
+
+    &:focus {
+      border-color: #3366ccad;
+    }
+
+    &::placeholder {
+      color: transparent;
+      text-transform: capitalize;
+    }
+
+    &:focus::placeholder {
+      color: #7a7a7a;
+    }
+
+    &:focus + label, &:not(:placeholder-shown) + label {
+      font-size: 12px;
+      background: #ffffff;
+      padding: 0 5px;
+    }
+  }
+
+  input {
+    padding: 15px 10px;
+
+    & + label {
+      margin-left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:focus + label, &:not(:placeholder-shown) + label {
+      top: 0%;
+    }
+  }
+
+  textarea {
+    padding: 12px 10px;
+    resize: none;
+
+    & + label {
+      margin-left: 0.5rem;
+      top: 10%;
+      transform: translateY(-10%);
+    }
+
+    &:focus + label, &:not(:placeholder-shown) + label {
+      top: -3.5%;
+    }
+  }
+}
+
+// buttons
+.btn {
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  min-width: 145px;
+  padding: 15px 10px;
+  font-size: 15px;
+  font-family: $main-font;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 5px;
+  background: $sec-color;
+  color: $text-color;
+  @include boxShadow($sec-color);
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+
+  &:hover, &:active {
+    opacity: 0.8;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  &:active, &:focus {
+    animation: btn-anim 0.3s ease-in-out;
+  }
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.btn-pry {
+  background: $info-color;
+  color: #f3f3f9;
+  box-shadow: 0px 8px 15px -8px #3366ccab;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: rgba($text-color, $alpha: 0.4);
+
+  .modal-content {
+    width: 50%;
+    height: 600px;
+    margin: 10% auto 10% auto;
+    background: $white-color;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px -10px rgba(130, 146, 175, 51%);
+
+    .events-news-header {
+      height: 45%;
+      width: 100%;
+      background-image: url(../img/lab-2-img.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
+
+      .news-title-tag-container {
+        width: 100%;
+        height: 100%;
+        padding: 1em 1.5em;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-image: linear-gradient(to top, rgba(10, 5, 35, 0.90), rgba(0,0,0, 0.2) 85%);
+        color: #f3f3f7;
+
+        .close-modal-btn {
+          position: absolute;
+          top: 8%;
+          font-size: 19px;
+          border-radius: 50px;
+          padding: 11px;
+          background: #ccccff61;
+        }
+
+        .news-tag-headline {
+
+          .news-tag {
+            display: inline-block;
+            border-radius: 50px;
+            padding: 2px;
+            min-width: 80px;
+            text-align: center;
+            text-transform: capitalize;
+            letter-spacing: 0.5px;
+            background: #ccccff61;
+            margin-bottom: 0.4em;
+          }
+
+          .news-title {
+            margin-bottom: 0.4rem;
+            font-size: 2em;
+            font-weight: 500;
+          }
+
+          .news-sub-title {
+            font-size: 16px;
+            letter-spacing: 0.5px;
+
+            &::first-letter {
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+
+    .news-description-container {
+      height: 55%;
+      padding: 1.5em;
+      overflow: auto;
+
+      .news-event-date-container {
+        display: flex;
+        gap: 1.5em;
+        margin-bottom: 1em;
+
+        .news-event-date, .news-event-read-time {
+          padding: 0.5em;
+          background: #f3f3f9;
+          border-radius: 25px;
+        }
+
+        .news-event-date, .news-event-read-time {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .ti {
+            font-size: 16px;
+            color: #c1c1c1;
+          }
+
+          span {
+            font-size: 12px;
+            text-transform: capitalize;
+            font-weight: bold;
+          }
+        }
+
+        .news-description {
+          line-height: 1.9;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+        }
+      }
+    }
+  }
+}
+
+
+// Site's navigation bar
+@import 'navbar';
+
+@import 'home';
+
+// Site's footer
+@import 'footer';
+
+// Mobile devices general 'Media Queries' style(for site responsiveness)
+@import 'mobile';

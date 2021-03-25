@@ -1,0 +1,159 @@
+.footer {
+  background: $text-color;
+  color: transparentize($sec-color, 0.3);
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .footer-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0.2em;
+    padding: 1.5rem;
+
+    .footer-brand {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 0.5em;
+
+      .footer-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .contact-info p:not(:last-child) {
+        font-size: 13px;
+        margin-bottom: 0.4em;
+      }
+    }
+
+    .title {
+      letter-spacing: 1.5px;
+    }
+
+    .quick-links {
+      ul {
+        text-decoration: none;
+        list-style-type: none;
+        
+        li {
+          text-transform: capitalize;
+          letter-spacing: 1px;
+          padding: 0.3em;
+
+          a:hover {
+            color: $info-color;
+            transition: color 0.2s ease-in-out;
+          }
+        }
+
+        li:not(:last-child) {
+          margin-bottom: 0.5em;
+        }
+      }
+    }
+
+    .social-links {
+      p{
+        font-size: 13.5px;
+      }
+
+      .links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.3em;
+
+        a i {
+          font-size: 20px;
+          border-radius: 50%;
+          padding: 0.6rem;
+          background: transparentize($info-color, $amount: 0.7);
+          
+          &:hover {
+            background:#3366cc21;
+            transition: background 0.2s linear;
+          }
+        }
+
+        a i.ti-facebook:hover {
+          @include social-link-color($info-color);
+          transition: color 0.2s linear;
+        }
+
+        a i.ti-twitter:hover {
+          @include social-link-color(#8379c7);
+          transition: color 0.2s linear;
+        }
+
+        a i.ti-instagram:hover {
+          @include social-link-color(#8379c7);
+          transition: color 0.2s linear;
+        }
+
+        a i.ti-youtube:hover {
+          @include social-link-color($danger-color);
+          transition: color 0.2s linear;
+        }
+      }
+    }
+  }
+
+  .copyright-container {
+    padding: 0.8rem;
+    border-top: 1px solid transparentize($sec-color, $amount: 0.8);
+    text-align: center;
+  }
+}
+
+// ===== *** Media Queries *** =====
+
+// Wild Screen Desktop & Laptop Devices
+@include mediaXl {
+  .footer {
+
+    .footer-info {
+      padding: 1.5rem 7rem;
+    }
+  }
+}
+
+// Large Screen Tablet, Laptop, & Desktop Devices
+@include mediaLg {
+  .footer {
+
+    .footer-info {
+      padding: 1.5rem 5rem;
+    }
+  }
+}
+
+// Small or Smartphone Devices
+@include mediaSm {
+  .footer {
+
+    .footer-info {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5em;
+
+      .footer-brand {
+        grid-template-columns: repeat(1, 1fr);
+
+        a {
+          width: 50%;
+
+          .footer-img {
+            width: 70%;
+          }
+        }
+      }
+
+      .social-links .links {
+        justify-content: space-around;
+      }
+    }
+  }
+}

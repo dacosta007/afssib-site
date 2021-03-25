@@ -1,0 +1,8 @@
+site's fonts URI address for production
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat&display=swap" rel="stylesheet">
+
+CSS rules to specify families:
+- font-family: 'Lora', serif;
+
+- font-family: 'Montserrat', sans-serif;

@@ -1,0 +1,68 @@
+[
+  {
+    "refId": "001",
+    "tag": "news",
+    "title": "admission open and avialable for sales",
+    "subTitle": "Something as sub-title",
+    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam assumenda, necessitatibus obcaecati velit est minus!",
+    "date": "20 sep 2020",
+    "session": "2020/2021",
+    "term": "first",
+    "newsPoster": "/public/img/studt-img-1.jpg"
+  },
+  {
+    "refId": "002",
+    "tag": "news",
+    "title": "expedition into the canyons of colorado",
+    "subTitle": "Something as sub-title",
+    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam assumenda, necessitatibus obcaecati velit est minus!",
+    "date": "10 feb 2021",
+    "session": "2020/2021",
+    "term": "first",
+    "newsPoster": "/public/img/ict-img.jpg"
+  },
+  {
+    "refId": "003",
+    "tag": "news",
+    "title": "current term comes to an end",
+    "subTitle": "Something as sub-title",
+    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam assumenda, necessitatibus obcaecati velit est minus!",
+    "date": "09 apr 2021",
+    "session": "2020/2021",
+    "term": "first",
+    "newsPoster": "/public/img/lab-img.jpg"
+  },
+  {
+    "refId": "004",
+    "tag": "event",
+    "title": "term begins",
+    "subTitle": "Something as sub-title",
+    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam assumenda, necessitatibus obcaecati velit est minus!",
+    "date": "wed 03 feb",
+    "session": "2020/2021",
+    "term": "first",
+    "newsPoster": "/public/img/lab-img.jpg"
+  },
+  {
+    "refId": "005",
+    "tag": "event",
+    "title": "second begins",
+    "subTitle": "Something as sub-title",
+    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam assumenda, necessitatibus obcaecati velit est minus!",
+    "date": "thu 11 mar",
+    "session": "2020/2021",
+    "term": "first",
+    "newsPoster": "/public/img/lab-img.jpg"
+  },
+  {
+    "refId": "006",
+    "tag": "event",
+    "title": "third begins",
+    "subTitle": "Something as sub-title",
+    "body": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam assumenda, necessitatibus obcaecati velit est minus!",
+    "date": "mon 12 apr",
+    "session": "2020/2021",
+    "term": "first",
+    "newsPoster": "/public/img/lab-img.jpg"
+  }
+]

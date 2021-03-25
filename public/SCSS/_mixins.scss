@@ -1,0 +1,71 @@
+@mixin  boxShadow($color) {
+  box-shadow: 0 2px 4px 0px rgba($color, $alpha: 0.3);
+}
+
+@mixin boxShadowTwo($color) {
+  box-shadow: 0px 8px 15px -8px rgba($color, $alpha: 0.51);
+}
+
+@mixin card {
+  background: $white-color;
+  padding: 1em;
+  border: 1px solid #f3f3f4;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px -8px rgba(171, 184, 208, 0.51);
+}
+
+// for social link color
+@mixin social-link-color($color) {
+  color: $color;
+}
+
+// for social link hover
+@mixin social-link-hover($bgcolor, $color) {
+  background: $bgcolor;
+  color: $color;
+  transition: backgroud 0.3s linear;
+}
+
+// === *** Animations === ***
+@mixin scaleIn($anim-time) {
+  animation: scale-in $anim-time linear;
+}
+
+@mixin scaleOut($anim-time) {
+  animation: scale-out $anim-time linear;
+}
+
+@mixin fadeIn($anim-time) {
+  animation: fade-in $anim-time linear;
+}
+
+@mixin fadeOut($anim-time) {
+  animation: fade-out $anim-time linear;
+}
+// === *** Animations ends === ***
+
+// === Media Queries Mixins ===
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (min-width: 501px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+// === Media Queries Mixins ends ===
