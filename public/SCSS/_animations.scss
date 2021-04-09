@@ -1,3 +1,9 @@
+// rotate 180deg Y-axis
+.rotateY-180 {
+  transform: rotateY(180deg);
+  transition: transform 0.3s linear;
+}
+
 // scale in & out animations
 .scale-in {
   animation: scale-in 0.2s linear;

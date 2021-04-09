@@ -34,6 +34,63 @@ const smallNav = () => {
   });
 }
 
+// ======*** Home Page Image rotate ***======
+let heroImgRotateProps = {
+  indxCouter: 0,
+  frontImgs: queryAll(document, "[data-front-imgs]"),
+  backImgs: queryAll(document, "[data-back-imgs]"),
+  frontImgCount: queryAll(document, "[data-front-imgs]").length,
+  backImgCount: queryAll(document, "[data-back-imgs]").length,
+  frontContainerImg: query(document, ".flip-img-front img"),
+  backContainerImg: query(document, ".flip-img-back img"),
+  baseImgURI: '/public/img/'
+};
+
+const heroImgRotate = () => {
+  // get all necessary images
+  const { frontImgs, backImgs } = heroImgRotateProps;
+
+  // total counts of front and back imgs each
+  const { frontImgCount, backImgCount } = heroImgRotateProps;
+  
+  // get font & back face of hero-img containers
+  const { frontContainerImg, backContainerImg } = heroImgRotateProps;
+
+  // the container of the images
+  const containerImgs = query(document, ".flip-img-inner");
+
+  // specify root/base img URI
+  const { baseImgURI } = heroImgRotateProps;
+
+  // image according to counter
+  let frontImgCounter = heroImgRotateProps.indxCouter > (frontImgCount - 1) ? 0 : heroImgRotateProps.indxCouter;
+  let backImgCounter = heroImgRotateProps.indxCouter > (backImgCount - 1) ? 0: heroImgRotateProps.indxCouter;
+
+  // change container img wanting to rotate to before rotation
+  if (containerImgs.classList.contains('rotateY-180')) {
+    // for front-face img
+    frontContainerImg.src = `${baseImgURI}${frontImgs[frontImgCounter].dataset.frontImgs}`;
+    containerImgs.classList.remove('rotateY-180');
+  } else {
+    // for back-face img
+    backContainerImg.src = `${baseImgURI}${backImgs[backImgCounter].dataset.backImgs}`;
+    containerImgs.classList.add('rotateY-180');
+  }
+
+  // incrementing index counter
+  heroImgRotateProps.indxCouter++;
+  if (heroImgRotateProps.indxCouter > (frontImgCount - 1)) {
+    heroImgRotateProps.indxCouter = 0;
+  }
+
+  // console.log(`indexCounter: ${heroImgRotateProps.indxCouter}, frontImgCounter: ${frontImgCounter}, backImgCounter: ${backImgCounter}`);
+
+  // set time interval to execute above given instructions
+  // PS: this rotate after 5sec. 
+  setTimeout(heroImgRotate, 5000);
+};
+// ======*** Home Page Image rotate ends ***======
+
 // help truncate text
 const truncateText = (str, limit, endChar) => {
   limit = (limit)? limit : 100;
@@ -49,8 +106,6 @@ const truncateText = (str, limit, endChar) => {
 
   return str.join(' ');
 }
-
-
 
 // trucate events and news texts on display before preview
 const shortNewsAndEventTxt = () => {
@@ -158,12 +213,16 @@ document.addEventListener('DOMContentLoaded', () => {
   // small navigation menu bar
   smallNav();
 
-  // truncate news & events texts description (run on site's home page only)
   if ((window.location.origin + '/') == window.location.href ) {
+    // for hero image auto rotation on the home page
+    heroImgRotate();
+
+    // truncate news & events texts description (run on site's home page only)
     shortNewsAndEventTxt();
 
-    // truncate about sch. & principal's words description text 
-    if(window.visualViewport.width <= 500) {
+    // truncate about sch. & principal's words description text
+    let checkMediaDevice = window.matchMedia("(max-width: 500px)");
+    if(checkMediaDevice.matches) {
       // for about sch.
       const aboutSchTxt = query(document, '#secSection .description');
       aboutSchTxt.innerText = truncateText(aboutSchTxt.innerText, 60);
@@ -172,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const principalTxt = query(document, '.fourth-section .description');
       principalTxt.innerText = truncateText(principalTxt.innerText, 60);
     }
-
+    
     // lazyload desired elements on the home page
     // const lazyloadEle = queryAll(document, '[data-intersect]');
     // lazyloadEle.forEach(lazyLoading);
