@@ -1,5 +1,5 @@
 font-face {
-  font-family: 'Lora Italic';
+  font-family: Lora-Italic;
   src: url("/public/fonts/Lora-Italic-VariableFont_wght.ttf");
 }
 
@@ -155,6 +155,12 @@ html, body {
   text-transform: capitalize;
   letter-spacing: 1px;
   margin-bottom: 1.5em;
+}
+
+.sub-title {
+  font-family: Montserrat;
+  text-transform: capitalize;
+  letter-spacing: 1px;
 }
 
 .description {
@@ -1856,6 +1862,360 @@ html, body {
   }
 }
 
+.main {
+  background: #ffffff;
+}
+
+.abt-first-section.gen-hero-container {
+  height: 55vh;
+  width: 100%;
+  clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 0);
+  background: #3e3ed4;
+  overflow: hidden;
+}
+
+.abt-first-section.gen-hero-container .section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.abt-first-section.gen-hero-container .section h1 {
+  font-size: clamp(6em, 1.3em, 2.5em);
+  font-family: Lora;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  color: #f9efef;
+}
+
+.abt-second-section {
+  padding: 2.5rem 0;
+}
+
+.abt-second-section .flex-container.sch-brief-history, .abt-second-section .flex-container.sch-philosophy {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 2em;
+  overflow: hidden;
+}
+
+.abt-second-section .flex-container.sch-brief-history .descriptive-title-and-text, .abt-second-section .flex-container.sch-philosophy .descriptive-title-and-text {
+  flex: 2;
+}
+
+.abt-second-section .flex-container.sch-brief-history .sch-building-img, .abt-second-section .flex-container.sch-philosophy .sch-building-img {
+  flex: 1;
+  position: relative;
+}
+
+.abt-second-section .flex-container.sch-brief-history .sch-building-img .sch_building_foreground_img_1, .abt-second-section .flex-container.sch-brief-history .sch-building-img .sch_building_foreground_img_2, .abt-second-section .flex-container.sch-philosophy .sch-building-img .sch_building_foreground_img_1, .abt-second-section .flex-container.sch-philosophy .sch-building-img .sch_building_foreground_img_2 {
+  position: absolute;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+.abt-second-section .flex-container.sch-brief-history .sch-building-img .sch_building_foreground_img_1, .abt-second-section .flex-container.sch-philosophy .sch-building-img .sch_building_foreground_img_1 {
+  top: -20%;
+  left: -23%;
+}
+
+.abt-second-section .flex-container.sch-brief-history .sch-building-img .sch_building_foreground_img_2, .abt-second-section .flex-container.sch-philosophy .sch-building-img .sch_building_foreground_img_2 {
+  transform: translate(75%, 56%);
+}
+
+.abt-second-section .flex-container.sch-brief-history .sch-building-img img.sch_building, .abt-second-section .flex-container.sch-philosophy .sch-building-img img.sch_building {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 355px;
+  max-height: 370px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 5px;
+}
+
+.abt-second-section h3.sub-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.abt-second-section .sch-aims-objectives-section .flex-container {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 2rem;
+}
+
+.abt-second-section .sch-aims-objectives-section .descriptive-img-container h3, .abt-second-section .sch-aims-objectives-section .descriptive-title-and-text h3 {
+  position: relative;
+}
+
+.abt-second-section .sch-aims-objectives-section .descriptive-img-container h3::before, .abt-second-section .sch-aims-objectives-section .descriptive-title-and-text h3::before {
+  content: '';
+  width: 10%;
+  display: inline-block;
+  position: absolute;
+  bottom: -6px;
+  border-bottom: 2px dashed #36a;
+}
+
+.abt-second-section .sch-aims-objectives-section .descriptive-img-container {
+  flex: 1;
+  text-align: center;
+}
+
+.abt-second-section .sch-aims-objectives-section .descriptive-title-and-text {
+  flex: 2;
+}
+
+.abt-third-section {
+  background-image: url(/public/img/polygon-scatter-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2.5rem 0;
+}
+
+.abt-third-section .section-title {
+  color: #f2f2fb;
+}
+
+.abt-third-section .grid-container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.abt-third-section .sch-vision, .abt-third-section .sch-mission, .abt-third-section .sch-motto {
+  position: relative;
+  overflow: hidden;
+}
+
+.abt-third-section .sch-vision .foreground-img, .abt-third-section .sch-mission .foreground-img, .abt-third-section .sch-motto .foreground-img {
+  position: absolute;
+  height: auto;
+  opacity: 0.09;
+  transform: translateX(70%);
+}
+
+.abt-third-section .sch-vision header, .abt-third-section .sch-mission header, .abt-third-section .sch-motto header {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+  margin-bottom: 1em;
+}
+
+.abt-third-section .sch-vision header h2.title, .abt-third-section .sch-mission header h2.title, .abt-third-section .sch-motto header h2.title {
+  margin-bottom: 0 !important;
+}
+
+.abt-third-section .sch-vision header .ti, .abt-third-section .sch-mission header .ti, .abt-third-section .sch-motto header .ti {
+  font-size: 48px;
+}
+
+.abt-third-section .description {
+  margin-bottom: 0;
+}
+
+.abt-fourth-section {
+  background-image: url(/public/img/circle-scatter-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2.5rem 0;
+}
+
+.abt-fourth-section .card {
+  padding: 1em 2.5em;
+}
+
+.abt-fourth-section .grid-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.abt-fourth-section .chant-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
+.abt-fourth-section .chant-header span {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.abt-fifth-section {
+  padding: 2.5rem 0;
+  position: relative;
+}
+
+.abt-fifth-section .foreground-clip-art {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(100% 6%, 100% 70%, 0 94%, 0 32%);
+  background: #124df314;
+}
+
+.abt-fifth-section .section {
+  position: inherit;
+}
+
+.abt-fifth-section .flex-container {
+  display: flex;
+  margin-bottom: 3.5em;
+  padding: 3em 2.5em;
+}
+
+.abt-fifth-section .flex-container .honourable-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: clamp(1.2em, 3.5em, 2.5em);
+  letter-spacing: 0.8px;
+}
+
+.abt-fifth-section .flex-container .grid-container {
+  flex: 1;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.9em;
+  row-gap: 2em;
+}
+
+.abt-fifth-section .flex-container .personnel-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8em;
+}
+
+.abt-fifth-section .flex-container .personnel-card div:first-of-type img {
+  border-radius: 9px;
+  box-shadow: 0 2px 9px 5px #f2f2fb;
+}
+
+.abt-fifth-section .flex-container .personnel-card div:nth-child(2) h5 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.abt-fifth-section .flex-container .personnel-card div:nth-child(2) h5 + div {
+  text-transform: capitalize;
+  color: #c4c4dc;
+}
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .abt-second-section .flex-container.sch-brief-history .sch_building_foreground_img_2, .abt-second-section .flex-container.sch-philosophy .sch_building_foreground_img_2 {
+    transform: translate(25%, 100%) !important;
+  }
+  .abt-second-section .flex-container.sch-brief-history img.sch_building, .abt-second-section .flex-container.sch-philosophy img.sch_building {
+    transform: translateY(15%);
+  }
+  .abt-third-section .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5em;
+  }
+  .abt-fifth-section .flex-container {
+    padding: 2em 1.5em;
+  }
+  .abt-fifth-section .flex-container .honourable-title {
+    font-size: clamp(1.2em, 3.5em, 2.2em);
+  }
+  .abt-fifth-section .flex-container .grid-container {
+    flex: 2.5;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    overflow: hidden;
+  }
+  .abt-first-section.gen-hero-container .section h1 {
+    font-size: clamp(4em, 1em, 2.5em);
+    padding: 0 0.3em;
+  }
+  .abt-second-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .abt-second-section .flex-container.sch-brief-history, .abt-second-section .flex-container.sch-philosophy {
+    flex-direction: column-reverse;
+  }
+  .abt-second-section .flex-container.sch-brief-history .descriptive-title-and-text, .abt-second-section .flex-container.sch-brief-history .sch-building-img, .abt-second-section .flex-container.sch-philosophy .descriptive-title-and-text, .abt-second-section .flex-container.sch-philosophy .sch-building-img {
+    flex: none;
+  }
+  .abt-second-section .flex-container.sch-brief-history .sch-building-img img.sch_building, .abt-second-section .flex-container.sch-philosophy .sch-building-img img.sch_building {
+    position: inherit;
+  }
+  .abt-second-section .sch-aims-objectives-section .flex-container {
+    flex-direction: column;
+  }
+  .abt-second-section .sch-aims-objectives-section .descriptive-img-container, .abt-second-section .sch-aims-objectives-section .descriptive-title-and-text {
+    flex: none;
+  }
+  .abt-second-section .sch-aims-objectives-section .descriptive-img-container {
+    order: 1;
+  }
+  .abt-second-section .sch-aims-objectives-section .descriptive-title-and-text {
+    order: 2;
+  }
+  .abt-third-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .abt-third-section .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2em;
+  }
+  .abt-third-section .sch-vision .foreground-img, .abt-third-section .sch-mission .foreground-img, .abt-third-section .sch-motto .foreground-img {
+    transform: translateX(60%) translateY(-6%);
+  }
+  .abt-fourth-section .card {
+    padding: 1em 1.5em;
+  }
+  .abt-fourth-section .chorus {
+    background: #d6e9f55e;
+    padding: 0.4em;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  .abt-fourth-section .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+  }
+  .abt-fifth-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .abt-fifth-section .flex-container {
+    padding: 2em 1em;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  .abt-fifth-section .flex-container .honourable-title {
+    flex: none;
+    order: 1;
+    font-size: clamp(1.2em, 3.5em, 2em);
+  }
+  .abt-fifth-section .flex-container .grid-container {
+    flex: none;
+    order: 2;
+  }
+  .abt-fifth-section .flex-container .personnel-card {
+    gap: 0;
+    flex-direction: column;
+  }
+}
+
 .footer {
   background: #201335;
   color: rgba(237, 242, 239, 0.7);
@@ -2040,12 +2400,12 @@ html, body {
     max-width: 540px;
   }
   .show-sm {
-    display: inherit;
+    display: inherit !important;
   }
   .show-flex-sm {
     display: flex !important;
   }
   .hide-sm {
-    display: none;
+    display: none !important;
   }
 }

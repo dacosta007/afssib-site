@@ -57,7 +57,7 @@
   }
 
   .show-sm {
-    display: inherit;
+    display: inherit !important;
   }
 
   .show-flex-sm {
@@ -65,6 +65,6 @@
   }
 
   .hide-sm {
-    display: none;
+    display: none !important;
   }
 }

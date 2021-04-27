@@ -1,0 +1,417 @@
+// page main container 
+.main {
+  background: $white-color;
+}
+
+// FIRST SECTION: the Hero-container section
+.abt-first-section.gen-hero-container {
+  height: 55vh;
+  width: 100%;
+  clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 0);
+  background: #3e3ed4;
+  overflow: hidden;
+
+  .section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+
+    h1 {
+      font-size: clamp(6em, 1.3em, 2.5em);
+      font-family: Lora;
+      text-transform: capitalize;
+      letter-spacing: 4px;
+      color: #f9efef;
+    }
+  }
+}
+
+// SECOND SECTION: Sch. breif history, philosophy, and believes
+.abt-second-section {
+  padding: 2.5rem 0;
+
+  .flex-container.sch-brief-history, .flex-container.sch-philosophy {
+    display: flex;
+    gap: 1.5em;
+    margin-bottom: 2em;
+    overflow: hidden;
+
+    .descriptive-title-and-text {
+      flex: 2;
+    }
+
+    .sch-building-img {
+      flex: 1;
+      position: relative;
+
+      .sch_building_foreground_img_1, .sch_building_foreground_img_2 {
+        position: absolute;
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .sch_building_foreground_img_1 {
+        top: -20%;
+        left: -23%;
+      }
+
+      .sch_building_foreground_img_2 {
+        transform: translate(75%, 56%);
+      }
+
+      img.sch_building {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 355px;
+        max-height: 370px;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  h3.sub-title {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .sch-aims-objectives-section {
+    .flex-container {
+      display: flex;
+      gap: 1.5em;
+      margin-bottom: 2rem;
+    }
+
+    .descriptive-img-container h3, .descriptive-title-and-text h3 {
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 10%;
+        display: inline-block;
+        position: absolute;
+        bottom: -6px;
+        border-bottom: 2px dashed #36a;
+      }
+    }
+
+    .descriptive-img-container {
+      flex: 1;
+      text-align: center;
+    }
+
+    .descriptive-title-and-text {
+      flex: 2;
+    }
+  }
+}
+
+// THIRD SECTION: Sch's Objectives, values, & Aims
+.abt-third-section {
+  background-image: url(/public/img/polygon-scatter-haikei.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2.5rem 0;
+
+  .section-title {
+    color: #f2f2fb;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+
+  .sch-vision, .sch-mission, .sch-motto {
+    position: relative;
+    overflow: hidden;
+
+    .foreground-img {
+      position: absolute;
+      height: auto;
+      opacity: 0.09;
+      transform: translateX(70%);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1.2em;
+      margin-bottom: 1em;
+  
+      h2.title {
+        margin-bottom: 0 !important;
+      }
+  
+      .ti {
+        font-size: 48px;
+      }
+    }
+  }
+
+  .description {
+    margin-bottom: 0;
+  }
+}
+
+// FOURTH SECTION: Sch's Anthems, Pledge, and Chant
+.abt-fourth-section {
+  background-image: url(/public/img/circle-scatter-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2.5rem 0;
+
+  .card {
+    padding: 1em 2.5em;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+
+  .chant-header {
+    display: flex;
+    align-items: flex-end;
+    gap: 1em;
+    margin-bottom: 0.5em;
+
+    span {
+      text-transform: capitalize;
+      font-size: 24px;
+      font-weight: 300;
+    }
+  }
+}
+
+// FIFTH SECTION: Highlights of sch's BOD, Managements, PTA Members
+.abt-fifth-section {
+  padding: 2.5rem 0;
+  position: relative;
+
+  .foreground-clip-art {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 6%, 100% 70%, 0 94%, 0 32%);
+    background: #124df314;
+  }
+
+  .section {
+    position: inherit;
+  }
+
+  .flex-container {
+    display: flex;
+    margin-bottom: 3.5em;
+    padding: 3em 2.5em;
+
+    .honourable-title {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: capitalize;
+      font-size: clamp(1.2em, 3.5em, 2.5em);
+      letter-spacing: 0.8px;
+    }
+
+    .grid-container {
+      flex: 1;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 0.9em;
+      row-gap: 2em;
+    }
+
+    .personnel-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8em;
+
+      div:first-of-type img {
+        border-radius: 9px;
+        box-shadow: 0 2px 9px 5px #f2f2fb;
+      }
+
+      div:nth-child(2) h5 {
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: capitalize;
+
+        & + div {
+          text-transform: capitalize;
+          color: #c4c4dc;
+        }
+      }
+    }
+  }
+}
+
+
+// =====*** Media Queries ***=====
+// Wild Screen Desktop & Laptop Devices
+@include mediaXl {}
+
+// Large Screen Tablet, Laptop, & Desktop Devices
+@include mediaLg {}
+
+// Medium Tablet & Small Devices
+@include mediaMd {
+  .abt-second-section {
+    .flex-container.sch-brief-history, .flex-container.sch-philosophy {
+      .sch_building_foreground_img_2 {
+        transform: translate(25%, 100%) !important;
+      }
+
+      img.sch_building {
+        transform: translateY(15%);
+      }
+    }
+  }
+
+  .abt-third-section {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 1.5em;
+    }
+  }
+
+  .abt-fifth-section {
+    .flex-container {
+      padding: 2em 1.5em;
+
+      .honourable-title {
+        font-size: clamp(1.2em, 3.5em, 2.2em);
+      }
+
+      .grid-container {
+        flex: 2.5;
+      }
+    }
+  }
+}
+
+// Small or Smartphone Devices
+@include mediaSm {
+  // the main body container
+  .main {
+    overflow: hidden;
+  }
+
+  // FIRST SECTION: the Hero-container section
+  .abt-first-section.gen-hero-container {
+    .section h1 {
+      font-size: clamp(4em, 1em, 2.5em);
+      padding: 0 0.3em;
+    }
+  }
+
+  .abt-second-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .flex-container.sch-brief-history, .flex-container.sch-philosophy {
+      flex-direction: column-reverse;
+
+      .descriptive-title-and-text, .sch-building-img {
+        flex: none;
+      }
+
+      .sch-building-img img.sch_building {
+        position: inherit;
+      }
+    }
+    
+    .sch-aims-objectives-section {
+  
+      .flex-container {
+        flex-direction: column;
+      }
+  
+      .descriptive-img-container, .descriptive-title-and-text {
+        flex: none;
+      }
+  
+      .descriptive-img-container {
+        order: 1;
+      }
+  
+      .descriptive-title-and-text {
+        order: 2;
+      }
+    }
+  }
+
+  .abt-third-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 2em;
+    }
+
+    .sch-vision, .sch-mission, .sch-motto {
+      .foreground-img {
+        transform: translateX(60%) translateY(-6%);
+      }
+    }
+  }
+
+  .abt-fourth-section {
+
+    .card {
+      padding: 1em 1.5em;
+    }
+
+    .chorus {
+      background: #d6e9f55e;
+      padding: 0.4em;
+      font-weight: 600;
+      border-radius: 5px;
+    }
+
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2em;
+    }
+  }
+
+  .abt-fifth-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .flex-container {
+      padding: 2em 1em;
+      flex-direction: column;
+      gap: 1.5em;
+
+      .honourable-title {
+        flex: none;
+        order: 1;
+        font-size: clamp(1.2em, 3.5em, 2em);
+      }
+
+      .grid-container {
+        flex: none;
+        order: 2;
+      }
+
+      .personnel-card {
+        gap: 0;
+        flex-direction: column;
+      }
+    }
+  }
+}

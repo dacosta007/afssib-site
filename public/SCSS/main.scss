@@ -13,6 +13,12 @@
   margin-bottom: 1.5em;
 }
 
+.sub-title {
+  font-family: Montserrat;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
 .description {
   font-size: 15px;
   line-height: 2;
@@ -363,7 +369,11 @@
 // Site's navigation bar
 @import 'navbar';
 
+// home page style
 @import 'home';
+
+// about page style
+@import 'about';
 
 // Site's footer
 @import 'footer';
