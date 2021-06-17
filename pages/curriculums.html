@@ -3,240 +3,558 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../bootstrap/css/afssstyle.css" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-  <title>curriculums</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="../bootstrap/css/font-awesome.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFSS, Ibadan Curriculum | Curriculum page</title>
+  <meta name="description" content="AFSS Ibadan school curriculums followed in accordance to the country, state, world wide syllabus. And some departments within the school as per subjects offered in the school">
+  <meta name="keywords" content="AFSS, Ibadan curriculums || syllabus, and Departments">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/public/css/themify-icons.css">
+  <link rel="stylesheet" href="/public/css/main.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#schMenu">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="../index.html" class="navbar-brand">
-          <img src="../images/afss_logo.png" alt="sch_logo" width="auto" height="30">
+  <!-- site's main header -->
+  <header>
+    <nav class="navbar">
+      <!-- the site logo/crest & humbuger icon -->
+      <div class="navbar-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" alt="sch_logo_or_crest" width="40px" height="auto">
         </a>
+        <!-- hamburger icon (show on small device) -->
+        <i class="ti ti-menu small-menu-icon"></i>
       </div>
-      <div class="collapse navbar-collapse" id="schMenu">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./principal.html">Principal</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Academics <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="./curriculums.html">Curriculum</a></li>
-              <li><a href="./departments.html">Departments</a></li>
-              <li><a href="./library.html">Library</a></li>
-              <li><a href="./laboratories.html">Laboratories</a></li>
-              <li><a href="./ict.html">ICT</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#informations" class="dropdown-toggle" data-toggle="dropdown">
-              Informations <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="listitem">
-              <li><a href="./boarding.html">Boarding</a></li>
-              <li><a href="./uniform.html">Uniform</a></li>
-              <li><a href="./admission.html">Admission</a></li>
-              <li><a href="./sch_calender.html">School Calendar</a></li>
-              <li><a href="./prospectus.html">Prospectus</a></li>
-              <li><a href="./anthem_pledge.html">Anthem/Pledge</a></li>
-            </ul>
-          </li>
-          <li><a href="./news.html">News</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./alumni.html">Alumni</a></li>
-          <li><a href="./contact_us.html">Contact Us</a></li>
+
+      <!-- the nav menus -->
+      <div class="navbar-menus">
+        <a href="./about.html">about</a>
+        <a href="./principal.html">principal</a>
+
+        <!-- academics -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>academics</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./curriculums.html">curriculums</a>
+            <a href="./library.html">library</a>
+            <a href="./laboratories.html">laboratories</a>
+          </div>
+        </div>
+
+        <!-- information -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>info</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./boarding.html">boarding</a>
+            <a href="./admission.html">admission</a>
+            <a href="./calendar.html">calendar</a>
+            <a href="./uniform.html">uniform</a>
+          </div>
+        </div>
+
+        <a href="./news.html">news</a>
+        <a href="./gallery.html">gallery</a>
+        <a href="./alumni.html">alumni</a>
+        <a href="./contact.html">contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- site's main body contents -->
+  <main class="main main-abt">
+    <!-- FIRST SECTION: Hero container and bold text page title -->
+    <section class="curr-first-section">
+      <div class="section">
+        <h1>curriculums</h1>
+      </div>
+    </section>
+
+    <!-- SECOND SECTION: Gives understanding of syllabus followed by the sch, books used, & other extra-curricular activities -->
+    <section class="curr-second-section">
+      <section class="section">
+        <!-- section's main title -->
+        <header class="section-title">
+          <h2>the premise</h2>
+          <h2>by which we educate</h2>
+        </header>
+
+        <!-- first segment: tell more of the sch's syllabus -->
+        <div class="syllabus">
+          <div class="flex-container">
+            <div class="descriptive-title-and-text">
+              <h3 class="sub-title">syllabus</h3>
+              <p class="description">
+                <b>A</b>postolic <b>F</b>aith <b>S</b>econdary <b>S</b>chool, Ibadan. We employ both the Nigeria national curriculums
+                which prepare our students for either the "Junior Secondary Certificate Examination" <b>(JSCE)</b>, 
+                "National Examination Council Junior School Certificate Examination" <b>(NECO)</b>, 
+                "West African Senior Secondary Certificate Examination" <b>(WAEC or WASSCE)</b>. And the international standard curriculums 
+                to also prepare our students for exams as <b>IGCSE</b>, <b>SAT</b>, <b>BECE</b>, and other international examinations. 
+              </p>
+              <p class="description">
+                Hence; this gives a framework for impacting enough knowledge and skills into our students to form, and have  a well-rounded 
+                education scope. All this help keeps our students well-informed and well equiped for present and ,future time.
+              </p>
+              <p class="description">
+                Our classrooms size are kept relatively small to a ratio of <b>1:20 (teacher/students)</b> delibrately, which helps improve interactions 
+                between teachers and, students. Which has proven to be more effective, and efficient communication in classrooms. More so, the delivery of our 
+                rich curriculums are made through our teaching specialist staffs who are capable of getting the job done.
+              </p>
+              <p class="description">
+                Classroom work is complemented by projects, course work, assignments, practicals, and expeditions to places of interest, so as to have a profound, 
+                and practical knowledge that is reliable.
+              </p>
+            </div>
+  
+            <div class="descriptive-img">
+              <img src="/public/img/curriculums_2.svg" alt="curriculums_img" width="250px" height="auto">
+            </div>
+          </div>
+        </div>
+
+        <!-- second segment: tell about extra-curricular/co-curricular activities  -->
+        <div class="co-curricular">
+          <div class="flex-container">
+            <div class="descriptive-img">
+              <img src="/public/img/vocational_skill.svg" alt="skil_img" width="250px" height="auto">
+            </div>
+  
+            <div class="descriptive-title-and-text">
+              <h3 class="sub-title">co-curricular activities</h3>
+              <p class="description">
+                This is an essential component at AFSS, Ibadan. As the saying tells; "all work and no play makes Jack a dull boy" 
+                and vice versa. As to this, there should be a balance between work, and play for students, and teachers alike. 
+                Therefore, we put together a combination of activities which includes both sports, intellectual, and cultural 
+                celebration activities. These activities take place after school hours, and on weekends.
+              </p>
+              <p class="description">
+                AFSS, Ibadan's facilities are designed to enable students to gain rich experiences, and not only develop their skills, 
+                but also, develop their critical thinking faculty as well. Below are some of our co-curricular activities:
+              </p>
+            </div>
+          </div>
+
+          <!-- heading and icons displays of extra-curricular activities -->
+          <div class="co-curricular-activities">
+            <div class="bg-pattern"></div>
+
+            <div class="vices">
+              <h3 class="sub-title">some co-curricular vices</h3>
+              <div class="grid-container">
+                <div class="activities">
+                  <div>
+                    <img src="/public/img/culinary.png" alt="culinary_skils_icon" width="50" height="auto">
+                    <h5>culinary skills</h5>
+                  </div>
+                </div>
+                <div class="activities">
+                  <div>
+                    <img src="/public/img/debate.png" alt="debate_icon" width="50" height="auto">
+                    <h5>debate</h5>
+                  </div>
+                </div>
+                <div class="activities">
+                  <div>
+                    <img src="/public/img/chess.png" alt="chess_icon" width="50" height="auto">
+                    <h5>chess</h5>
+                  </div>
+                </div>
+                <div class="activities">
+                  <div>
+                    <img src="/public/img/enterprenuership.png" alt="enterprenuership_icon" width="50" height="auto">
+                    <h5>enterprenuership</h5>
+                  </div>
+                </div>
+                <div class="activities">
+                  <div>
+                    <img src="/public/img/music.png" alt="music_icon" width="50" height="auto">
+                    <h5>music</h5>
+                  </div>
+                </div>
+                <div class="activities">
+                  <div>
+                    <img src="/public/img/soccer.png" alt="soccer_icon" width="50" height="auto">
+                    <h5>football</h5>
+                  </div>
+                </div>
+                <div class="activities">
+                  <div>
+                    <img src="/public/img/athletics.png" alt="athletics_icon" width="50" height="auto">
+                    <h5>athletics</h5>
+                  </div>
+                </div>
+                <div class="activities">
+                  <div>
+                    <img src="/public/img/ict.png" alt="ict_icon" width="50" height="auto">
+                    <h5>ICT</h5>
+                  </div>
+                </div>
+                <div class="activities">
+                  <div>
+                    <img src="/public/img/sudoku.png" alt="sudoku_icon" width="50" height="auto">
+                    <h5>sudoku</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- THIRD SECTION: Helps relate the sch segmentation -->
+    <section class="curr-third-section">
+      <section class="section">
+        <!-- section's main title -->
+        <header class="section-title">
+          <h2>A seperation of</h2>
+          <h2>concern by schools</h2>
+        </header>
+
+        <!-- overview of the classifications of schs -->
+        <p class="description">
+          At AFSS Ibadan, we have schools seperated into two classification to serve required purposes more effective and efficient in a 
+          robust fashion to give proper adequate knowledge required to students in accordance to their age gaps. Therefore, below are the 
+          classifications of our school;
+        </p>
+
+        <!-- junior secondary sch: -->
+        <div class="jss-section">
+          <div class="flex-container">
+            <div class="descriptive-title-and-text">
+              <h3 class="sub-title">JSS (Junior Secondary School)</h3>
+              <p class="description">
+                This school classification phase is typically for students between the age 11 to 14. A wide range of subjects is mapped out 
+                to develop their knowledge, understanding, and talents through our broad, and balanced curriculum. Therefore, a careful tracking 
+                of students attainments duely monitored by the school and such reports sent over to student's parent or guardian.
+              </p>
+              <p class="description">
+                More so, because of our careful and meticulous preparations(ref. to curricular syllabus), all students are a worthy cadidate to 
+                seat for both Nigeria exams(<b>NECO</b>, <b>WAEC</b>), and international assessments(i.e <b>IGCSE</b>, <b>BECE</b>)
+              </p>
+            </div>
+  
+            <div class="descriptive-img">
+              <img src="/public/img/type_of_sch.svg" alt="sch_type" width="250px" height="auto">
+            </div>
+          </div>
+        </div>
+
+        <!-- senior secondary sch: -->
+        <div class="sss-section">
+          <div class="flex-container">
+            <div class="descriptive-img">
+              <img src="/public/img/type_of_sch.svg" alt="sch_type" width="250px" height="auto">
+            </div>
+  
+            <div class="descriptive-title-and-text">
+              <h3 class="sub-title">SSS (Senior Secondary School)</h3>
+              <p class="description">
+                Under this school classification, which is typically for students between the age of 15years and above; A wider range of subjects/courses 
+                are introduced for proper and advance knowledge-base to deeping much futher our student's knowledge, and understanding.
+              </p>
+              <p class="description">
+                This classification school phase is the final stage for preparing our students into universities. A proper counselling is offered to each 
+                of our students in making a decisive decisions on courses/deciplines to pursue in the university by how well they do in their attainment 
+                report in school.
+              </p>
+              <p class="description">
+                Although, their 3years span in the school(under <b>SSS</b> classification) which is the total years expected to be spent. All of the students 
+                are worthy enough to seat for the Nigeria exams at the senior level (i.e; <b>JAMB/UTME</b>, <b>WAEC</b>, <b>NECO</b>), and other international 
+                assessments test (i.e; <b>SAT</b>, <b>IGCSE</b>, <b>TOEFL</b> etc.).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- FOURTH SECTION: This displays list of subjects/course offered by the sch. in accordance to departments -->
+    <section class="curr-fourth-section">
+      <section class="section">
+        <!-- section's main title -->
+        <header class="section-title">
+          <h2>our plethora of</h2>
+          <h2>subjects by departments</h2>
+        </header>
+
+        <div class="departments">
+          <!-- mathematics department -->
+          <div class="department">
+            <!-- for section foreground style -->
+            <div class="foreground"></div>
+            <div class="foreground"></div>
+  
+            <header class="sub-title">
+              <img src="/public/img/sudoku.png" alt="maths_dept" width="50px" height="auto">
+              <h3>mathematics</h3>
+            </header>
+  
+            <div class="grid-container">
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>mathematics</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>further mathematics</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- art & drama department -->
+          <div class="department">
+            <!-- for section foreground style -->
+            <div class="foreground"></div>
+            <div class="foreground"></div>
+  
+            <header class="sub-title">
+              <img src="/public/img/counselor.png" alt="art_and_drama_dept" width="50px" height="auto">
+              <h3>art & drama</h3>
+            </header>
+  
+            <div class="grid-container">
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>literature in English</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>music</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>history</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>fine art</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- languages department -->
+          <div class="department">
+            <!-- for section foreground style -->
+            <div class="foreground"></div>
+            <div class="foreground"></div>
+  
+            <header class="sub-title">
+              <img src="/public/img/mission.png" alt="languages_dept" width="50px" height="auto">
+              <h3>languages</h3>
+            </header>
+  
+            <div class="grid-container">
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>English</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>French</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>Yoruba</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>Igbo</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>Hausa</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- humanities department -->
+          <div class="department">
+            <!-- for section foreground style -->
+            <div class="foreground"></div>
+            <div class="foreground"></div>
+  
+            <header class="sub-title">
+              <img src="/public/img/alumni.png" alt="languages_dept" width="50px" height="auto">
+              <h3>humanities</h3>
+            </header>
+  
+            <div class="grid-container">
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>civic edu.</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>geography</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>government</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>religious edu.</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>christian edu.</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- sciences department -->
+          <div class="department">
+            <!-- for section foreground style -->
+            <div class="foreground"></div>
+            <div class="foreground"></div>
+  
+            <header class="sub-title">
+              <img src="/public/img/laboratory.png" alt="sciences_dept" width="50px" height="auto">
+              <h3>sciences</h3>
+            </header>
+  
+            <div class="grid-container">
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>physics</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>chemistry</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>biology</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>agricultural science</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>data processing</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>computer edu.</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- commercial department -->
+          <div class="department">
+            <!-- for section foreground style -->
+            <div class="foreground"></div>
+            <div class="foreground"></div>
+  
+            <header class="sub-title">
+              <img src="/public/img/morale.png" alt="commercial_dept" width="50px" height="auto">
+              <h3>commercial</h3>
+            </header>
+  
+            <div class="grid-container">
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>commerce</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>book keeping</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>financial accounting</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>economics</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>business studies</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- vocational department -->
+          <div class="department">
+            <!-- for section foreground style -->
+            <div class="foreground"></div>
+            <div class="foreground"></div>
+  
+            <header class="sub-title">
+              <img src="/public/img/vocational.png" alt="vocational_dept" width="50px" height="auto">
+              <h3>vocational</h3>
+            </header>
+  
+            <div class="grid-container">
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>basic technology</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>technical drawing</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>home economics</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>food & nutritions</span>
+              </div>
+              <div class="subject">
+                <i class="ti ti-angle-right"></i> <span>physical edu.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </section>
+  </main>
+
+  <!-- site's main footer -->
+  <footer class="footer">
+    <div class="footer-info">
+      <div class="footer-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" class="footer-img" alt="sch_logo_or_crest" width="50px" height="auto">
+        </a>
+        <div class="contact-info">
+          <p>Apostolic Faith Secondary School, Ibadan</p>
+          <p>SW8/803, Lodge street, Oke-Ado, Ibadan, Oyo State, Nigeria</p>
+          <p>Tel: <br> <span>+234 703 4793 449,</span> <br> <span>+234 807 9053 533</span></p>
+        </div>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h4 class="title">quick links</h4>
+
+        <ul>
+          <li><a href="./contact_us.html#faq">FAQ</a></li>
+          <li><a href="./admission.html">admission</a></li>
+          <li><a href="./alumni.html">alumni</a></li>
+          <li><a href="./contact_us.html">contact us</a></li>
         </ul>
       </div>
-    </div>
-  </nav><!-- Navigation Bar Ends -->
+  
+      <!-- sch social media links -->
+      <div class="social-links">
+        <h4 class="title">follow us</h4>
 
-  <section class="img-curriculum">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h2 class="call-out-1">Curriculums</h2>
-      </div>
-    </div>
-  </section>
+        <p>
+          on our major social media platforms, to get closer on events within and around the school.
+        </p>
 
-  <section class="section-2">
-    <div class="container">
-      <article class="font-style">
-        <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p>
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <aside class="curriculums-img">
-    <article class="row">
-      <div class="col-md-12">
-        <div class="img-overlay">
-          <div class="container">
-            <h5 class="category text-center">OUR Curriculum</h5>
-            <h3 class="header-title text-center" style="margin-top:0; margin-bottom:15px; padding:20px;">According To
-              The Ministry</h3>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card-plain">
-                  <div class="content-3">
-                    <h4 class="category">Rich</h4>
-                    <div>
-                      <i class="fa fa-book logo-small" style="border-color: #cc9090; color:#fff;"></i>
-                    </div>
-                    <div class="description-2">
-                      <p class="font-style">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="content-3">
-                    <h4 class="category">Complete</h4>
-                    <div>
-                      <i class="fa fa-puzzle-piece logo-small" style="border-color: #cc9090;"></i>
-                    </div>
-                    <div class="description-2">
-                      <p class="font-size">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card-plain">
-                  <div class="content-3">
-                    <h4 class="category">Acknowledge</h4>
-                    <div>
-                      <i class="fa fa-legal logo-small" style="border-color: #cc9090; color:#fff;"></i>
-                    </div>
-                    <div class="description-2">
-                      <p class="font-style">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="links">
+          <a href="http://facebook.com/afssibadan">
+            <i class="ti ti-facebook"></i>
+          </a>
+          <a href="http://twitter.com/afssibadan">
+            <i class="ti ti-twitter"></i>
+          </a>
+          <a href="http://instagram.com/afssibadan">
+            <i class="ti ti-instagram"></i>
+          </a>
+          <a href="http://youtube.com/afssibadan">
+            <i class="ti ti-youtube"></i>
+          </a>
         </div>
       </div>
-    </article>
-  </aside>
+    </div>
 
-  <footer class="footer">
-    <!-- Footer Section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <!-- Sch-logo and address -->
-          <div class="row">
-            <div class="col-sm-4">
-              <a href="../index.html" title="home Page">
-                <img src="../images/afss_logo.png" class="img-responsive ft-logo" alt="sch_logo" />
-              </a>
-            </div>
-            <div class="col-md-8">
-              <span>
-                Apostolic Faith Secondary School <small class="small">Ibadan</small> <br>
-                SW8/803, Lodge Street Oke-Ado, Ibadan. <br>
-                Tel:<br> +234 703 479 3449, +234 807 905 3533. <br>
-                Email: afssib@yahoo.com
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <!-- External Links -->
-          <div class="text-center">
-            <h5>External Links</h5>
-            <a href="contact.html">Quick Contact</a><br>
-            <a href="contact.html">Enquires</a><br>
-            <a href="#" target="_blank">Alumni Association</a><br>
-            <a href="http://www.wikipedia.org" target="_blank">Wikipedia</a><br>
-            <a href="http://www.google.com.ng" target="_blank">Google</a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <!--Social Media Links -->
-          <div class="">
-            <h5>Follow Us On</h5>
-            <a href="https://www.facebook.com" target="_blank" title="like our page on facebook">
-              <i class="fa fa-facebook facebook"></i> Facebook
-            </a>
-
-            <br>
-
-            <a href="https://www.twitter.com" target="_blank" title="follow us on twitter">
-              <i class="fa fa-twitter twitter"></i> Twitter
-            </a>
-
-            <br>
-
-            <a href="https://www.googleplus.com" target="_blank" title="join our circle on google plus ">
-              <i class="fa fa-google-plus google-plus"></i> Google<sup>+</sup>
-            </a>
-            <br>
-            <a href="#" title="follow us on instagram">
-              <i class="fa fa-instagram instagram"></i> Instalgram
-            </a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <p class="text-center">
-        &copy;2016 Apostolic Faith Secondary School, Ibadan. All Right Reserved.
-      </p>
+    <!-- site's copyright's statement -->
+    <div class="copyright-container">
+      <small>
+        &copy;2021 
+        <span class="hide-sm">Apostolic Faith Secondary School</span> 
+        AFSS<sup>&trade;</sup> 
+        <span class="show-sm">Oke-Ado</span>, Ibadan. All Rights Reserved.
+      </small>
     </div>
   </footer>
-  <!--
-  ============================================
-  Jquery File And Javascript core file
-  ============================================
-   -->
-  <script src="../bootstrap/js/jquery.min.js"></script>
-  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- javaScript and other script files -->
+  <script src="/public/js/main.js"></script>
 </body>
 
 </html>

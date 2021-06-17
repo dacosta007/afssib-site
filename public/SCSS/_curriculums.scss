@@ -1,0 +1,347 @@
+// FIRST SECTION:
+.curr-first-section {
+  @include gen-hero-container;
+}
+
+// SECOND SECTION:
+.curr-second-section {
+  padding: 2.5rem 0;
+
+  .syllabus .flex-container, .co-curricular .flex-container {
+    display: flex;
+    gap: 1.2rem;
+
+    .descriptive-title-and-text {
+      flex: 2;
+
+      .sub-title {
+        margin-bottom: 1em;
+      }
+    }
+
+    .descriptive-img {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .syllabus .flex-container {
+    margin-bottom: 2.5em;
+  }
+
+  .co-curricular {
+    margin-bottom: 3.5rem;
+
+    .flex-container {
+      margin-bottom: 1.5rem;
+    }
+
+    .co-curricular-activities {
+      position: relative;
+
+      .bg-pattern {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 18%);
+        background: #e1edff;
+      }
+
+      .vices {
+        position: inherit;
+      }
+
+      .sub-title {
+        text-align: center;
+        font-size: x-large;
+        margin-bottom: 0.6em;
+      }
+
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1em;
+        row-gap: 1.5em;
+
+        .activities {
+          text-align: center;
+          padding: 0 4.5rem;
+
+          div {
+            @include card;
+          }
+
+          img {
+            width: 90px;
+            height: auto;
+          }
+
+          h5 {
+            font-size: 18px;
+            font-variant: small-caps;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// THIRD SECTION: 
+.curr-third-section {
+  padding: 2.5rem 0;
+  background: #f2f2ff;
+
+  .jss-section .flex-container, .sss-section .flex-container {
+    display: flex;
+    gap: 1.2rem;
+
+    .descriptive-title-and-text {
+      flex: 2;
+
+      .sub-title {
+        margin-bottom: 1em;
+      }
+    }
+
+    .descriptive-img {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .jss-section {
+    margin-bottom: 2em;
+    margin-top: 3em;
+  }
+}
+
+// FOURTH SECTION:
+.curr-fourth-section {
+  padding: 2.5rem 0;
+  background: #dae6ff;
+
+  .departments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+
+    .department {
+      position: relative;
+      @include card;
+
+      .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1em;
+
+        .subject {
+          display: flex;
+          align-items: center;
+          gap: 0.5em;
+          text-transform: capitalize;
+
+          i {
+            font-weight: bolder;
+            font-size: 16px;
+          }
+
+          span {
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+
+    .foreground {
+      position: absolute;
+      width: 40%;
+      height: 40%;
+      clip-path: circle(74.4% at 3% 3%);
+      background: #6453f338;
+      top: 0;
+      left: 0;
+    }
+
+    .foreground:nth-child(2){
+      width: 100%;
+      height: 100%;
+      clip-path: circle(50% at 93% 94%);
+      background: #cfcdef30;
+      top: 0;
+      left: 0;
+    }
+
+    .sub-title {
+      margin-bottom: 1em;
+
+      img {
+        width: 70px;
+        height: auto;
+      }
+    }
+  }
+}
+
+// =====*** Media Queries ***=====
+
+// Medium Tablet & Small Devices
+@include mediaMd {
+
+  // SECOND SECTION:
+  .curr-second-section {
+
+    .syllabus .flex-container, .co-curricular .flex-container {
+      flex-direction: column;
+
+      .descriptive-title-and-text {
+        order: 2;
+  
+        .sub-title {
+          text-align: center;
+        }
+      }
+
+      .descriptive-img {
+        order: 1;
+  
+        img {
+          width: 50%;
+        }
+      }
+    }
+
+    .co-curricular .co-curricular-activities {
+      overflow: hidden;
+
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  // THIRD SECTION:
+  .curr-third-section {
+
+    .jss-section .flex-container, .sss-section .flex-container {
+      flex-direction: column;
+
+      .descriptive-title-and-text {
+        order: 2;
+  
+        .sub-title {
+          text-align: center;
+        }
+      }
+  
+      .descriptive-img {
+        order: 1;
+  
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  // FOURTH SECTION: 
+  .curr-fourth-section {
+
+    .departments {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// Small or Smartphone Devices
+@include mediaSm {
+  // FIRST SECTION:
+  .curr-first-section {
+    .section h1 {
+      font-size: clamp(3.5em, 1em, 2.5em);
+      padding: 0 0.3em;
+    }
+  }
+  
+  // SECOND SECTION:
+  .curr-second-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .syllabus .flex-container, .co-curricular .flex-container {
+      flex-direction: column;
+
+      .descriptive-title-and-text {
+        order: 2;
+
+        .sub-title {
+          text-align: center;
+        }
+      }
+
+      .descriptive-img {
+        order: 1;
+      }
+    }
+
+    .co-curricular .co-curricular-activities {
+      overflow: hidden;
+
+      .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+
+        .activities {
+          padding: 0 3.5rem;
+        }
+      }
+    }
+  }
+
+  // THIRD SECTION:
+  .curr-third-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .jss-section .flex-container, .sss-section .flex-container {
+      flex-direction: column;
+
+      .descriptive-title-and-text {
+        order: 2;
+
+        .sub-title {
+          text-align: center;
+        }
+      }
+
+      .descriptive-img {
+        order: 1;
+      }
+    }
+  }
+
+  // FOURTH SECTION:
+  .curr-fourth-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .departments {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

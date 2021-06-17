@@ -3,239 +3,178 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../bootstrap/css/afssstyle.css" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-  <title>library</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="../bootstrap/css/font-awesome.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFSS, Ibadan Library | Library page</title>
+  <meta name="description" content="AFSS Ibadan repository of books and diverse knowledge within its library ">
+  <meta name="keywords" content="AFSS, Ibadan library and repository of books">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/public/css/themify-icons.css">
+  <link rel="stylesheet" href="/public/css/main.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#schMenu">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="../index.html" class="navbar-brand">
-          <img src="../images/afss_logo.png" alt="sch_logo" width="auto" height="30">
+  <!-- site's main header -->
+  <header>
+    <nav class="navbar">
+      <!-- the site logo/crest & humbuger icon -->
+      <div class="navbar-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" alt="sch_logo_or_crest" width="40px" height="auto">
         </a>
+        <!-- hamburger icon (show on small device) -->
+        <i class="ti ti-menu small-menu-icon"></i>
       </div>
-      <div class="collapse navbar-collapse" id="schMenu">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./principal.html">Principal</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Academics <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="./curriculums.html">Curriculum</a></li>
-              <li><a href="./departments.html">Departments</a></li>
-              <li><a href="./library.html">Library</a></li>
-              <li><a href="./laboratories.html">Laboratories</a></li>
-              <li><a href="./ict.html">ICT</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#informations" class="dropdown-toggle" data-toggle="dropdown">
-              Informations <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="listitem">
-              <li><a href="./boarding.html">Boarding</a></li>
-              <li><a href="./uniform.html">Uniform</a></li>
-              <li><a href="./admission.html">Admission</a></li>
-              <li><a href="./sch_calender.html">School Calendar</a></li>
-              <li><a href="./prospectus.html">Prospectus</a></li>
-              <li><a href="./anthem_pledge.html">Anthem/Pledge</a></li>
-            </ul>
-          </li>
-          <li><a href="./news.html">News</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./alumni.html">Alumni</a></li>
-          <li><a href="./contact_us.html">Contact Us</a></li>
+
+      <!-- the nav menus -->
+      <div class="navbar-menus">
+        <a href="./about.html">about</a>
+        <a href="./principal.html">principal</a>
+
+        <!-- academics -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>academics</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./curriculums.html">curriculums</a>
+            <a href="./library.html">library</a>
+            <a href="./laboratories.html">laboratories</a>
+          </div>
+        </div>
+
+        <!-- information -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>info</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./boarding.html">boarding</a>
+            <a href="./admission.html">admission</a>
+            <a href="./calendar.html">calendar</a>
+            <a href="./uniform.html">uniform</a>
+          </div>
+        </div>
+
+        <a href="./news.html">news</a>
+        <a href="./gallery.html">gallery</a>
+        <a href="./alumni.html">alumni</a>
+        <a href="./contact.html">contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- site's main body contents -->
+  <main class="main main-abt">
+    <!-- FIRST SECTION: Hero container and bold text page title -->
+    <section class="lib-first-section">
+      <div class="section">
+        <h1>library</h1>
+      </div>
+    </section>
+
+    <!-- SECOND SECTION: Description about the sch's library -->
+    <section class="lib-second-section">
+      <section class="section">
+        <!-- section's main title -->
+        <header class="section-title">
+          <h2>a myriad of</h2>
+          <h2>knowledge based repositories</h2>
+        </header>
+
+        <div class="library">
+          <div class="flex-container">
+            <div class="descriptive-title-and-text">
+              <p class="description">
+                A standard library is put in place to enhance, and broading the intellectual minds of our students,  
+                as not only to subject themselves to subjects or courses taught in classrooms but, also to have well-rounded 
+                awearness to the world, or community around them.
+              </p>
+
+              <p class="description">
+                AFSS Ibadan is having within her library, wider varieties of books from history, to literatures, to encyclopeadia, 
+                magazines, to daily newspapers, to almanacs, and much more. Which makes up a standard library. More so, our liberians 
+                who are having library usage prowess, gives their services to students using the library to get the most out of it and 
+                also have a sense on how the or a library is being ran.
+              </p>
+            </div>
+
+            <div class="descriptive-img">
+              <img src="/public/img/book_lover.svg" alt="library_img" width="250px" height="auto">
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- site's main footer -->
+  <footer class="footer">
+    <div class="footer-info">
+      <div class="footer-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" class="footer-img" alt="sch_logo_or_crest" width="50px" height="auto">
+        </a>
+        <div class="contact-info">
+          <p>Apostolic Faith Secondary School, Ibadan</p>
+          <p>SW8/803, Lodge street, Oke-Ado, Ibadan, Oyo State, Nigeria</p>
+          <p>Tel: <br> <span>+234 703 4793 449,</span> <br> <span>+234 807 9053 533</span></p>
+        </div>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h4 class="title">quick links</h4>
+
+        <ul>
+          <li><a href="./contact_us.html#faq">FAQ</a></li>
+          <li><a href="./admission.html">admission</a></li>
+          <li><a href="./alumni.html">alumni</a></li>
+          <li><a href="./contact_us.html">contact us</a></li>
         </ul>
       </div>
-    </div>
-  </nav><!-- Navigation Bar Ends -->
+  
+      <!-- sch social media links -->
+      <div class="social-links">
+        <h4 class="title">follow us</h4>
 
-  <section class="img-lib">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h2 class="call-out-1">Library</h2>
-      </div>
-    </div>
-  </section>
+        <p>
+          on our major social media platforms, to get closer on events within and around the school.
+        </p>
 
-  <section class="section-2">
-    <div class="container">
-      <article class="">
-        <p class="font-style">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p class="font-style">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p class="font-style">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <p class="font-style">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <aside class="lib-img">
-    <article class="row">
-      <div class="col-md-12">
-        <div class="img-overlay">
-          <div class="container">
-            <h3 class="header-title text-center" style="margin-top:0; margin-bottom:15px; padding:20px;">Why Our Library
-            </h3>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card-plain">
-                  <div class="content-3">
-                    <h4 class="category">FREELANCE</h4>
-                    <div>
-                      <i class="fa fa-home logo-small" style="border-color: #cc9090;"></i>
-                    </div>
-                    <div class="description-2">
-                      <p class="font-style">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <div class="content-3">
-                    <h4 class="category">ACCESSIBLE</h4>
-                    <div>
-                      <i class="fa fa-group logo-small" style="border-color: #cc9090;"></i>
-                    </div>
-                    <div class="description-2">
-                      <p class="font-size">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card-plain">
-                  <div class="content-3">
-                    <h4 class="category">Maintainance</h4>
-                    <div>
-                      <i class="fa fa-leaf logo-small" style="border-color: #cc9090;"></i>
-                    </div>
-                    <div class="description-2">
-                      <p class="font-style">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="links">
+          <a href="http://facebook.com/afssibadan">
+            <i class="ti ti-facebook"></i>
+          </a>
+          <a href="http://twitter.com/afssibadan">
+            <i class="ti ti-twitter"></i>
+          </a>
+          <a href="http://instagram.com/afssibadan">
+            <i class="ti ti-instagram"></i>
+          </a>
+          <a href="http://youtube.com/afssibadan">
+            <i class="ti ti-youtube"></i>
+          </a>
         </div>
       </div>
-    </article>
-  </aside>
+    </div>
 
-  <footer class="footer in-space">
-    <!-- Footer Section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <!-- Sch-logo and address -->
-          <div class="row">
-            <div class="col-sm-4">
-              <a href="../index.html" title="home Page">
-                <img src="../images/afss_logo.png" class="img-responsive ft-logo" alt="sch_logo" />
-              </a>
-            </div>
-            <div class="col-md-8">
-              <span>
-                Apostolic Faith Secondary School <small class="small">Ibadan</small> <br>
-                SW8/803, Lodge Street Oke-Ado, Ibadan. <br>
-                Tel:<br> +234 703 479 3449, +234 807 905 3533. <br>
-                Email: afssib@yahoo.com
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <!-- External Links -->
-          <div class="text-center">
-            <h5>External Links</h5>
-            <a href="contact.html">Quick Contact</a><br>
-            <a href="contact.html">Enquires</a><br>
-            <a href="#" target="_blank">Alumni Association</a><br>
-            <a href="http://www.wikipedia.org" target="_blank">Wikipedia</a><br>
-            <a href="http://www.google.com.ng" target="_blank">Google</a>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <!--Social Media Links -->
-          <div class="">
-            <h5>Follow Us On</h5>
-            <a href="https://www.facebook.com" target="_blank" title="like our page on facebook">
-              <i class="fa fa-facebook facebook"></i> Facebook
-            </a>
-
-            <br>
-
-            <a href="https://www.twitter.com" target="_blank" title="follow us on twitter">
-              <i class="fa fa-twitter twitter"></i> Twitter
-            </a>
-
-            <br>
-
-            <a href="https://www.googleplus.com" target="_blank" title="join our circle on google plus ">
-              <i class="fa fa-google-plus google-plus"></i> Google<sup>+</sup>
-            </a>
-            <br>
-            <a href="#" title="follow us on instagram">
-              <i class="fa fa-instagram instagram"></i> Instalgram
-            </a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <p class="text-center">
-        &copy;2016 Apostolic Faith Secondary School, Ibadan. All Right Reserved.
-      </p>
+    <!-- site's copyright's statement -->
+    <div class="copyright-container">
+      <small>
+        &copy;2021 
+        <span class="hide-sm">Apostolic Faith Secondary School</span> 
+        AFSS<sup>&trade;</sup> 
+        <span class="show-sm">Oke-Ado</span>, Ibadan. All Rights Reserved.
+      </small>
     </div>
   </footer>
-  <!--
-  ============================================
-  Jquery File And Javascript core file
-  ============================================
-   -->
-  <script src="../bootstrap/js/jquery.min.js"></script>
-  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- javaScript and other script files -->
+  <script src="/public/js/main.js"></script>
 </body>
 
 </html>

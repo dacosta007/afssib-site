@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Calendar</title>
+  <meta name="description" content="AFSS Ibadan school calendar for the session">
+  <meta name="keywords" content="AFSS, Ibadan school calendar">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/public/css/themify-icons.css">
+  <link rel="stylesheet" href="/public/css/main.css">
+</head>
+
+<body>
+  <!-- site's main header -->
+  <header>
+    <nav class="navbar">
+      <!-- the site logo/crest & humbuger icon -->
+      <div class="navbar-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" alt="sch_logo_or_crest" width="40px" height="auto">
+        </a>
+        <!-- hamburger icon (show on small device) -->
+        <i class="ti ti-menu small-menu-icon"></i>
+      </div>
+
+      <!-- the nav menus -->
+      <div class="navbar-menus">
+        <a href="./about.html">about</a>
+        <a href="./principal.html">principal</a>
+
+        <!-- academics -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>academics</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./curriculums.html">curriculums</a>
+            <a href="./library.html">library</a>
+            <a href="./laboratories.html">laboratories</a>
+          </div>
+        </div>
+
+        <!-- information -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>info</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./boarding.html">boarding</a>
+            <a href="./admission.html">admission</a>
+            <a href="./calendar.html">calendar</a>
+            <a href="./uniform.html">uniform</a>
+          </div>
+        </div>
+
+        <a href="./news.html">news</a>
+        <a href="./gallery.html">gallery</a>
+        <a href="./alumni.html">alumni</a>
+        <a href="./contact.html">contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- site's main body contents -->
+  <main class="main main-abt">
+    <!-- FIRST SECTION: Hero container and bold text page title -->
+    <section class="cal-first-section">
+      <div class="section">
+        <h1>calendar</h1>
+      </div>
+    </section>
+
+    <!-- SECOND SECTION: A description on the school's events for the whole session -->
+    <article class="cal-second-section">
+      <section class="section">
+        <header class="section-title">
+          <h2>events around school</h2>
+        </header>
+
+        <p class="description">
+          welcome to AFSS Ibadan, school calendar page. Here, we make known all evetns we will 
+          be having for the current on going session. To make things easier, we break all events 
+          down into terms(i.e first, second, and third term) of the current session. Below are the 
+          the events. Please note, all events are colour quoted for easier and faster visualization 
+          when perusing through all events within the current session.
+        </p>
+
+        <h5 class="sub-title">event priorities colour keys:</h5>
+        <div class="event-color-quotes">
+          <div>
+            low: <span class="color-quote-default"></span>
+          </div>
+          <div>
+            medium: <span class="color-quote-medium"></span>
+          </div>
+          <div>
+            high: <span class="color-quote-high"></span>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- THIRD SECTION: A list of school's events in relation to term -->
+    <article class="cal-third-section">
+      <section class="section">
+        <!-- first term events -->
+        <article class="first-term accordion">
+          <header class="accordion-header">
+            <h3>first term events</h3> <i class="ti ti-angle-down icon-indicator"></i>
+          </header>
+          <!-- list of events nodes -->
+          <section class="accordion-body">
+            <div class="event high" data-id="1" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>4</span>
+              </div>
+              <div class="event-title">
+                computer hardware desktops and notebooks and handhelds oh my
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>15:00 - 17:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event default" data-id="2" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>2</span>
+              </div>
+              <div class="event-title">
+                compartible inkjet cartridge
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>12:00 - 14:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event medium" data-id="3" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>8</span>
+              </div>
+              <div class="event-title">
+                choosing the best audio player software for your computer
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>14:00 - 15:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event medium" data-id="4" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>11</span>
+              </div>
+              <div class="event-title">
+                microsoft patch management for home users
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>9:00 - 11:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event high" data-id="5" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>14 - 16</span>
+              </div>
+              <div class="event-title">
+                help finding information online
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>11:00 - 13:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event default" data-id="6" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>18 - 20</span>
+              </div>
+              <div class="event-title">
+                steps in installing rack mount LCD monitors
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>13:00 - 14:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <!-- second term events -->
+        <article class="second-term accordion">
+          <header class="accordion-header">
+            <h3>second term events</h3> <i class="ti ti-angle-down"></i>
+          </header>
+
+          <!-- list of events nodes -->
+          <section class="accordion-body hide">
+            <div class="event high" data-id="7" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>jun</span> <span>4 - 5</span>
+              </div>
+              <div class="event-title">
+                computer hardware desktops and notebooks and handhelds oh my
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>15:00 - 17:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event default" data-id="8" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>jun</span> <span>8 - 10</span>
+              </div>
+              <div class="event-title">
+                help finding information online
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>15:00 - 17:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event high" data-id="9" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>jun</span> <span>14 - 16</span>
+              </div>
+              <div class="event-title">
+                compatible inkjet cartridge
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>15:00 - 17:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event default" data-id="10" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>jun</span> <span>18 - 20</span>
+              </div>
+              <div class="event-title">
+                choosing the best audio player software for your computer
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>15:00 - 17:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event high" data-id="11" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>jun</span> <span>22</span>
+              </div>
+              <div class="event-title">
+                steps in installing rack mount LCD monitors
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>15:00 - 17:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event default" data-id="12" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>jun</span> <span>28</span>
+              </div>
+              <div class="event-title">
+                microsoftpatch management for home users
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>15:00 - 17:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <!-- third term events -->
+        <article class="third-term accordion">
+          <header class="accordion-header">
+            <h3>third term events</h3> <i class="ti ti-angle-down"></i>
+          </header>
+
+          <!-- list of events nodes -->
+          <section class="accordion-body hide">
+            <div class="event high" data-id="13" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>4</span>
+              </div>
+              <div class="event-title">
+                computer hardware desktops and notebooks and handhelds oh my
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>15:00 - 17:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event default" data-id="14" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>2</span>
+              </div>
+              <div class="event-title">
+                compartible inkjet cartridge
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>12:00 - 14:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event medium" data-id="15" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>8</span>
+              </div>
+              <div class="event-title">
+                choosing the best audio player software for your computer
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>14:00 - 15:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event medium" data-id="16" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>11</span>
+              </div>
+              <div class="event-title">
+                microsoft patch management for home users
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>9:00 - 11:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event high" data-id="17" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>14 - 16</span>
+              </div>
+              <div class="event-title">
+                help finding information online
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>11:00 - 13:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="event default" data-id="18" onclick="openEventModal(this)">
+              <div class="event-date">
+                <span>may</span> <span>18 - 20</span>
+              </div>
+              <div class="event-title">
+                steps in installing rack mount LCD monitors
+              </div>
+              <div class="event-time-venue">
+                <div class="time-venue">
+                  <span>13:00 - 14:00</span> <span>online</span>
+                </div>
+                <!-- read more CTA btn -->
+                <i class="ti ti-arrow-right"></i>
+              </div>
+            </div>
+          </section>
+        </article>
+      </section>
+    </article>
+
+    <!-- modal window for displaying event description or message -->
+    <aside class="event-modal" id="eventModal">
+      <section class="event-modal-content">
+        <header class="modal-header">
+          <!-- the close btn -->
+          <span class="close-modal-btn ti ti-close" onclick="closeEventModal('eventModal');"></span>
+
+          <div class="event-date">
+            <h4>may</h4>
+            <h2>4</h2>
+          </div>
+          <h3 class="event-title">
+            computer hardware desktops and notebooks and handhelds
+          </h3>
+        </header>
+
+        <article class="event-modal-body">
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quibusdam ducimus, reprehenderit ullam odio consequuntur. Hic consectetur suscipit cumque, itaque excepturi minima dolores id. Illum quam hic ea ullam optio?
+          </p>
+          <p class="description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum veniam laudantium, maiores similique asperiores corrupti nobis consequatur pariatur error tempora laborum officiis nemo velit doloribus quam animi perspiciatis eaque.
+          </p>
+        </article>
+      </section>
+    </aside>
+  </main>
+
+  <!-- site's main footer -->
+  <footer class="footer">
+    <div class="footer-info">
+      <div class="footer-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" class="footer-img" alt="sch_logo_or_crest" width="50px" height="auto">
+        </a>
+        <div class="contact-info">
+          <p>Apostolic Faith Secondary School, Ibadan</p>
+          <p>SW8/803, Lodge street, Oke-Ado, Ibadan, Oyo State, Nigeria</p>
+          <p>Tel: <br> <span>+234 703 4793 449,</span> <br> <span>+234 807 9053 533</span></p>
+        </div>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h4 class="title">quick links</h4>
+
+        <ul>
+          <li><a href="./contact_us.html#faq">FAQ</a></li>
+          <li><a href="./admission.html">admission</a></li>
+          <li><a href="./alumni.html">alumni</a></li>
+          <li><a href="./contact_us.html">contact us</a></li>
+        </ul>
+      </div>
+  
+      <!-- sch social media links -->
+      <div class="social-links">
+        <h4 class="title">follow us</h4>
+
+        <p>
+          on our major social media platforms, to get closer on events within and around the school.
+        </p>
+
+        <div class="links">
+          <a href="http://facebook.com/afssibadan">
+            <i class="ti ti-facebook"></i>
+          </a>
+          <a href="http://twitter.com/afssibadan">
+            <i class="ti ti-twitter"></i>
+          </a>
+          <a href="http://instagram.com/afssibadan">
+            <i class="ti ti-instagram"></i>
+          </a>
+          <a href="http://youtube.com/afssibadan">
+            <i class="ti ti-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- site's copyright's statement -->
+    <div class="copyright-container">
+      <small>
+        &copy;2021 
+        <span class="hide-sm">Apostolic Faith Secondary School</span> 
+        AFSS<sup>&trade;</sup> 
+        <span class="show-sm">Oke-Ado</span>, Ibadan. All Rights Reserved.
+      </small>
+    </div>
+  </footer>
+
+  <!-- javaScript and other script files -->
+  <script src="/public/js/main.js"></script>
+  <script async src="/public/js/schCalendar.js"></script>
+</body>
+
+</html>

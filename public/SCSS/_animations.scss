@@ -42,6 +42,14 @@
   animation: modal-hide-sm 0.4s ease-in !important;
 }
 
+.event-modal-anim-show {
+  animation: event-modal-anim 0.4s ease-in;
+}
+
+.event-modal-anim-hide {
+  animation: event-modal-anim-hide 0.4s ease-out !important;
+}
+
 // === for laptops & desktop ===
 
 // animation keyframe definition
@@ -126,5 +134,49 @@
   }
   to {
     transform: translateX(-100vw);
+  }
+}
+
+@keyframes event-modal-anim {
+  from {
+    transform: translateY(-20%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes event-modal-anim-hide {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-20%);
+    opacity: 0.5;
+  }
+}
+
+@keyframes event-modal-anim-show-sm {
+  from {
+    transform: translateY(85vh);
+    opacity: 0.9;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes event-modal-anim-hide-sm {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(85vh);
+    opacity: 0.9;
   }
 }

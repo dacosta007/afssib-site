@@ -369,11 +369,32 @@
 // Site's navigation bar
 @import 'navbar';
 
+// ====== All pages particulate styles ======
 // home page style
 @import 'home';
 
 // about page style
 @import 'about';
+
+// principal page style
+@import 'principal';
+
+// curriculums page style
+@import 'curriculums';
+
+// library page style
+@import 'library';
+
+// laboratory page style
+@import 'laboratories';
+
+// boarding page style
+@import 'boarding';
+
+// calendar page style
+@import 'calendar';
+
+// ====== All pages particulate styles Ends ======
 
 // Site's footer
 @import 'footer';

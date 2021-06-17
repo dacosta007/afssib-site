@@ -26,6 +26,30 @@
   transition: backgroud 0.3s linear;
 }
 
+// for hero container
+@mixin gen-hero-container {
+  height: 55vh;
+  width: 100%;
+  clip-path: polygon(100% 0, 100% 68%, 0 100%, 0 0);
+  background: #3e3ed4;
+  overflow: hidden;
+
+  .section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+
+    h1 {
+      font-size: clamp(6em, 1.3em, 2.5em);
+      font-family: Lora;
+      text-transform: capitalize;
+      letter-spacing: 4px;
+      color: #f9efef;
+    }
+  }
+}
+
 // === *** Animations === ***
 @mixin scaleIn($anim-time) {
   animation: scale-in $anim-time linear;

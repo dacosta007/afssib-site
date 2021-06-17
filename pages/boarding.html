@@ -3,449 +3,211 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../bootstrap/css/afssstyle.css" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-  <title>Boarding</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="../bootstrap/css/font-awesome.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boarding House</title>
+  <meta name="description" content="AFSS Ibadan, residencial boarding house for male and female students">
+  <meta name="keywords" content="AFSS, Ibadan boarding house">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/public/css/themify-icons.css">
+  <link rel="stylesheet" href="/public/css/main.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#schMenu">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="../index.html" class="navbar-brand">
-          <img src="../images/afss_logo.png" alt="sch_logo" width="auto" height="30">
+  <!-- site's main header -->
+  <header>
+    <nav class="navbar">
+      <!-- the site logo/crest & humbuger icon -->
+      <div class="navbar-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" alt="sch_logo_or_crest" width="40px" height="auto">
         </a>
+        <!-- hamburger icon (show on small device) -->
+        <i class="ti ti-menu small-menu-icon"></i>
       </div>
-      <div class="collapse navbar-collapse" id="schMenu">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./principal.html">Principal</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Academics <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="./curriculums.html">Curriculum</a></li>
-              <li><a href="./departments.html">Departments</a></li>
-              <li><a href="./library.html">Library</a></li>
-              <li><a href="./laboratories.html">Laboratories</a></li>
-              <li><a href="./ict.html">ICT</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#informations" class="dropdown-toggle" data-toggle="dropdown">
-              Informations <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="listitem">
-              <li><a href="./boarding.html">Boarding</a></li>
-              <li><a href="./uniform.html">Uniform</a></li>
-              <li><a href="./admission.html">Admission</a></li>
-              <li><a href="./sch_calender.html">School Calendar</a></li>
-              <li><a href="./prospectus.html">Prospectus</a></li>
-              <li><a href="./anthem_pledge.html">Anthem/Pledge</a></li>
-            </ul>
-          </li>
-          <li><a href="./news.html">News</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./alumni.html">Alumni</a></li>
-          <li><a href="./contact_us.html">Contact Us</a></li>
+
+      <!-- the nav menus -->
+      <div class="navbar-menus">
+        <a href="./about.html">about</a>
+        <a href="./principal.html">principal</a>
+
+        <!-- academics -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>academics</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./curriculums.html">curriculums</a>
+            <a href="./library.html">library</a>
+            <a href="./laboratories.html">laboratories</a>
+          </div>
+        </div>
+
+        <!-- information -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>info</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./boarding.html">boarding</a>
+            <a href="./admission.html">admission</a>
+            <a href="./calendar.html">calendar</a>
+            <a href="./uniform.html">uniform</a>
+          </div>
+        </div>
+
+        <a href="./news.html">news</a>
+        <a href="./gallery.html">gallery</a>
+        <a href="./alumni.html">alumni</a>
+        <a href="./contact.html">contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- site's main body contents -->
+  <main class="main main-abt">
+    <!-- FIRST SECTION: Hero container and bold text page title -->
+    <section class="boa-first-section">
+      <div class="section">
+        <h1>boarding</h1>
+      </div>
+    </section>
+
+    <!-- SECOND SECTION: Some brief description about residence, & meals -->
+    <article class="boa-second-section">
+      <section class="section">
+        <!-- section's main title -->
+        <header class="section-title">
+          <h2>boarding life</h2>
+        </header>
+
+        <!-- brief description on residence, and meals -->
+        <div class="flex-container hostels">
+          <div class="descriptive-title-and-text">
+            <p class="description">
+              We understand that, for students to open up to the possibilities inherent in 
+              <b>AFSS Ibadan</b>, it is important for them to feel at home. For this reason, 
+              our purpose-built boarding hostels have the right balance of mod-cons and 
+              amenities to ensure homeliness, safety and discipline.
+            </p>
+            <p class="description">
+              Each hostel is run by an experienced House Master/Mistress. The House Master/Mistress 
+              is assisted by an Assistant House Master/Mistress. Their roles are to provide a seamless 
+              link between the academic and pastoral spheres of each student’s life. They will therefore 
+              monitor, and give report on student's progress in each respective hostels.
+            </p>
+            <p class="description">
+              Initially, students will be accommodated in a hostel based on their Year group, 
+              to engender a sense of family and homeliness. Each hostel has, study rooms and 
+              a common room equipped with board games and leisure facilities. Students are  
+              provided three balanced and nutritious meals a day, set in the Dining Hall.
+            </p>
+          </div>
+
+          <div class="descriptive-img">
+            <div class="foreground-pattern"></div>
+            <div class="boarding-imgs">
+              <img src="/public/img/yellow_dots.svg" alt="dot-img-pattern" class="dot-img" width="200" height="auto">
+              <img src="/public/img/boarding-img-1.jpg" loading="lazy" alt="boarding-img-1" class="boarding-img-1" width="250" height="auto">
+              <img src="/public/img/boarding-img-2.jpg" loading="lazy" alt="boarding-img-2" class="boarding-img-2" width="250" height="auto">
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- THIRD SECTION: Some description on medical care & security -->
+    <article class="boa-third-section">
+      <section class="section">
+        <div class="flex-container medical-care">
+          <div class="descriptive-img">
+            <div class="foreground-pattern"></div>
+            <div class="medical-img">
+              <img src="/public/img/yellow_dots.svg" alt="dot_img" width="200" height="auto">
+              <img src="/public/img/sickbay.jpg" loading="lazy" alt="sickbay" width="250" height="auto">
+            </div>
+          </div>
+
+          <div class="descriptive-title-and-text">
+            <h3 class="sub-title">medical care</h3>
+            <p class="description">
+              The wellness of students is of paramount importance. At AFSS Ibadan, we ascertain a well-equipped Medical  
+              Clinic, staffed with qualified school nurses to deal with medical situations in the event immediate requirement 
+              of student medical attention. Students with more needs are transferred to the resident hospital in the area.
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- site's main footer -->
+  <footer class="footer">
+    <div class="footer-info">
+      <div class="footer-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" class="footer-img" alt="sch_logo_or_crest" width="50px" height="auto">
+        </a>
+        <div class="contact-info">
+          <p>Apostolic Faith Secondary School, Ibadan</p>
+          <p>SW8/803, Lodge street, Oke-Ado, Ibadan, Oyo State, Nigeria</p>
+          <p>Tel: <br> <span>+234 703 4793 449,</span> <br> <span>+234 807 9053 533</span></p>
+        </div>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h4 class="title">quick links</h4>
+
+        <ul>
+          <li><a href="./contact_us.html#faq">FAQ</a></li>
+          <li><a href="./admission.html">admission</a></li>
+          <li><a href="./alumni.html">alumni</a></li>
+          <li><a href="./contact_us.html">contact us</a></li>
         </ul>
       </div>
-    </div>
-  </nav><!-- Navigation Bar Ends -->
+  
+      <!-- sch social media links -->
+      <div class="social-links">
+        <h4 class="title">follow us</h4>
 
-  <section class="">
-
-  </section>
-  <section class="img-boarding">
-    <div class="container">
-      <article class="col-lg-8 col-lg-offset-2">
-        <h2 class="call-out-1">
-          Boarding
-        </h2>
-      </article>
-    </div>
-  </section>
-
-  <section class="container-fluid">
-    <div class="container">
-      <article class="text-center">
-        <div class="title title-area">
-          <h5>OUR</h5>
-          <h2>Boarding School</h2>
-          <div class="bar bar-primary">*</div>
-        </div>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-          sunt in culpa qui officia deserunt mollit anim id est laborum.
+          on our major social media platforms, to get closer on events within and around the school.
         </p>
-      </article>
 
-      <article class="container">
-        <div class="text-center title title-area">
-          <h3>Why You Will Like Our Hostel</h3>
-          <div class="bar bar-primary">*</div>
-        </div>
-
-        <div class="text-center container">
-          <p class="text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-        </div>
-
-        <div class="row" style="padding-top: 25px;padding-bottom: 30px;">
-          <div class="col-lg-4 col-md-4">
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-group" style="color:#3489dc; font-size:35px;"></i>
-              </div>
-              <div class="col-md-10">
-                <h4 class="header-title" style="color:#3489dc;">Collaborate</h4>
-                <p class="description-2">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-umbrella" style="color:#ff0055; font-size:35px;"></i>
-              </div>
-              <div class="col-md-10">
-                <h4 class="header-title" style="color:#ff0055;">Space</h4>
-                <p class="description-2">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-4">
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker" style="color:#4caf50; font-size:35px;"></i>
-              </div>
-              <div class="col-md-10">
-                <h4 class="header-title" style="color:#4caf50;">Location Integration</h4>
-                <p class="description-2">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <div class="section-grey">
-    <div class="row">
-      <div class="col-lg-6">
-        <img src="../images/blog1.jpg" class="img-rounded img-responsive" alt="hogwath">
-      </div>
-      <div class="col-lg-5 col-lg-offset-1">
-        <h3 class="header-title text-center" style="color:#3489dc;">Some Of Our Featurea</h3>
-        <div class="row">
-          <div class="col-md-2">
-            <i class="fa fa-cogs" style="color:#3489dc; font-size:35px;"></i>
-          </div>
-          <div class="col-md-10">
-            <h4 class="header-title" style="color:#3489dc;">Hundreds Of Components</h4>
-            <p class="description-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2">
-            <i class="fa fa-clock-o" style="color:#ff5100; font-size:35px;"></i>
-          </div>
-          <div class="col-md-10">
-            <h4 class="header-title" style="color:#ff5100;">Good Sinester Timing</h4>
-            <p class="description-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-2">
-            <i class="fa fa-coffee" style="color:#4caf50; font-size:35px;"></i>
-          </div>
-          <div class="col-md-10">
-            <h4 class="header-title" style="color:#4caf50;">Great Meal Schedule</h4>
-            <p class="description-2">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
+        <div class="links">
+          <a href="http://facebook.com/afssibadan">
+            <i class="ti ti-facebook"></i>
+          </a>
+          <a href="http://twitter.com/afssibadan">
+            <i class="ti ti-twitter"></i>
+          </a>
+          <a href="http://instagram.com/afssibadan">
+            <i class="ti ti-instagram"></i>
+          </a>
+          <a href="http://youtube.com/afssibadan">
+            <i class="ti ti-youtube"></i>
+          </a>
         </div>
       </div>
     </div>
-  </div>
 
-  <aside class="section-grey">
-    <div class="container">
-      <div class="title title-area">
-        <h2 class="header-title">Here Are What Parents Are Saying</h2>
-      </div>
-      <br>
-      <div class="carousel slide text-center" data-ride="carousel" id="boarding-slide">
-        <!-- Carousel Start-->
-        <ol class="carousel-indicators">
-          <!-- Carousel-indicators -->
-          <li class="active" data-target="#boarding-slide" data-slide-to="0" style="visibility:hidden;"></li>
-          <li data-target="#boarding-slide" data-slide-to="1" style="visibility:hidden;"></li>
-          <li data-target="#boarding-slide" data-slide-to="2" style="visibility:hidden;"></li>
-          <li data-target="#boarding-slide" data-slide-to="3" style="visibility:hidden;"></li>
-        </ol><!-- Carousel-indicators Ends -->
-
-        <!-- Wrapper For Carousel -->
-        <div class="carousel-inner" role="listbox">
-          <!-- Carousel-inner Start -->
-          <div class="item text-center active">
-            <div>
-              <img src="../images/bg4.jpeg" class="img-circle boarding-img-slide" alt="img1" />
-            </div>
-            <h4 class="description-2">
-              <i class="fa fa-quote"></i>
-              <i>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br> quis nostrud
-                exercitation ullamco laboris nisi <br> ut aliquip ex ea commodo consequat.
-              </i>
-              <i class="fa fa-quote"></i>
-            </h4>
-            <h4 class="description">Parent 1</h4>
-            <h5>Pillot @ Emirate Airliner</h5>
-            <div class="">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
-          </div>
-
-          <div class="item text-center">
-            <div>
-              <img src="../images/bg3.jpeg" class="img-circle boarding-img-slide" alt="img1" />
-            </div>
-            <h4 class="description-2">
-              <i class="fa fa-quote"></i>
-              <i>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br> quis nostrud
-                exercitation ullamco laboris nisi <br> ut aliquip ex ea commodo consequat.
-              </i>
-              <i class="fa fa-quote"></i>
-            </h4>
-            <h4 class="description">Parent 2</h4>
-            <h5>Engineer @ Audi Inovations &amps; Technology</h5>
-            <div class="">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
-          </div>
-
-          <div class="item text-center">
-            <div class="">
-              <img src="../images/city.jpg" class="img-circle boarding-img-slide" alt="img1" />
-            </div>
-            <h4 class="description-2">
-              <i class="fa fa-quote"></i>
-              <i>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br> quis nostrud
-                exercitation ullamco laboris nisi <br> ut aliquip ex ea commodo consequat.
-              </i>
-              <i class="fa fa-quote"></i>
-            </h4>
-            <h4 class="description">Parent 3</h4>
-            <h5>Designer @ Louboutin &amps; Co.</h5>
-            <div class="">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
-          </div>
-
-          <div class="item text-center">
-            <div>
-              <img src="../images/city.jpg" class="img-circle boarding-img-slide" alt="img4" />
-            </div>
-            <h4 class="description-2">
-              <i class="fa fa-quote"></i>
-              <i>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br> quis nostrud
-                exercitation ullamco laboris nisi <br> ut aliquip ex ea commodo consequat.
-              </i>
-              <i class="fa fa-quote"></i>
-            </h4>
-            <h4 class="description">Parent 4</h4>
-            <h5>CEO @ Marketing Digital Ltd</h5>
-            <div class="">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
-          </div>
-        </div><!-- Carousel-inner Ends -->
-
-        <!-- Carousel-controls -->
-        <a class="left carousel-control" href="#boarding-slide" role="button" data-slide="prev"
-          style="margin-top:67px;">
-          <span class="fa fa-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#boarding-slide" role="button" data-slide="next"
-          style="margin-top:67px;">
-          <span class="fa fa-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div><!-- Carousel Ends-->
-    </div>
-  </aside>
-
-  <div class="section-2">
-    <div class="container">
-      <div class="text-center">
-        <h3 class="title-area title header-title">Give Us Your View</h3>
-      </div>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <form action="#">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control form-control-afss" placeholder="Fullname">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control form-control-afss" placeholder="Email">
-              </div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control form-control-afss" name="comments" rows="5"
-                placeholder="Place your Message Here"></textarea>
-            </div>
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <button class="btn butn-primary" type="button" name="Submit">
-                  Send <i class="glyphicon glyphicon-send" style="font-size:20px;"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <!-- Footer Section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <!-- Sch-logo and address -->
-          <div class="row">
-            <div class="col-sm-4">
-              <a href="../index.html" title="home Page">
-                <img src="../images/afss_logo.png" class="img-responsive ft-logo" alt="sch_logo" />
-              </a>
-            </div>
-            <div class="col-sm-8">
-              <span>
-                Apostolic Faith Secondary School <small class="small">Ibadan</small> <br>
-                SW8/803, Lodge Street Oke-Ado, Ibadan. <br>
-                Tel:<br> +234 703 479 3449, +234 807 905 3533. <br>
-                Email: afssib@yahoo.com
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <!-- External Links -->
-          <div class="text-center">
-            <h5>External Links</h5>
-            <a href="contact.html">Quick Contact</a><br>
-            <a href="contact.html">Enquires</a><br>
-            <a href="#" target="_blank">Alumni Association</a><br>
-            <a href="http://www.wikipedia.org" target="_blank">Wikipedia</a><br>
-            <a href="http://www.google.com.ng" target="_blank">Google</a>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <!--Social Media Links -->
-          <div class="">
-            <h5>Follow Us On</h5>
-            <a href="https://www.facebook.com" target="_blank" title="like our page on facebook">
-              <i class="fa fa-facebook facebook"></i> Facebook
-            </a>
-
-            <br>
-
-            <a href="https://www.twitter.com" target="_blank" title="follow us on twitter">
-              <i class="fa fa-twitter twitter"></i> Twitter
-            </a>
-
-            <br>
-
-            <a href="https://www.googleplus.com" target="_blank" title="join our circle on google plus ">
-              <i class="fa fa-google-plus google-plus"></i> Google<sup>+</sup>
-            </a>
-            <br>
-            <a href="#" title="follow us on instagram">
-              <i class="fa fa-instagram instagram"></i> Instalgram
-            </a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <p class="text-center">
-        &copy;2016 Apostolic Faith Secondary School, Ibadan. All Right Reserved.
-      </p>
+    <!-- site's copyright's statement -->
+    <div class="copyright-container">
+      <small>
+        &copy;2021 
+        <span class="hide-sm">Apostolic Faith Secondary School</span> 
+        AFSS<sup>&trade;</sup> 
+        <span class="show-sm">Oke-Ado</span>, Ibadan. All Rights Reserved.
+      </small>
     </div>
   </footer>
-  <!--
-  ============================================
-  Jquery File And Javascript core file
-  ============================================
-   -->
-  <script src="../bootstrap/js/jquery.min.js"></script>
-  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- javaScript and other script files -->
+  <script src="/public/js/main.js"></script>
 </body>
 
 </html>
