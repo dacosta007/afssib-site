@@ -230,6 +230,10 @@
   }
 }
 
+// .btn-with-icon {
+
+// }
+
 .btn-block {
   width: 100%;
 }
@@ -238,6 +242,69 @@
   background: $info-color;
   color: #f3f3f9;
   box-shadow: 0px 8px 15px -8px #3366ccab;
+}
+
+.btn-pry-inverse {
+  background: transparent;
+  color: $info-color;
+
+  &:hover, &:focus {
+    background: rgba($info-color, $alpha: 0.3);
+    font-weight: bold;
+    transition: border 0.4s ease, font-weight 0.4s ease;
+  }
+}
+
+.btn-warning {
+  background: $warning-color;
+  color: $sec-color;
+  box-shadow: 0px 8px 15px -8px rgba($warning-color, $alpha: 0.4);
+}
+
+.btn-warning-inverse {
+  background: transparent;
+  color: $warning-color;
+
+  &:hover, &:focus {
+    background: rgba($warning-color, $alpha: 0.3);
+    font-weight: bold;
+    transition: border 0.4s ease, font-weight 0.4s ease;
+  }
+}
+
+.btn-danger {
+  background: $danger-color;
+  color: $sec-color;
+  box-shadow: 0px 8px 15px -8px rgba($danger-color, $alpha: 0.4);
+}
+
+.btn-danger-inverse {
+  background: transparent;
+  color: $danger-color;
+
+  &:hover, &:active {
+    background: rgba($danger-color, $alpha: 0.3);
+    font-weight: bold;
+    transition: background 0.4s ease, font-weight 0.3s ease;
+  }
+}
+
+.btn-secondary {
+  background: $text-color;
+  color: $sec-color;
+  box-shadow: 0px 8px 15px -8px rgba($text-color, $alpha: 0.4);
+}
+
+.btn-secondary-inverse {
+  background: transparent;
+  color: $text-color;
+  border: 2px solid rgba($text-color, $alpha: 0.5);
+
+  &:hover, &:focus {
+    background: rgba($text-color, $alpha: 0.3);
+    font-weight: bold;
+    transition: background 0.4s ease, font-weight 0.4s ease;
+  }
 }
 
 .modal {
@@ -396,6 +463,9 @@
 
 // admission page style
 @import 'admission';
+
+// uniforms page style
+@import 'uniforms';
 
 // ====== All pages particulate styles Ends ======
 

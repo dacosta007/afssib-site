@@ -1,0 +1,38 @@
+[
+  {
+    "id": "Ax5o8f",
+    "name": "male overall uniform",
+    "description": "Here is the overall male's school uniform, which present our male students quite elegantly, and smart. The overall uniform consist of a pair shirt, jump-jacket, trouser, cardigan, and a pullover sweater. All these gives a perfect completeness to our male students in AFSS, Ibadan.",
+    "img": "/public/img/male-overall-uniform.jpg",
+    "imgCreator": { "name": "Rhii Photography", "imgRef": "https://unsplash.com/@rhii?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" },
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "prices": { "xs": 9500, "s": 14500, "m": 16500, "l": 18500, "xl": 20500 }
+  },
+  {
+    "id": "IAdBW4",
+    "name": "female uniform",
+    "description": "This is the female complete uniform, which are a complusory uniform to gear to have. In It we you'll be getting a pair shit, jump-jacket, skirt, and a cardigan. All these makes up an AFSS, Ibadan female school uniform",
+    "img": "/public/img/female-uniform.jpg",
+    "imgCreator": { "name": "Rhii Photography", "imgRef": "https://unsplash.com/@rhii?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" },
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "prices": { "xs": 7500, "s": 9500, "m": 11500, "l": 13500, "xl": 15500 }
+  },
+  {
+    "id": "USmprO",
+    "name": "female overall uniform",
+    "description": "Here is the overall female's school uniform, which help model our female students more elegantly. The overall school uniform comprises of a shit, jump-jacket, skirt, tie, cardigan, and a pullover sweeter. These help complete the female uniform of AFSS, Ibadan.",
+    "img": "/public/img/femal-overall-uniform.jpg",
+    "imgCreator": { "name": "Rhii Photography", "imgRef": "https://unsplash.com/@rhii?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" },
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "prices": { "xs": 9500, "s": 14500, "m": 16500, "l": 18500, "xl": 20500 }
+  },
+  {
+    "id": "afJZIv",
+    "name": "school uniform ties",
+    "description": "this is the official school uniform ties which are worn on school's uniform and other school's wears. All this are modelled to fit perfectly",
+    "img": "/public/img/sch-uniform-ties.jpg",
+    "imgCreator": { "name": "Rhii Photography", "imgRef": "https://unsplash.com/@rhii?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" },
+    "sizes": ["xs", "s", "m", "l", "xl"],
+    "prices": { "xs": 1500, "s": 2500, "m": 3500, "l": 4500, "xl": 5500 }
+  }
+]
