@@ -354,6 +354,12 @@
           border-radius: 50px;
           padding: 11px;
           background: #ccccff61;
+          cursor: pointer;
+          transition: background 0.4s ease-in-out;
+
+          &:hover {
+            background: #ccccffc9;
+          }
         }
 
         .news-tag-headline {
@@ -372,7 +378,8 @@
 
           .news-title {
             margin-bottom: 0.4rem;
-            font-size: 2em;
+            font-size: 1.5em;
+            line-height: 1.6;
             font-weight: 500;
           }
 
@@ -407,7 +414,7 @@
         .news-event-date, .news-event-read-time {
           display: flex;
           align-items: center;
-          gap: 10px;
+          gap: 8px;
 
           .ti {
             font-size: 16px;
@@ -466,6 +473,9 @@
 
 // uniforms page style
 @import 'uniforms';
+
+// news page style
+@import 'news';
 
 // ====== All pages particulate styles Ends ======
 
