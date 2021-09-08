@@ -180,3 +180,12 @@
     opacity: 0.9;
   }
 }
+
+@keyframes img-skeleton-loading {
+  from {
+    background: rgba($color: #e7eefb, $alpha: 0.4);
+  }
+  to {
+    background: rgba($color: #e7eefb, $alpha: 1.0);
+  }
+}

@@ -1,0 +1,224 @@
+// FIRST SECTION:
+.gal-first-section {
+  @include gen-hero-container;
+}
+
+// SECOND SECTION:
+.gal-second-section {
+  padding: 2.5rem 0;
+
+  .all-img-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2em;
+    align-items: start;
+  }
+
+  .img-col-one, .img-col-two, .img-col-three {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+    place-items: start;
+    width: 100%;
+  }
+
+  .img-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #e7eefb;
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover .img-caption {
+      opacity: 1;
+    }
+
+    &:hover .img-caption p {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .img-caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5em;
+    color: #dedeff;
+    font-size: 13px;
+    background: linear-gradient(to bottom, transparent, rgba(36, 52, 72, 0.7));
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    transition: opacity 0.5s ease 0.10s;
+    opacity: 0;
+
+    p {
+      transform: translateY(100%);
+      opacity: 0.3;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+
+      &::first-letter {
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .lg-img-loading {
+    min-height: 350px;
+  }
+
+  .sm-img-loading {
+    min-height: 200px;
+  }
+
+  .img-skeleton-loading {
+    animation: img-skeleton-loading 0.9s ease infinite alternate;
+  }
+
+  .img-caption-skeleton-loading {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    height: 15px;
+    margin: 0 0 0.8em 0.5em;
+    animation: img-skeleton-loading 1s ease-in-out 0.5s infinite alternate;
+  }
+}
+
+// IMAGE MODAL WINDOW
+.modal-img .modal {
+  
+  .modal-content {
+    width: 80%;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    margin-top: 5%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+    }
+  }
+
+  span.close-btn {
+    position: absolute;
+    right: 8em;
+    background: rgba($text-color, $alpha: 0.3);
+    color: rgba($sec-color, $alpha: 0.7);
+    font-size: 1.6em;
+    padding: 0.4em;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    &:hover {
+      background: rgba($text-color, $alpha: 0.8);
+      color: rgba($sec-color, $alpha: 1.0);
+    }
+  }
+
+  .modal-img-container {
+    display: grid;
+    place-items: center;
+    min-width: calc(100% - 230px);
+    min-height: calc(100% - 50px);
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      width: auto;
+      height: 100%;
+      display: block;
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+// =====*** Media Queries ***=====
+
+// Tablet Devices
+@include mediaMd {
+  // SECOND SECTION:
+  .gal-second-section {
+
+    .all-img-container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+// Small or Smartphone Devices
+@include mediaSm {
+  // FIRST SECTION:
+  .gal-first-section {
+    .section h1 {
+      font-size: clamp(4.5em, 1em, 2.5em);
+      padding: 0 0.3em;
+    }
+  }
+
+  // SECOND SECTION:
+  .gal-second-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .all-img-container {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+
+  // IMAGE MODAL WINDOW
+  .modal-img .modal {
+    background: rgba(32, 19, 53, 0.91);
+
+    .modal-content {
+      width: 100%;
+  
+      span.close-btn {
+        right: 1em;
+      }
+  
+      .modal-img-container {
+        min-width: auto;
+        width: 100%;
+        min-height: calc(100% - 90px);
+    
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
