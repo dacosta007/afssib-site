@@ -3,159 +3,536 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../bootstrap/css/afssstyle.css" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-  <title>About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFSS Ibadan Alumni</title>
+  <meta name="description" content="AFSS, Ibadan alumni community">
+  <meta name="keywords" content="AFSS, Ibadan alumni community">
+  <link rel="icon" sizes="96x96" href="/favicon-96x96.png" type="image/png">
+  <link rel="stylesheet" href="/public/css/themify-icons.css">
+  <link rel="stylesheet" href="/public/css/main.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#schMenu">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="../index.html" class="navbar-brand">
-          <img src="../images/afss_logo.png" alt="sch_logo" width="auto" height="30">
+  <!-- site's main header -->
+  <header>
+    <nav class="navbar">
+      <!-- the site logo/crest & humbuger icon -->
+      <div class="navbar-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" alt="sch_logo_or_crest" width="40px" height="auto">
         </a>
+        <!-- hamburger icon (show on small device) -->
+        <i class="ti ti-menu small-menu-icon"></i>
       </div>
-      <div class="collapse navbar-collapse" id="schMenu">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./principal.html">Principal</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Academics <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="./curriculums.html">Curriculum</a></li>
-              <li><a href="./departments.html">Departments</a></li>
-              <li><a href="./library.html">Library</a></li>
-              <li><a href="./laboratories.html">Laboratories</a></li>
-              <li><a href="./ict.html">ICT</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#informations" class="dropdown-toggle" data-toggle="dropdown">
-              Informations <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="listitem">
-              <li><a href="./boarding.html">Boarding</a></li>
-              <li><a href="./uniform.html">Uniform</a></li>
-              <li><a href="./admission.html">Admission</a></li>
-              <li><a href="./sch_calender.html">School Calendar</a></li>
-              <li><a href="./prospectus.html">Prospectus</a></li>
-              <li><a href="./anthem_pledge.html">Anthem/Pledge</a></li>
-            </ul>
-          </li>
-          <li><a href="./news.html">News</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./alumni.html">Alumni</a></li>
-          <li><a href="./contact_us.php">Contact Us</a></li>
+
+      <!-- the nav menus -->
+      <div class="navbar-menus">
+        <a href="./about.html">about</a>
+        <a href="./principal.html">principal</a>
+
+        <!-- academics -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>academics</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./curriculums.html">curriculums</a>
+            <a href="./library.html">library</a>
+            <a href="./laboratories.html">laboratories</a>
+          </div>
+        </div>
+
+        <!-- information -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>info</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./boarding.html">boarding</a>
+            <a href="./admission.html">admission</a>
+            <a href="./calendar.html">calendar</a>
+            <a href="./uniform.html">uniform</a>
+          </div>
+        </div>
+
+        <a href="./news.html">news</a>
+        <a href="./gallery.html">gallery</a>
+        <a href="./alumni.html">alumni</a>
+        <a href="./contact_us.html">contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main main-abt">
+    <!-- FIRST SECTION: Hero container and bold text page title -->
+    <section class="alu-first-section">
+      <div class="section">
+        <h1>alumni</h1>
+      </div>
+    </section>
+
+    <!-- SECOND SECTION: The Alumni community -->
+    <section class="alu-second-section">
+      <section class="section">
+        <header class="section-title">
+          <h2>AFSS Ibadan</h2>
+          <h2>Alumni community</h2>
+        </header>
+
+        <article class="flex-container">
+          <div class="descriptive-title-and-text">
+            <p class="description">
+              the Apostolic Faith Secondary School Alumni Association<b>(AFSSAA)</b> community, Ibadan Chapter, 
+              is the coming together of past, and present old students which have graduated, and have ever attended the 
+              school at some period in time. AFSSAA community help her alma mater work hand-in-hand, to keep the school 
+              moving forward to higher level of excellence. And thus, foster better relationship with other sister branches 
+              within the AFSS school paradigm.
+            </p>
+          </div>
+
+          <!-- pictional representation of the alumni community -->
+          <div class="descriptive-img-container">
+            <div class="community-ring-1"></div>
+            <div class="community-ring-2"></div>
+            <div class="community-ring-3"></div>
+
+            <!-- container for all imgs -->
+            <div class="community-imgs">
+              <div class="alumni-img-container lg-img-container">
+                <img src="/public/img/alumni_aminu.jpg" alt="alumni member one" loading="lazy" width="150" height="auto">
+              </div>
+              <div class="alumni-img-container">
+                <img src="/public/img/alumni_babayeju.jpg" alt="alumni member two" loading="lazy" width="150" height="auto">
+              </div>
+              <div class="alumni-img-container">
+                <img src="/public/img/alumni_toki.jpg" alt="alumni member three" loading="lazy" width="150" height="auto">
+              </div>
+              <div class="alumni-img-container">
+                <img src="/public/img/alumni_wonuola.jpg" alt="alumni member four" loading="lazy" width="150" height="auto">
+              </div>
+              <div class="alumni-img-container">
+                <img src="/public/img/alumni_osadare.jpg" alt="alumni member five" loading="lazy" width="150" height="auto">
+              </div>
+              <div class="alumni-img-container lg-img-container">
+                <img src="/public/img/alumni_funmi.jpg" alt="alumni member six" loading="lazy" width="150" height="auto">
+              </div>
+              <div class="alumni-img-container xl-img-container">
+                <img src="/public/img/alumni_omotosho.jpg" alt="alumni member seven" loading="lazy" width="150" height="auto">
+              </div>
+              <div class="alumni-img-container lg-img-container">
+                <img src="/public/img/alumni_jayeola.jpg" alt="alumni member eight" loading="lazy" width="150" height="auto">
+              </div>
+              <div class="alumni-img-container">
+                <img src="/public/img/alumni_kenneth.jpg" alt="alumni member nine" loading="lazy" width="150" height="auto">
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <!-- THIRD SECTION: Benefits of Alumni community to the sch -->
+    <section class="alu-third-section">
+      <section class="section">
+        <header class="section-title">
+          <h2>A community With Purpose</h2>
+          <h2>To A New Frontier</h2>
+        </header>
+
+        <article class="flex-container">
+          <div class="descriptive-title-and-text">
+            <p class="description">
+              AFSSAA is not just a community that comes together for the sake of it, but to 
+              make impact towards uplifting their alma mater, and also to her members. As the 
+              community importance can never be overemphazized, towards a great deal of progress 
+              to the school, and also to her members. Here are some noticeable merits to:
+            </p>
+
+            <h3 class="sub-title">The School</h3>
+
+            <p class="description">
+              these are not all but some highlights of some infinite possibilities which the school 
+              could benefit from;
+            </p>
+          </div>
+
+          <!-- highlighted benefits to the school -->
+          <div class="highlighted-benefits">
+            <div class="highlight">
+              <header class="sub-title">
+                <h1>1.</h1>
+                <h1>referrals</h1>
+              </header>
+              <div>
+                Help to make in-flow of students coming into the school through 
+                referring interested parents, which makes it easier and reliable.
+              </div>
+            </div>
+
+            <div class="highlight">
+              <header class="sub-title">
+                <h1>2.</h1>
+                <h1>mentorship</h1>
+              </header>
+              <div>
+                Many of the community members are now captain of their industries. Which can 
+                aid in passing down their knowledge, insights, and guides to our students, on 
+                how to really navigated such industry.
+              </div>
+            </div>
+
+            <div class="highlight">
+              <header class="sub-title">
+                <h1>3.</h1>
+                <h1>volunteering</h1>
+              </header>
+              <div>
+                As an alumnus, its opens a way to give back or render an assistance towards any 
+                project or events within the school if the matter arises.
+              </div>
+            </div>
+
+            <div class="highlight">
+              <header class="sub-title">
+                <h1>4.</h1>
+                <h1>strong community</h1>
+              </header>
+              <div>
+                With a better backing of community, there are countless possibilities for greateness 
+                having a united group of bright, and vibrant minds.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="flex-container">
+          <div class="descriptive-title-and-text">
+            <h3 class="sub-title">her members</h3>
+
+            <p class="description">
+              although, there are endless possibilities towards benefits which can be attained 
+              with the establishment of the AFSSAA community, thus, not all can be highlighted. But 
+              here are some few worthy mentions: 
+            </p>
+          </div>
+
+          <!-- highlighted benefits to members -->
+          <div class="highlighted-benefits">
+            <div class="highlight">
+              <header class="sub-title">
+                <div class="descriptive-icon">
+                  <img src="/public/img/rekindle_friendship.webp" alt="friendship icon" width="120" height="auto">
+                </div>
+                <h2>rekindle old friendship</h2>
+              </header>
+              <div>
+                One of the major function of the community is to help bring ex-students together 
+                in reminiscing on old friendship, and also can form news ones.
+              </div>
+            </div>
+
+            <div class="highlight">
+              <header class="sub-title">
+                <div class="descriptive-icon">
+                  <img src="/public/img/reunion.webp" alt="friendship icon" width="120" height="auto">
+                </div>
+                <h2>reunion & school events</h2>
+              </header>
+              <div>
+                At intervals, the alumni body organizes social events, and homecomings. As a member, 
+                you get to participate, and network with other members of the community.
+              </div>
+            </div>
+
+            <div class="highlight">
+              <header class="sub-title">
+                <div class="descriptive-icon">
+                  <img src="/public/img/profession_network.svg" alt="networking icon" width="120" height="auto">
+                </div>
+                <h2>professional networking</h2>
+              </header>
+              <div>
+                Many members lives & work nationwide, and across the globe. Thus, opening a plethora of 
+                opportunities, of building professional network both across the nation, and aborad. 
+              </div>
+            </div>
+
+            <div class="highlight">
+              <header class="sub-title">
+                <div class="descriptive-icon">
+                  <img src="/public/img/community_support.webp" alt="community support icon" width="120" height="auto">
+                </div>
+                <h2>community support</h2>
+              </header>
+              <div>
+                The adoption of the "Ubuntu" ideology which simply put: <b>"Not I, but all we are happy"</b>. 
+                By this, we can all come together to help members out that are in need of assistance where possible. 
+                As in unity we stand, but divided we fall(no pawn! intended).
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <!-- FOURTH SECTION: Some noticeable memebers of the Alumni community -->
+    <section class="alu-fourth-section">
+      <section class="section">
+        <header class="section-title">
+          <h2>Get to know</h2>
+          <h2>Some of the community members</h2>
+        </header>
+
+        <article class="flex-container">
+          <div class="descriptive-title-and-text">
+            <div class="description">
+              here are some executive, and honourable members of the association, which gives 
+              momentum, and purpose towards the community, and as well as making all events, and 
+              activities seemlessly fluid, to letting it all have meaning;
+            </div>
+
+            <!-- AFSSAA EX-COS members -->
+            <div class="excos-members-container">
+              <div class="excos-member">
+                <div class="excos-img">
+                  <img src="/public/img/alumni_exec_tolu.jpg" alt="excos img" loading="lazy" width="250px" height="auto">
+                </div>
+
+                <div class="details">
+                  <div class="name">tolulope sodunke</div>
+                  <span class="title">president</span>
+                  <div class="social-handles">
+                    <a href="https://facebook.com/tolulope.sodunke" target="_blank" class="ti ti-facebook"></a> 
+                    <a href="https://twitter.com/@eljaypimping" target="_blank" class="ti ti-twitter"></a> 
+                    <a href="https://instagram.com/eljaypimping" target="_blank" class="ti ti-instagram"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="excos-member">
+                <div class="excos-img">
+                  <img src="/public/img/alumni_exec_folake.jpg" alt="excos img" loading="lazy" width="250px" height="auto">
+                </div>
+
+                <div class="details">
+                  <div class="name">oluwafolakemi oke</div>
+                  <span class="title">vice president</span>
+                  <div class="social-handles">
+                    <a href="https://facebook.com/oluwafolakemi.odejinmi" target="_blank" class="ti ti-facebook"></a> 
+                    <a href="https://twitter.com/oluwafolakemi.odejinmi" target="_blank" class="ti ti-twitter"></a> 
+                    <a href="https://instagram.com/oluwafolakemi.odejinmi" target="_blank" class="ti ti-instagram"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="excos-member">
+                <div class="excos-img">
+                  <img src="/public/img/alumni_exec_isaac.jpg" alt="excos img" loading="lazy" width="250px" height="auto">
+                </div>
+
+                <div class="details">
+                  <div class="name">isaac lawrence olatunji</div>
+                  <span class="title">Gen. secretary</span>
+                  <div class="social-handles">
+                    <a href="https://facebook.com/olatunji.isaac1" target="_blank" class="ti ti-facebook"></a> 
+                    <a href="https://twitter.com/@isaac_loves" target="_blank" class="ti ti-twitter"></a> 
+                    <a href="https://instagram.com/isaac_newage0" target="_blank" class="ti ti-instagram"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="excos-member">
+                <div class="excos-img">
+                  <img src="/public/img/alumni_exec_kuti.jpg" alt="excos img" loading="lazy" width="250px" height="auto">
+                </div>
+
+                <div class="details">
+                  <div class="name">israel ife kuti</div>
+                  <span class="title">P.R.O</span>
+                  <div class="social-handles">
+                    <a href="https://facebook.com/kuti.israelifeoluwa" target="_blank" class="ti ti-facebook"></a> 
+                    <a href="https://twitter.com/@kuti_israel" target="_blank" class="ti ti-twitter"></a> 
+                    <a href="https://instagram.com/israelkuti_" target="_blank" class="ti ti-instagram"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- some AFSSAA community members pics -->
+          <div class="descriptive-img-container">
+            <div class="member-img">
+              <img src="/public/img/alumni_olawoyin.jpg" alt="afssaa community member" loading="lazy" width="200" height="auto">
+              <div class="member-detail">
+                <div class="name">samuel olawoyin</div>
+                <div>member</div>
+              </div>
+            </div>
+
+            <div class="member-img">
+              <img src="/public/img/alumni_konan.jpg" alt="afssaa community member" loading="lazy" width="200" height="auto">
+              <div class="member-detail">
+                <div class="name">esther konan</div>
+                <div>member</div>
+              </div>
+            </div>
+
+            <div class="member-img">
+              <img src="/public/img/alumni_eyitayo.jpg" alt="afssaa community member" loading="lazy" width="200" height="auto">
+              <div class="member-detail">
+                <div class="name">eyitayo olatunji</div>
+                <div>member</div>
+              </div>
+            </div>
+
+            <div class="member-img">
+              <img src="/public/img/alumni_toppyjay.jpg" alt="afssaa community member" loading="lazy" width="200" height="auto">
+              <div class="member-detail">
+                <div class="name">temitope babalola</div>
+                <div>member</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <!-- FIFTH SECTION: Tell how to join the community newsletter -->
+    <section class="alu-fifth-section">
+      <section class="section">
+        <div class="subscriber-container">
+          <header class="sub-title">
+            <h1>🔥</h1>
+            <h2>dont't miss</h2>
+            <h2>our hottest news!</h2>
+          </header>
+
+          <p class="description">
+            enter your email to receive our periodical round-up of most hottest news, and events 
+            within the community.
+          </p>
+
+          <!-- subscriber form container -->
+          <div class="community-newsletter">
+            <!-- subscriber email address -->
+            <div class="input-field">
+              <input type="email" name="subscriberEmail" id="subscriberEmail" placeholder="your email address">
+              <label for="subscriberEmail">your email address</label>
+            </div>
+            
+            <!-- subscriber agreement consent -->
+            <div class="input-field" style="margin-bottom: 0.5em;">
+              <input type="checkbox" name="userConsent" id="userConsent">
+              <label for="userConsent">
+                I agree to my <b>email address</b> being stored, and use to receive periodic newsletter.
+              </label>
+              <!-- custom checkbox element -->
+              <div class="custom-checkbox"></div>
+            </div>
+
+            <!-- show error message -->
+            <div class="error-msg" style="margin-bottom: 1em; padding-right: 2em;"></div>
+
+            <!-- the subscribe button -->
+            <div class="subscribe-btn-container">
+              <button type="button" onclick="communityNewsletter()" class="btn btn-pry btn-block">
+                subscribe
+              </button>
+            </div>
+          </div>
+
+          <!-- subscriber confirmation message -->
+          <div class="confirmation-msg fade-in" data-confirmation-msg="">
+            <header>
+              <h1>😀</h1>
+              <h2 class="sub-title">successful</h2>
+            </header>
+            <p class="description">
+              you are now a successufully subscriber to our periodic newsletter, where you can get 
+              the latest, concurrent news, and events about the community, and the school. We promise 
+              not to spam your inbox. Thank you! 🙂.
+            </p>
+            <!-- close confirmation message button -->
+            <div class="close-btn-container">
+              <button class="btn btn-secondary btn-block" onclick="closeMsg()">
+                close message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- site's main footer -->
+  <footer class="footer">
+    <div class="footer-info">
+      <div class="footer-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" class="footer-img" alt="sch_logo_or_crest" width="50px" height="auto">
+        </a>
+        <div class="contact-info">
+          <p>Apostolic Faith Secondary School, Ibadan</p>
+          <p>SW8/803, Lodge street, Oke-Ado, Ibadan, Oyo State, Nigeria</p>
+          <p>Tel: <br> <span>+234 703 4793 449,</span> <br> <span>+234 807 9053 533</span></p>
+        </div>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h4 class="title">quick links</h4>
+
+        <ul>
+          <li><a href="./contact_us.html#faq">FAQ</a></li>
+          <li><a href="./admission.html">admission</a></li>
+          <li><a href="./alumni.html">alumni</a></li>
+          <li><a href="./contact_us.html">contact us</a></li>
         </ul>
       </div>
-    </div>
-  </nav><!-- Navigation Bar Ends -->
+  
+      <!-- sch social media links -->
+      <div class="social-links">
+        <h4 class="title">follow us</h4>
 
-  <section class="container-fluid">
-    <div class="container">
-      <article class="">
+        <p>
+          on our major social media platforms, to get closer on events within and around the school.
+        </p>
 
-      </article>
-    </div>
-  </section>
-
-  <section class="container-fluid">
-    <div class="container">
-      <article class="">
-
-      </article>
-    </div>
-  </section>
-
-  <aside class="">
-    <article class="">
-      <div class="">
-
-      </div>
-    </article>
-  </aside>
-
-  <footer class="footer in-space">
-    <!-- Footer Section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <!-- Sch-logo and address -->
-          <div class="row">
-            <div class="col-sm-4">
-              <a href="../index.html" title="home Page">
-                <img src="../images/afss_logo.png" class="img-responsive ft-logo" alt="sch_logo" />
-              </a>
-            </div>
-            <div class="col-sm-8">
-              <span>
-                Apostolic Faith Secondary School <small class="small">Ibadan</small> <br>
-                SW8/803, Lodge Street Oke-Ado, Ibadan. <br>
-                Tel:<br> +234 703 479 3449, +234 807 905 3533. <br>
-                Email: afssib@yahoo.com
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <!-- External Links -->
-          <div class="text-center">
-            <h6>External Links</h6>
-            <a href="#contact.php">Quick Contact</a><br>
-            <a href="#contact.php">Enquires</a><br>
-            <a href="#" target="_blank">Alumni Association</a><br>
-            <a href="http://www.wikipedia.org" target="_blank">Wikipedia</a><br>
-            <a href="http://www.google.com.ng" target="_blank">Google</a>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <!--Social Media Links -->
-          <div class="text-center">
-            <h6>Follow Us On</h6>
-            <a href="https://www.facebook.com" target="_blank" title="like our page on facebook">
-              Facebook <span></span> <span></span> <span class="glyphicon glyphicon-facebook">f</span>
-            </a>
-
-            <br>
-
-            <a href="https://www.twitter.com" target="_blank" title="follow us on twitter">
-              Twitter <span></span> <span></span> <span class="glyphicon glyphicon-twitter">t</span>
-            </a>
-
-            <br>
-
-            <a href="https://www.googleplus.com" target="_blank" title="join our circle on google plus ">
-              Google Plus <span></span> <span></span> <span class="glyphicon glyphicon-google-plus">g<sup>+</sup></span>
-            </a>
-          </div>
+        <div class="links">
+          <a href="http://facebook.com/afssibadan">
+            <i class="ti ti-facebook"></i>
+          </a>
+          <a href="http://twitter.com/afssibadan">
+            <i class="ti ti-twitter"></i>
+          </a>
+          <a href="http://instagram.com/afssibadan">
+            <i class="ti ti-instagram"></i>
+          </a>
+          <a href="http://youtube.com/afssibadan">
+            <i class="ti ti-youtube"></i>
+          </a>
         </div>
       </div>
-      <hr>
-      <p class="text-center">
-        &copy;2016 Apostolic Faith Secondary School, Ibadan. All Right Reserved.
-      </p>
+    </div>
+
+    <!-- site's copyright's statement -->
+    <div class="copyright-container">
+      <small>
+        &copy;2021 
+        <span class="hide-sm">Apostolic Faith Secondary School</span> 
+        AFSS<sup>&trade;</sup> 
+        <span class="show-sm">Oke-Ado</span>, Ibadan. All Rights Reserved.
+      </small>
     </div>
   </footer>
-  <!--
-  ============================================
-  Jquery File And Javascript core file
-  ============================================
-   -->
-  <script src="../bootstrap/js/jquery.min.js"></script>
-  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- javaScript and other script files -->
+  <script src="/public/js/main.js"></script>
+  <script src="/public/js/alumni.js"></script>
 </body>
 
 </html>
