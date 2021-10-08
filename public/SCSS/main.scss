@@ -141,7 +141,7 @@
     transition: top 0.2s, font-size 0.2s, color 0.2s;
   }
 
-  input, textarea {
+  input, select, textarea {
     width: 100%;
     background: $white-color;
     border: 2px solid #a4abdc56;
@@ -170,7 +170,7 @@
     }
   }
 
-  input {
+  input, select {
     padding: 15px 10px;
 
     & + label {
@@ -229,10 +229,6 @@
     animation: btn-anim 0.3s ease-in-out;
   }
 }
-
-// .btn-with-icon {
-
-// }
 
 .btn-block {
   width: 100%;
@@ -482,6 +478,9 @@
 
 // alumni page style
 @import 'alumni';
+
+// contact page style
+@import 'contact';
 
 // ====== All pages particulate styles Ends ======
 

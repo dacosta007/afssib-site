@@ -3,1101 +3,993 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../bootstrap/css/afssstyle.css" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-  <link rel="favicon" href="#">
-  <title>About Us</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="../bootstrap/css/font-awesome.css" />
-  <script src="https://maps.googleapis.com/maps/api/js"></script>
-
-  <script>
-    function initialize() {
-      var mapProp = {
-        center: new google.maps.LatLng(51.508742, -0.120850),
-        zoom: 5,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
-
-  <style>
-    .contact-map {
-      padding: 0px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <meta name="description" content="You can contact us through here and can get feedback in an instant">
+  <meta name="keywords" content="Contact us at AFSS, Oke-Ado Ibadan">
+  <link rel="icon" sizes="96x96" href="/favicon-96x96.png" type="image/png">
+  <link rel="stylesheet" href="/public/css/themify-icons.css">
+  <link rel="stylesheet" href="/public/css/main.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#schMenu">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="../index.html" class="navbar-brand">
-          <img src="../images/afss_logo.png" alt="sch_logo" width="auto" height="30">
+  <!-- site's main header -->
+  <header>
+    <nav class="navbar">
+      <!-- the site logo/crest & humbuger icon -->
+      <div class="navbar-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" alt="sch_logo_or_crest" width="40px" height="auto">
         </a>
+        <!-- hamburger icon (show on small device) -->
+        <i class="ti ti-menu small-menu-icon"></i>
       </div>
-      <div class="collapse navbar-collapse" id="schMenu">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./principal.html">Principal</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Academics <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="./curriculums.html">Curriculum</a></li>
-              <li><a href="./departments.html">Departments</a></li>
-              <li><a href="./library.html">Library</a></li>
-              <li><a href="./laboratories.html">Laboratories</a></li>
-              <li><a href="./ict.html">ICT</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#informations" class="dropdown-toggle" data-toggle="dropdown">
-              Informations <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="listitem">
-              <li><a href="./boarding.html">Boarding</a></li>
-              <li><a href="./uniform.html">Uniform</a></li>
-              <li><a href="./admission.html">Admission</a></li>
-              <li><a href="./sch_calender.html">School Calendar</a></li>
-              <li><a href="./prospectus.html">Prospectus</a></li>
-              <li><a href="./anthem_pledge.html">Anthem/Pledge</a></li>
-            </ul>
-          </li>
-          <li><a href="./news.html">News</a></li>
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./alumni.html">Alumni</a></li>
-          <li><a href="./contact_us.html">Contact Us</a></li>
-        </ul>
+
+      <!-- the nav menus -->
+      <div class="navbar-menus">
+        <a href="./about.html">about</a>
+        <a href="./principal.html">principal</a>
+
+        <!-- academics -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>academics</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./curriculums.html">curriculums</a>
+            <a href="./library.html">library</a>
+            <a href="./laboratories.html">laboratories</a>
+          </div>
+        </div>
+
+        <!-- information -->
+        <div class="dropdown">
+          <!-- dropdown button -->
+          <a href="javascript:void(0);" class="dropdown-btn">
+            <span>info</span> <i class="ti ti-angle-down"></i>
+          </a>
+          <!-- dropdown menu contents -->
+          <div class="dropdown-content">
+            <a href="./boarding.html">boarding</a>
+            <a href="./admission.html">admission</a>
+            <a href="./calendar.html">calendar</a>
+            <a href="./uniform.html">uniform</a>
+          </div>
+        </div>
+
+        <a href="./news.html">news</a>
+        <a href="./gallery.html">gallery</a>
+        <a href="./alumni.html">alumni</a>
+        <a href="./contact_us.html">contact</a>
       </div>
-    </div>
-  </nav><!-- Navigation Bar Ends -->
+    </nav>
+  </header>
 
-
-
-  <script>
-    var schCenter = new google.maps.LatLng(7.3735, 3.8808);
-
-    function initialize() {
-      var mapProp = {
-        center: new google.maps.LatLng(7.3735, 3.8808),
-        zoom: 9,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-      var marker = new google.maps.Marker({
-        position: schCenter,
-        animation: google.maps.Animation.BOUNCE,
-        title: 'Click to zoom'
-      });
-
-      marker.setMap(map);
-      google.maps.event.addListener(marker, 'click', function () {
-        map.setZoom(9);
-        map.setCenter(marker.getPosition());
-      });
-    }
-    google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
-  <!--
-  <section class="section-2 map-section">
-    <div class="contact-container">
-          <div class="filter">
-            <div class="address">
-              <h4>Where to meet</h4>
-              <p>
-                SW8/803, lodge street,<br> Oke-Ado, Ibadan
-              </p>
-              <h4>Bell Us</h4>
-              <p>
-                +234 703 479 3449, <br> +234 807 905 3533
-              </p>
-              <h4>the Oldways</h4>
-              <a href="mailto:ololade00736@yahoo.com ">afssib@yahoo.com</a>
-            </div>
+  <main class="main main-abt">
+    <!-- FIRST SECTION: sch. address, contact media channel, & contact form -->
+    <section class="con-first-section">
+      <section class="section">
+        <article class="grid-container">
+          <!-- contact media list and links -->
+          <div class="sch-contact-info">
+            <header class="sub-title">
+              <h1>get in touch</h1>
+              <div>
+                Feel free to get through to us, on any question related to the 
+                school, and we will be very glad to respond to any of them. Below 
+                are communication media channels you can use to reach out to us:
+              </div>
+            </header>
+            <section class="contact-media">
+              <div class="media-channel">
+                <i class="ti ti-home"></i> 
+                <div class="detail">
+                  Apostolic Faith Secondary School, Ibadan SW8/803, Lodge street, 
+                  Oke-Ado, Ibadan, Oyo State, Nigeria
+                </div>
+              </div>
+              <div class="media-channel">
+                <i class="ti ti-headphone-alt"></i> 
+                <div class="detail">
+                  <span>+234 703 4793 449</span>, <br>
+                  <span>+234 807 9053 533</span>
+                </div>
+              </div>
+              <div class="media-channel">
+                <i class="ti ti-email"></i> 
+                <div class="detail">
+                  <span>contact@afssibadan.edu.ng</span>, <br>
+                  <span>info@afssibadan.edu.ng</span>
+                </div>
+              </div>
+              <div class="media-channel">
+                <div class="social-links">
+                  <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                  <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                  <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                  <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
+                </div>
+              </div>
+            </section>
           </div>
 
-
-    </div>
-
-  </section>
--->
-  <!-- <div class="map" id="" style="width: 100%; height:470;"></div> -->
-  <div class="" id="googleMap" style="width:100%;height:400px;"></div>
-  <section class="section-2 contact-img" style="background-color:#343434; color:#fff;">
-    <div class="title-area"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <h2 class="title" style="color:#444;">Get in Touch</h2>
-          <p style="color:#888;">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Nemo temporibus magnam ut obcaecati ullam velit itaque deleniti.
-            </h5>
-            <div class="horizontal">
-              <div class="icon">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="">
-                <h3>Find us At</h3>
+          <!-- contact form section -->
+          <div class="contact-form-container">
+            <form method="POST" action="#" data-contact-form="">
+              <header>
+                <h2 class="sub-title center-text">drop us a line</h2>
                 <p>
-                  SW8/803, lodge street,<br> Oke-Ado, Ibadan
+                  Wanting to get through to us in an instant, without any clutter. Send 
+                  us a message, and we'll be sure to get back to you in no time. 
                 </p>
+              </header>
+              <div class="input-field">
+                <input type="text" name="fullname" id="fullname" placeholder="Full name" required>
+                <label for="fullname">Full name</label>
               </div>
-            </div>
-            <div class="horizontal">
-              <div class="icon">
-                <i class="fa fa-phone"></i>
+              <div class="input-field">
+                <input type="email" name="email" id="email" placeholder="Your email" required>
+                <label for="email">Your email</label>
               </div>
-              <div class="">
-                <h3>Give us a call</h3>
-                <p>
-                  School <br>
-                  +234 703 479 3449, <br> +234 807 905 3533 <br>
-                  Mon-Fri, 8:00am - 5:00pm
-                </p>
+              <div class="input-field">
+                <select name="gender" id="gender" placeholder="Gender">
+                  <option value="" selected></option>
+                  <option value="male">Male</option>
+                  <option value="female">female</option>
+                  <option value="other">other</option>
+                </select>
+                <label for="gender">Gender</label>
               </div>
-            </div>
-            <div class="horizontal">
-              <div class="icon">
-                <i class="fa fa-envelope-o"></i>
+              <div class="input-field">
+                <textarea name="message" id="message" placeholder="Your message" cols="30" rows="5" required></textarea>
+                <label for="message">Your message</label>
               </div>
-              <div class="">
-                <h3>Prefer to mail us</h3>
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com ">afssib@yahoo.com</a>
-                </p>
-              </div>
-            </div>
-        </div>
-        <div class="col-md-5 col-md-offset-2">
-          <div class="card" style="padding:15px; margin-top:60px;">
-            <h2 class="contact-title">Contact Us</h2>
-            <form class="" action="MAILTO:ololade00736@yahoo.com" method="post" enctype="text/plain">
-
-              <div class="row">
-
-                <div class="form-group col-md-6">
-                  <label for="name" class="control-label">Your Fullname</label>
-                  <input type="text" class="form-control form-control-afss" placeholder="Fullname">
-                </div>
-
-
-
-                <div class="form-group col-md-6">
-                  <label for="email" class="control-label">Your Email</label>
-                  <input type="text" class="form-control form-control-afss" placeholder="Email address">
-                </div>
-
-
-                <div class="form-group col-md-12">
-                  <div class="form-group">
-                    <textarea class="form-control form-control-afss" name="name" rows="8" cols="40"
-                      placeholder="Your Comments"></textarea>
-                  </div>
-
-
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-info butn-primary" style="float:right;">
-                      Send <i class="glyphicon glyphicon-send"></i>
-                    </button>
-                  </div>
-                </div>
-
+              <!-- submit message button -->
+              <div class="input-field">
+                <button type="submit" class="btn btn-secondary btn-block">
+                  <span>send message</span> <i class="ti ti-send"></i>
+                </button>
               </div>
             </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
-  </section>
+            <!-- confirmation message -->
+            <div class="frm-confirmation-msg fade-in hide" data-confirmation-msg="">
+              <header class="center-text">
+                <h1>📧</h1>
+                <h2>success!</h2>
+              </header>
 
-  <section class="section-grey">
+              <p class="description">
+                Your message is <b>successfully</b> sent!. We will make sure to get back 
+                to you <b>within 24hrs</b>, to give answers to any doubts or questions 
+                you want clarity on. Thank you.
+              </p>
 
-    <div class="title-area">
-
-      <h2>
-        Our Other Branches Within Nigeria
-      </h2>
-
-      <div class="bar bar-primary">
-        *
-      </div>
-
-    </div>
-
-    <div class="row">
-
-      <div class="col-md-3">
-        <div class="contact-card">
-
-          <div class="contact-header"
-            style="background: url('../images/city-1.jpg'); background-position: center; background-size: cover;">
-
-            <h4 class="contact-city">lagos </h4>
-
-          </div>
-
-          <div class="contact-content">
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  1, Apostolic Faith Campgrounds Road
-
-                  Anthony Village, Lagos.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  +234 805 7809 039, +234 803 4346 747.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com" class="text-center">
-                    school@something.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com" class="text-center">
-                    www.apostolicfaithsecsch.org
-                  </a>
-                </p>
-              </div>
+              <footer class="close-btn-container">
+                <button class="btn btn-secondary btn-block" onclick="closeMsg()">
+                  close message
+                </button>
+              </footer>
             </div>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
+    </section>
 
-      <div class="col-md-3">
-        <div class="contact-card">
+    <!-- SECOND SECTION: sch branches nationwide & their details -->
+    <section class="con-second-section">
+      <section class="section">
+        <header class="sub-title center-text">
+          <h3>get to know</h3>
+          <h1>some of our branches</h1>
+        </header>
 
-          <div class="contact-header"
-            style="background-image: url('../images/city.jpg'); background-position: center; background-size: cover;">
-            <div>
-              <h4 class="contact-city">oyo</h4>
+        <p class="description center-text">
+          these are some of our branches nationwide 
+        </p>
+        
+        <div class="grid-container">
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?lagos" alt="Lagos branch image" width="200" height="auto">
+              <div class="state">Lagos</div>
             </div>
-          </div>
-
-          <div class="contact-content">
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  Apostolic Faith Campgrounds Road Anthony Village, Lagos.
+                </div>
               </div>
-              <div class="col-md-10">
-                <p>
-                  SW8/803, Lodge Street Oke-Ado, Ibadan.
-                </p>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 805 7809 039</span> 
+                  <span>+234 815 5814 984</span>
+                </div>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.apostolicfaithsecsch.org</span></div>
               </div>
-              <div class="col-md-10">
-                <p>
-                  +234 703 479 3449, +234 807 905 3533.
-                </p>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>afss@apostolicfaithsecsch.org</span>
+                  <span>afss@afssanthonyportal.com</span>
+                </div>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2 text-center">
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    school@something.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2 text-center">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    www.schoolsomething.edu.ng
-                  </a>
-                </p>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
               </div>
             </div>
           </div>
 
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="contact-card">
-
-          <div class="contact-header"
-            style="background-image: url('../images/header-3.jpeg'); background-position: center; background-size: cover;">
-            <h4 class="contact-city">Ogun</h4>
-          </div>
-
-          <div class="contact-content">
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  20 Somorin Street, Oke Abetu, Off Car Wash, Adatan, Abeokuta, Ogun State.
-                </p>
-              </div>
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?highschool" alt="Ibadan branch image" width="200" height="auto">
+              <div class="state">Ibadan</div>
             </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  SW8/803, Lodge street, Oke-Ado, Ibadan, Oyo State, Nigeria.
+                </div>
               </div>
-              <div class="col-md-10">
-                <p>
-                  +234 803 7171 141.
-                </p>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 703 4793 449</span> 
+                  <span>+234 807 9053 533</span>
+                </div>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-envelope-o"></i>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>website.edu.ng</span></div>
               </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    school@something.com
-                  </a>
-                </p>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div><span>info@website.edu.ng</span></div>
               </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    schoolsomething.com
-                  </a>
-                </p>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
               </div>
             </div>
           </div>
 
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="contact-card">
-
-          <div class="contact-header"
-            style="background-image: url('../images/header-7.jpeg'); background-position: center; background-size: cover;">
-
-            <h4 class="contact-city">Osun</h4>
-
-          </div>
-
-          <div class="contact-content">
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  2, Fagbola Road, Isokun, Ilesa, Osun State.
-                </p>
-                <br>
-              </div>
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?building,colledge" alt="Aba branch image" width="200" height="auto">
+              <div class="state">aba</div>
             </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  +234 803 7171 141.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    school@something.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    schoolsomething.com
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-
-    </div>
-
-    <!--  Second Row For Contact Cards -->
-    <div class="row">
-
-      <div class="col-md-3">
-        <div class="contact-card">
-
-          <div class="contact-header"
-            style="background-image: url('../images/bg3.jpeg'); background-position: center; background-size: cover;">
-
-            <h4 class="contact-city">Ekiti</h4>
-
-          </div>
-
-          <div class="contact-content">
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  Ise Road, Emure, Ekiti, Ekiti State..
-                </p>
-                <br>
-                <br>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  +234 803 7171 141.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    school@something.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    schoolsomething.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="contact-card">
-
-          <div class="contact-header"
-            style="background-image: url('../images/bg4.jpeg'); background-position: center; background-size: cover;">
-            <h4 class="contact-city">kwara</h4>
-          </div>
-
-          <div class="contact-content">
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  Egosi-Ile, along Ayedun Road, Kwara State.
-                </p>
-
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  +234 803 570 1884, +234 805 780 9039.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    school@something.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    schoolsomething.com
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="contact-card">
-
-          <div class="contact-header"
-            style="background-image: url('../images/bg3.jpeg'); background-position: center; background-size: cover;">
-            <h4 class="contact-city">kogi</h4>
-          </div>
-
-          <div class="contact-content">
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  Odokoro Quarters, Ayetoro Gbede, Kogi State.
-                </p>
-
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  +234 803 578 9377, +234 803 625 5944.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    school@something.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    schoolsomething.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="contact-card">
-
-          <div class="contact-header"
-            style="background-image: url('../images/header-4.jpeg'); background-position: center; background-size: cover;">
-            <h4 class="contact-city">benin</h4>
-          </div>
-
-          <div class="contact-content">
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  1, Akugbe Street, Off Upper Siluko Road, Useh/Ugoh Quarters, Benin City, Edo State.
-                </p>
-
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  +234 705 563 2259.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    school@something.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    schoolsomething.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Third Row contact card   -->
-    <div class="row">
-      <div class="col-md-3">
-        <div class="contact-card">
-
-          <div class="contact-header"
-            style="background-image: url('../images/landing.jpg'); background-position: center; background-size: cover;">
-            <h4 class="contact-city">OWERRI:</h4>
-          </div>
-
-          <div class="contact-content">
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  MCC/Uratta Road, Opposite Zonal Education/MGT Board, Owerri.
-                </p>
-                <br>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  +234 806 941 6655.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    school@something.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    schoolsomething.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="contact-card">
-
-          <div class="contact-header"
-            style="background-image: url('../images/city-2.png'); background-position: center; background-size: cover;">
-            <h4 class="contact-city">Uyo</h4>
-          </div>
-
-          <div class="contact-content">
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  Ibesikpo Asutan Localk Government Area, Akwa Ibom State.
-                </p>
-
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  +234 802 735 9965.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    school@something.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    schoolsomething.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-      <div class="col-md-3">
-        <div class="contact-card">
-
-          <div class="contact-header"
-            style="background-image: url('../images/music-3.jpg'); background-position: center; background-size: cover;">
-            <h4 class="contact-city">Aba</h4>
-          </div>
-
-          <div class="contact-content">
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
                   210, Hospital Road, P. O. Box 254 Aba, Abia State.
-                </p>
-                <br>
+                </div>
+              </div>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 803 7304 481</span> 
+                </div>
+              </div>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.apostolicfaithsecsch.org</span></div>
+              </div>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>afssaba@yahoo.com</span>
+                </div>
+              </div>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  +234 803 730 4481.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    afssaba@yahoo.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    schoolsomething.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
           </div>
 
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?students" alt="Uyo branch image" width="200" height="auto">
+              <div class="state">Uyo</div>
+            </div>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  Ibesikpo Asutan Localk Government Area, Akwa Ibom State.
+                </div>
+              </div>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 802 7359 965</span>
+                </div>
+              </div>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.apostolicfaithsecsch.org</span></div>
+              </div>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>afss@apostolicfaithsecsch.org</span>
+                  <span>afss@afssanthonyportal.com</span>
+                </div>
+              </div>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?nigeria" alt="Imo branch image" width="200" height="auto">
+              <div class="state">Imo</div>
+            </div>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  MCC/Uratta Road, Opposite Zonal Education/MGT Board, Owerri.
+                </div>
+              </div>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 806 9416 655</span>
+                </div>
+              </div>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.apostolicfaithsecsch.org</span></div>
+              </div>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>afss@apostolicfaithsecsch.org</span>
+                  <span>afss@afssanthonyportal.com</span>
+                </div>
+              </div>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?city" alt="Kogi branch image" width="200" height="auto">
+              <div class="state">Kogi</div>
+            </div>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  Odokoro Quarters, Ayetoro Gbede, Kogi State.
+                </div>
+              </div>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 803 5789 377</span> 
+                  <span>+234 803 6255 944</span>
+                </div>
+              </div>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.apostolicfaithsecsch.org</span></div>
+              </div>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>afss@apostolicfaithsecsch.org</span>
+                  <span>afss@afssanthonyportal.com</span>
+                </div>
+              </div>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?building,pilgrim" alt="Kwara branch image" width="200" height="auto">
+              <div class="state">Kwara</div>
+            </div>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  Egosi-Ile, along Ayedun Road, Kwara State.
+                </div>
+              </div>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 803 7813 025</span> 
+                  <span>+234 805 7809 039</span>
+                </div>
+              </div>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.afssegosi.net</span></div>
+              </div>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>contact@afssegosi.net</span>
+                  <span>afssegosi@gmail.com</span>
+                </div>
+              </div>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?building,scholar" alt="Ogun branch image" width="200" height="auto">
+              <div class="state">ogun</div>
+            </div>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  20 Somorin Street, Oke Abetu, Off Car Wash, Adatan, Abeokuta, Ogun State.
+                </div>
+              </div>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 806 4961 246</span> 
+                  <span>+234 806 0479 209</span>
+                </div>
+              </div>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.afssabeokutaportal.com</span></div>
+              </div>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>info@afssabeokutaportal.com</span>
+                </div>
+              </div>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?colledge" alt="Akwa Ibom branch image" width="200" height="auto">
+              <div class="state">Akwa ibom</div>
+            </div>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  KM 5, Umuahia Road, P. O. Box 58, Ikot Ekpene, Akwa Ibom State Nigeria
+                </div>
+              </div>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 803 9314 278</span>
+                </div>
+              </div>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.apostolicfaithsecsch.org</span></div>
+              </div>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>afss@apostolicfaithsecsch.org</span>
+                  <span>afss@afssanthonyportal.com</span>
+                </div>
+              </div>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?art,culture" alt="Benin branch image" width="200" height="auto">
+              <div class="state">Benin</div>
+            </div>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  1, Akugbe Street, Off Upper Siluko Road, Useh/Ugoh Quarters, Benin City, Edo State.
+                </div>
+              </div>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 705 5632 259</span>
+                </div>
+              </div>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.apostolicfaithsecsch.org</span></div>
+              </div>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>afss@apostolicfaithsecsch.org</span>
+                  <span>afss@afssanthonyportal.com</span>
+                </div>
+              </div>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?knowledge,fountain" alt="Ekiti branch image" width="200" height="auto">
+              <div class="state">ekiti</div>
+            </div>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  Ise Road, Emure, Ekiti, Ekiti State.
+                </div>
+              </div>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 806 7745 179</span>
+                </div>
+              </div>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.apostolicfaithsecsch.org</span></div>
+              </div>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>afss@apostolicfaithsecsch.org</span>
+                  <span>afss@afssanthonyportal.com</span>
+                </div>
+              </div>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?heritage,sculpture" alt="Osun branch image" width="200" height="auto">
+              <div class="state">osun</div>
+            </div>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  2, Fagbola Road, Isokun, Ilesa, Osun State.
+                </div>
+              </div>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 803 7813 025</span>
+                </div>
+              </div>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.apostolicfaithsecsch.org</span></div>
+              </div>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>afss@apostolicfaithsecsch.org</span>
+                  <span>afss@afssanthonyportal.com</span>
+                </div>
+              </div>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="branch">
+            <!-- branch img -->
+            <div class="branch-img-container">
+              <img src="https://source.unsplash.com/400x400/?building,golden" alt="Port-harcourt branch image" width="200" height="auto">
+              <div class="state">port</div>
+            </div>
+            <!-- branch info -->
+            <div class="branch-info-container">
+              <!-- sch address -->
+              <div class="info">
+                <i class="ti ti-map-alt"></i>
+                <div>
+                  56 Elioparanwo Road, off Ada George junction Port Harcourt.
+                </div>
+              </div>
+              <!-- sch dial -->
+              <div class="info">
+                <i class="ti ti-headphone-alt"></i>
+                <div>
+                  <span>+234 903 8289 551</span>
+                  <span>+234 902 6416 250</span>
+                </div>
+              </div>
+              <!-- sch website address -->
+              <div class="info">
+                <i class="ti ti-world"></i>
+                <div><span>www.apostolicfaithschoolsph.com</span></div>
+              </div>
+              <!-- email address -->
+              <div class="info">
+                <i class="ti ti-email"></i>
+                <div>
+                  <span>info@apostolicfaithschoolsph.com</span>
+                  <span>contact@apostolicfaithschoolsph.com</span>
+                </div>
+              </div>
+              <!-- sch social media links -->
+              <div class="social-media-links">
+                <a href="https://facebook.com/afssibadan" target="_blank" class="ti ti-facebook"></a>
+                <a href="https://twitter.com/@afssibadan" target="_blank" class="ti ti-twitter"></a>
+                <a href="https://instagram.com/@afssibadan" target="_blank" class="ti ti-instagram"></a>
+                <a href="https://linkedin.com/afssibadan" target="_blank" class="ti ti-linkedin"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- THIRD SECTION: some frequently ask questions(FAQ) -->
+    <section class="con-third-section" id="#faq">
+      <section class="section">
+        <header class="sub-title center-text">
+          <h3>FAQ</h3>
+          <h1>some frequently ask questions</h1>
+        </header>
+
+        <p class="description">
+          You may be curious about some things which are necessary to be inquisitive about, 
+          and imperative towards any decisions that is to be taken. Below are some of the 
+          fundermental, and familiar answers to question that have, and may be asked. And 
+          should you consider these information insufficient, feel free to contact us through 
+          any of the above media channels, we will be glad to respond to any query in no time, thank you.
+        </p>
+
+        <!-- known FAQ -->
+        <div class="faq-container accordion-container">
+          <div class="accordion">
+            <header class="question">
+              <span>What do you fees covers?</span> 
+              <!-- open/close icon -->
+              <i class="ti ti-plus"></i>
+            </header>
+            <!-- answer -->
+            <article class="answer">
+              <p>
+                It encompasses lunch, educational materials, and a one-time registration fee.
+              </p>
+            </article>
+          </div>
+
+          <div class="accordion">
+            <header class="question">
+              <span>is lunch provided?</span> 
+              <!-- open/close icon -->
+              <i class="ti ti-plus"></i>
+            </header>
+            <!-- answer -->
+            <article class="answer">
+              <p>
+                yes, we provide healthy, nutritious, cooked meal for our students.
+              </p>
+            </article>
+          </div>
+
+          <div class="accordion">
+            <header class="question">
+              <span>do you run a bus system</span> 
+              <!-- open/close icon -->
+              <i class="ti ti-plus"></i>
+            </header>
+            <!-- answer -->
+            <article class="answer">
+              <p>
+                not at the moment. But will be making such available soon.
+              </p>
+            </article>
+          </div>
+
+          <div class="accordion">
+            <header class="question">
+              <span>how do I buy and apply for an admission form</span> 
+              <!-- open/close icon -->
+              <i class="ti ti-plus"></i>
+            </header>
+            <!-- answer -->
+            <article class="answer">
+              <p>
+                we have make it easier for parent to purchase our admission form for 
+                their child or ward on the the school's admission portal. Follow this 
+                link to the <a href="https://admission-portal1234.netlify.app">admission portal</a> 
+                portal to secure one for your child.
+              </p>
+            </article>
+          </div>
+
+          <div class="accordion">
+            <header class="question">
+              <span>Entrance exams preperation and requirement</span> 
+              <!-- open/close icon -->
+              <i class="ti ti-plus"></i>
+            </header>
+            <!-- answer -->
+            <article class="answer">
+              <p>
+                subjects to be taken for exams are English, and Mathematics, also an interview 
+                will be conducted to affirm the child. But before all this is to be conducted, 
+                the child must be with the examination print-out slip, which is printed when the 
+                admission form was purchase. Hence, serves as a prove of application/payment.
+              </p>
+            </article>
+          </div>
+
+          <div class="accordion">
+            <header class="question">
+              <span>How can I know my child's entrance exam scores?</span> 
+              <!-- open/close icon -->
+              <i class="ti ti-plus"></i>
+            </header>
+            <!-- answer -->
+            <article class="answer">
+              <p>
+                you can get your child's examination scores and admission status on the 
+                school's admission portal you created when you bought the admission form.
+              </p>
+            </article>
+          </div>
+
+          <div class="accordion">
+            <header class="question">
+              <span>when given admission, what should I do</span> 
+              <!-- open/close icon -->
+              <i class="ti ti-plus"></i>
+            </header>
+            <!-- answer -->
+            <article class="answer">
+              <p>
+                As it will be a provisonal admission, a counter offer should be follow up by the 
+                parent, in making all necessary steps need to complete the admission process. This 
+                can be done through the child's account on the admission portal. So there is no need 
+                be having uncertainty, we make the process easier to safe guard such admission. 
+              </p>
+            </article>
+          </div>
+
+          <div class="accordion">
+            <header class="question">
+              <span>how can i purchase the school wears & uniforms</span> 
+              <!-- open/close icon -->
+              <i class="ti ti-plus"></i>
+            </header>
+            <!-- answer -->
+            <article class="answer">
+              <p>
+                you can head over the school's website, on the <a href="./uniform.html">uniform page</a> 
+                to make purchase and place wears & uniforms order on required wears of your choice. 
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <!-- site's main footer -->
+  <footer class="footer">
+    <div class="footer-info">
+      <div class="footer-brand">
+        <a href="/">
+          <img src="/public/img/afss_logo.png" class="footer-img" alt="sch_logo_or_crest" width="50px" height="auto">
+        </a>
+        <div class="contact-info">
+          <p>Apostolic Faith Secondary School, Ibadan</p>
+          <p>SW8/803, Lodge street, Oke-Ado, Ibadan, Oyo State, Nigeria</p>
+          <p>Tel: <br> <span>+234 703 4793 449,</span> <br> <span>+234 807 9053 533</span></p>
         </div>
       </div>
+  
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h4 class="title">quick links</h4>
 
-      <div class="col-md-3">
-        <div class="contact-card">
+        <ul>
+          <li><a href="./contact_us.html#faq">FAQ</a></li>
+          <li><a href="./admission.html">admission</a></li>
+          <li><a href="./alumni.html">alumni</a></li>
+          <li><a href="./contact_us.html">contact us</a></li>
+        </ul>
+      </div>
+  
+      <!-- sch social media links -->
+      <div class="social-links">
+        <h4 class="title">follow us</h4>
 
-          <div class="contact-header"
-            style="background-image: url('../images/header-4.jpeg'); background-position: center; background-size: cover;">
-            <h4 class="contact-city">benin</h4>
-          </div>
+        <p>
+          on our major social media platforms, to get closer on events within and around the school.
+        </p>
 
-          <div class="contact-content">
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  1, Akugbe Street, Off Upper Siluko Road, Useh/Ugoh Quarters, Benin City, Edo State.
-                </p>
-
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-phone"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  +234 705 563 2259.
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-envelope-o"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    school@something.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-2">
-                <i class="fa fa-globe"></i>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a href="mailto:ololade00736@yahoo.com">
-                    schoolsomething.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-          </div>
-
+        <div class="links">
+          <a href="http://facebook.com/afssibadan">
+            <i class="ti ti-facebook"></i>
+          </a>
+          <a href="http://twitter.com/afssibadan">
+            <i class="ti ti-twitter"></i>
+          </a>
+          <a href="http://instagram.com/afssibadan">
+            <i class="ti ti-instagram"></i>
+          </a>
+          <a href="http://youtube.com/afssibadan">
+            <i class="ti ti-youtube"></i>
+          </a>
         </div>
       </div>
     </div>
 
-  </section>
-
-  <footer class="footer in-space">
-    <!-- Footer Section -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-          <!-- Sch-logo and address -->
-          <div class="row">
-            <div class="col-sm-4">
-              <a href="../index.html" title="home Page">
-                <img src="../images/afss_logo.png" class="img-responsive ft-logo" alt="sch_logo" />
-              </a>
-            </div>
-            <div class="col-sm-8">
-              <span>
-                Apostolic Faith Secondary School <small class="small">Ibadan</small> <br>
-                SW8/803, Lodge Street Oke-Ado, Ibadan. <br>
-                Tel:<br> +234 703 479 3449, +234 807 905 3533. <br>
-                Email: afssib@yahoo.com
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <!-- External Links -->
-          <div class="text-center">
-            <h5>External Links</h5>
-            <a href="#contact.php">Quick Contact</a><br>
-            <a href="#contact.php">Enquires</a><br>
-            <a href="#" target="_blank">Alumni Association</a><br>
-            <a href="http://www.wikipedia.org" target="_blank">Wikipedia</a><br>
-            <a href="http://www.google.com.ng" target="_blank">Google</a>
-          </div>
-        </div>
-
-        <div class="col-sm-4">
-          <!--Social Media Links -->
-          <div class="">
-            <h5>Follow Us On</h5>
-            <a href="https://www.facebook.com" target="_blank" title="like our page on facebook">
-              <i class="fa fa-facebook facebook"></i> Facebook
-            </a>
-
-            <br>
-
-            <a href="https://www.twitter.com" target="_blank" title="follow us on twitter">
-              <i class="fa fa-twitter twitter"></i> Twitter
-            </a>
-
-            <br>
-
-            <a href="https://www.googleplus.com" target="_blank" title="join our circle on google plus ">
-              <i class="fa fa-google-plus google-plus"></i> Google<sup>+</sup>
-            </a>
-            <br>
-            <a href="#" title="follow us on instagram">
-              <i class="fa fa-instagram instagram"></i> Instalgram
-            </a>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <p class="text-center">
-        &copy;2016 Apostolic Faith Secondary School, Ibadan. All Right Reserved.
-      </p>
+    <!-- site's copyright's statement -->
+    <div class="copyright-container">
+      <small>
+        &copy;2021 
+        <span class="hide-sm">Apostolic Faith Secondary School</span> 
+        AFSS<sup>&trade;</sup> 
+        <span class="show-sm">Oke-Ado</span>, Ibadan. All Rights Reserved.
+      </small>
     </div>
   </footer>
 
-  <!--
-  ============================================
-  Jquery File And Javascript core file
-  ============================================
-   -->
-  <script src="../bootstrap/js/jquery.min.js"></script>
-  <script src="../bootstrap/js/bootstrap.min.js"></script>
-
+  <!-- javaScript and other script files -->
+  <script src="/public/js/main.js"></script>
+  <script src="/public/js/contact.js"></script>
 </body>
 
 </html>
